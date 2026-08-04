@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/evidence-manifest.schema.json",
+  "title": "InterfaceOS Evidence Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "type",
+    "status",
+    "version",
+    "owner",
+    "figmaUrl",
+    "figmaNodeId",
+    "documentationPath",
+    "codePath",
+    "storybookPath",
+    "aiMetadataPath",
+    "accessibilityStatus",
+    "reviewStatus",
+    "lastReviewedDate",
+    "dependencies",
+    "relatedItems",
+    "evidenceLinks"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "id": {
+      "type": "string",
+      "pattern": "^IOS-(FND|TKN|ICO|CMP|PAT|TPL|PGE|FLW|DEC|REL)-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "type": {
+      "enum": [
+        "foundation",
+        "token",
+        "icon",
+        "component",
+        "pattern",
+        "template",
+        "page",
+        "flow",
+        "decision",
+        "release"
+      ]
+    },
+    "status": {
+      "enum": [
+        "research",
+        "specification",
+        "design",
+        "review",
+        "accessibility",
+        "documentation",
+        "implementation",
+        "storybook",
+        "ai-metadata",
+        "testing",
+        "approval",
+        "released",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "owner": { "type": "string", "minLength": 1 },
+    "figmaUrl": { "type": ["string", "null"], "format": "uri" },
+    "figmaNodeId": { "type": ["string", "null"], "minLength": 1 },
+    "documentationPath": { "$ref": "#/$defs/nullableRepoPath" },
+    "codePath": { "$ref": "#/$defs/nullableRepoPath" },
+    "storybookPath": { "$ref": "#/$defs/nullableRepoPath" },
+    "aiMetadataPath": { "$ref": "#/$defs/nullableRepoPath" },
+    "accessibilityStatus": {
+      "enum": [
+        "not-applicable",
+        "not-reviewed",
+        "in-progress",
+        "passed",
+        "failed",
+        "exception"
+      ]
+    },
+    "reviewStatus": {
+      "enum": [
+        "draft",
+        "in-review",
+        "changes-requested",
+        "approved",
+        "rejected"
+      ]
+    },
+    "lastReviewedDate": { "type": ["string", "null"], "format": "date" },
+    "dependencies": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" },
+      "uniqueItems": true
+    },
+    "relatedItems": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/relationship" },
+      "uniqueItems": true
+    },
+    "evidenceLinks": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri-reference" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "nullableRepoPath": {
+      "type": ["string", "null"],
+      "pattern": "^(?!/)(?!.*\\.\\.)[^\\s]+$"
+    },
+    "artifactId": {
+      "type": "string",
+      "pattern": "^IOS-(FND|TKN|ICO|CMP|PAT|TPL|PGE|FLW|DEC|REL)-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id"],
+      "properties": {
+        "id": { "$ref": "#/$defs/artifactId" },
+        "versionRange": { "type": "string", "minLength": 1 }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "targetId"],
+      "properties": {
+        "type": { "type": "string", "minLength": 1 },
+        "targetId": { "$ref": "#/$defs/artifactId" }
+      }
+    }
+  }
+}
