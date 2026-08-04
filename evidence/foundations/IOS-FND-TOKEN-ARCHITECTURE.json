@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FND-TOKEN-ARCHITECTURE",
+  "name": "Token architecture",
+  "type": "foundation",
+  "status": "implementation",
+  "version": "0.1.0",
+  "owner": "unassigned",
+  "figmaUrl": null,
+  "figmaNodeId": null,
+  "documentationPath": "docs/design-system/tokens/token-architecture.md",
+  "codePath": "packages/tokens",
+  "storybookPath": null,
+  "aiMetadataPath": null,
+  "accessibilityStatus": "in-progress",
+  "reviewStatus": "draft",
+  "lastReviewedDate": null,
+  "dependencies": [],
+  "relatedItems": [],
+  "evidenceLinks": [
+    "schemas/token-file.schema.json",
+    "docs/decisions/0003-dtcg-token-format.md"
+  ]
+}

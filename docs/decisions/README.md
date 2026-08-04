@@ -6,6 +6,7 @@ Architectural decisions use ADRs with immutable numbers and statuses: Proposed, 
 | ----------------------------------------- | ------------------------------------------------------- | -------- |
 | [ADR-0001](0001-modular-monorepo.md)      | Start with a pnpm modular monorepo and modular monolith | Proposed |
 | [ADR-0002](0002-authority-by-artifact.md) | Assign source-of-truth authority by artifact concern    | Proposed |
+| [ADR-0003](0003-dtcg-token-format.md)     | Use DTCG-compatible canonical token sources             | Proposed |
 
 ## Decision policy
 

@@ -1,0 +1,435 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "InterfaceOS sRGB color primitives. Numeric steps describe relative lightness, not usage.",
+  "color": {
+    "primitive": {
+      "$type": "color",
+      "neutral": {
+        "0": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [1, 1, 1],
+            "alpha": 1,
+            "hex": "#ffffff"
+          },
+          "$type": "color",
+          "$description": "White endpoint.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.969, 0.973, 0.98],
+            "alpha": 1,
+            "hex": "#f7f8fa"
+          },
+          "$type": "color",
+          "$description": "Lightest neutral surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.925, 0.933, 0.949],
+            "alpha": 1,
+            "hex": "#eceef2"
+          },
+          "$type": "color",
+          "$description": "Subtle neutral surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.855, 0.867, 0.89],
+            "alpha": 1,
+            "hex": "#dadde3"
+          },
+          "$type": "color",
+          "$description": "Light neutral separator step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.788, 0.804, 0.835],
+            "alpha": 1,
+            "hex": "#c9cdd5"
+          },
+          "$type": "color",
+          "$description": "Neutral border step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.451, 0.475, 0.522],
+            "alpha": 1,
+            "hex": "#737985"
+          },
+          "$type": "color",
+          "$description": "Mid neutral step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.275, 0.294, 0.333],
+            "alpha": 1,
+            "hex": "#464b55"
+          },
+          "$type": "color",
+          "$description": "Strong neutral content step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.188, 0.204, 0.235],
+            "alpha": 1,
+            "hex": "#30343c"
+          },
+          "$type": "color",
+          "$description": "Dark neutral surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.118, 0.129, 0.153],
+            "alpha": 1,
+            "hex": "#1e2127"
+          },
+          "$type": "color",
+          "$description": "Darker neutral surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.082, 0.09, 0.11],
+            "alpha": 1,
+            "hex": "#15171c"
+          },
+          "$type": "color",
+          "$description": "Darkest neutral endpoint.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      },
+      "blue": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.937, 0.957, 1],
+            "alpha": 1,
+            "hex": "#eff4ff"
+          },
+          "$type": "color",
+          "$description": "Light blue tint.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.741, 0.82, 1],
+            "alpha": 1,
+            "hex": "#bdd1ff"
+          },
+          "$type": "color",
+          "$description": "Light blue content step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.349, 0.525, 0.929],
+            "alpha": 1,
+            "hex": "#5986ed"
+          },
+          "$type": "color",
+          "$description": "Blue emphasis step for dark surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.176, 0.392, 0.843],
+            "alpha": 1,
+            "hex": "#2d64d7"
+          },
+          "$type": "color",
+          "$description": "Blue action step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.141, 0.341, 0.839],
+            "alpha": 1,
+            "hex": "#2457d6"
+          },
+          "$type": "color",
+          "$description": "Blue accessible action step on light surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.106, 0.263, 0.671],
+            "alpha": 1,
+            "hex": "#1b43ab"
+          },
+          "$type": "color",
+          "$description": "Blue hover step on light surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.082, 0.192, 0.49],
+            "alpha": 1,
+            "hex": "#15317d"
+          },
+          "$type": "color",
+          "$description": "Dark blue emphasis step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      },
+      "green": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.925, 0.984, 0.949],
+            "alpha": 1,
+            "hex": "#ecfbf2"
+          },
+          "$type": "color",
+          "$description": "Light success tint.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.612, 0.898, 0.725],
+            "alpha": 1,
+            "hex": "#9ce5b9"
+          },
+          "$type": "color",
+          "$description": "Light success content step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.082, 0.522, 0.278],
+            "alpha": 1,
+            "hex": "#158547"
+          },
+          "$type": "color",
+          "$description": "Success border and action step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.035, 0.322, 0.165],
+            "alpha": 1,
+            "hex": "#09522a"
+          },
+          "$type": "color",
+          "$description": "Success text step on light surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.016, 0.122, 0.067],
+            "alpha": 1,
+            "hex": "#041f11"
+          },
+          "$type": "color",
+          "$description": "Dark success surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      },
+      "red": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [1, 0.949, 0.949],
+            "alpha": 1,
+            "hex": "#fff2f2"
+          },
+          "$type": "color",
+          "$description": "Light danger tint.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [1, 0.702, 0.702],
+            "alpha": 1,
+            "hex": "#ffb3b3"
+          },
+          "$type": "color",
+          "$description": "Light danger content step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.784, 0.122, 0.153],
+            "alpha": 1,
+            "hex": "#c81f27"
+          },
+          "$type": "color",
+          "$description": "Danger border and action step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.478, 0.059, 0.082],
+            "alpha": 1,
+            "hex": "#7a0f15"
+          },
+          "$type": "color",
+          "$description": "Danger text step on light surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.18, 0.02, 0.031],
+            "alpha": 1,
+            "hex": "#2e0508"
+          },
+          "$type": "color",
+          "$description": "Dark danger surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      },
+      "amber": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [1, 0.973, 0.898],
+            "alpha": 1,
+            "hex": "#fff8e5"
+          },
+          "$type": "color",
+          "$description": "Light warning tint.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.996, 0.831, 0.4],
+            "alpha": 1,
+            "hex": "#fed466"
+          },
+          "$type": "color",
+          "$description": "Light warning content step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.718, 0.435, 0.016],
+            "alpha": 1,
+            "hex": "#b76f04"
+          },
+          "$type": "color",
+          "$description": "Warning border step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.404, 0.235, 0.008],
+            "alpha": 1,
+            "hex": "#673c02"
+          },
+          "$type": "color",
+          "$description": "Warning text step on light surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.149, 0.082, 0],
+            "alpha": 1,
+            "hex": "#261500"
+          },
+          "$type": "color",
+          "$description": "Dark warning surface step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      }
+    }
+  }
+}

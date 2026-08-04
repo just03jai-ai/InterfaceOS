@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Radius primitives use a restrained progression and do not imply component use.",
+  "radius": {
+    "primitive": {
+      "$type": "dimension",
+      "none": {
+        "$value": { "value": 0, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Square corner.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "sm": {
+        "$value": { "value": 4, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Subtle corner rounding.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "md": {
+        "$value": { "value": 8, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Default surface rounding candidate.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "lg": {
+        "$value": { "value": 12, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Prominent surface rounding candidate.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "xl": {
+        "$value": { "value": 16, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Large container rounding candidate.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "full": {
+        "$value": { "value": 9999, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Pill and circular treatment when geometry permits.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../../schemas/token-theme-contract.schema.json",
+  "schemaVersion": "1.0.0",
+  "themes": ["light", "dark"],
+  "requiredMappings": [
+    "color.theme.background.canvas",
+    "color.theme.background.surface",
+    "color.theme.background.subtle",
+    "color.theme.background.inverse",
+    "color.theme.text.primary",
+    "color.theme.text.secondary",
+    "color.theme.text.disabled",
+    "color.theme.text.inverse",
+    "color.theme.border.default",
+    "color.theme.border.strong",
+    "color.theme.focus.ring",
+    "color.theme.interactive.primary.default",
+    "color.theme.interactive.primary.hover",
+    "color.theme.interactive.primary.active",
+    "color.theme.interactive.primary.foreground",
+    "color.theme.status.success.background",
+    "color.theme.status.success.foreground",
+    "color.theme.status.success.border",
+    "color.theme.status.warning.background",
+    "color.theme.status.warning.foreground",
+    "color.theme.status.warning.border",
+    "color.theme.status.danger.background",
+    "color.theme.status.danger.foreground",
+    "color.theme.status.danger.border"
+  ],
+  "contrastPairs": [
+    {
+      "foreground": "color.semantic.text.primary",
+      "background": "color.semantic.background.canvas",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.text.secondary",
+      "background": "color.semantic.background.canvas",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.text.inverse",
+      "background": "color.semantic.background.inverse",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.interactive.primary.foreground",
+      "background": "color.semantic.interactive.primary.default",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.status.success.foreground",
+      "background": "color.semantic.status.success.background",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.status.warning.foreground",
+      "background": "color.semantic.status.warning.background",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.status.danger.foreground",
+      "background": "color.semantic.status.danger.background",
+      "minimum": 4.5,
+      "wcag": "1.4.3 Contrast Minimum"
+    },
+    {
+      "foreground": "color.semantic.focus.ring",
+      "background": "color.semantic.background.canvas",
+      "minimum": 3,
+      "wcag": "1.4.11 Non-text Contrast"
+    }
+  ]
+}

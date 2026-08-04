@@ -1,6 +1,6 @@
 # IOS-001 — Design Foundations and Token Architecture
 
-Status: Proposed — implementation not authorized
+Status: Active — Stage 1 code foundation authorized; review pending
 Owner: Unassigned
 Target date: Unscheduled
 
@@ -15,6 +15,10 @@ Create an approved, accessible, mode-aware foundation and token architecture tha
 - Canonical Figma Design System file provisioned with durable URL and permissions.
 - Token format/build decision and browser/platform support targets approved.
 - CI passes on the approved foundation baseline.
+
+## Stage 1 authorization note
+
+Stage 1 implementation was explicitly authorized on 2026-08-04. The missing owners, proposed ADRs, and absent Figma file remain release and Figma-execution blockers; they are not treated as satisfied. Stage 1 artifacts remain draft or in-progress until their approval gates are recorded.
 
 ## Work breakdown
 
@@ -51,6 +55,23 @@ Create an approved, accessible, mode-aware foundation and token architecture tha
 | IOS-001-029 | Release foundations and tokens                   | 028            | Version, changelog, release manifest, migration notes       | Release approval       |
 
 Ranges such as `006–018` mean all listed items in that inclusive range.
+
+## Stage 1 implementation traceability
+
+| IOS items         | Stage 1 result                                                                                                                                         | Review state                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| 002               | Taxonomy, naming grammar, tier dependencies, and component-token strategy authored                                                                     | Draft; design and engineering approval required   |
+| 003               | DTCG-compatible token and theme-contract schemas implemented                                                                                           | ADR-0003 Proposed; architecture approval required |
+| 004               | Figma collection, mode, name conversion, and evidence mapping documented                                                                               | Figma file and execution blocked                  |
+| 005, 022          | Deterministic validation and CSS/JSON/TypeScript/Tailwind exporters implemented                                                                        | Engineering review required                       |
+| 006–018           | Initial color, typography, spacing, sizing, radius, border, shadow/elevation, breakpoint, responsive, z-index, motion, and opacity sources implemented | Visual and domain review required                 |
+| 007–008, 027      | Declared opaque sRGB contrast pairs pass automated thresholds in light and dark                                                                        | Manual accessibility and Figma review incomplete  |
+| 020               | Canonical modular `.tokens.json` sources implemented                                                                                                   | Design and engineering approval required          |
+| 021               | Component-token creation and dependency rules documented; no component tokens added                                                                    | Architecture approval required                    |
+| 023               | Schema, naming, duplicate, reference, theme, cycle, and contrast contract tests implemented                                                            | Passing locally                                   |
+| 024               | Stable evidence IDs and Git paths recorded                                                                                                             | Figma reconciliation blocked                      |
+| 025               | Architecture, naming, theme, Figma, ownership, export, and contribution documentation implemented                                                      | Documentation review required                     |
+| 019, 026, 028–029 | Figma implementation, AI metadata, release evidence, and release                                                                                       | Not started; outside Stage 1                      |
 
 ## Documentation requirements
 

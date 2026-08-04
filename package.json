@@ -8,13 +8,15 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "pnpm typecheck && pnpm validate",
+    "build": "pnpm tokens:build && pnpm typecheck && pnpm validate",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/**/*.test.mjs",
-    "validate": "pnpm validate:schemas && pnpm validate:links && pnpm validate:secrets",
+    "tokens:build": "node packages/tokens/scripts/build.mjs",
+    "tokens:validate": "node packages/tokens/scripts/validate.mjs",
+    "validate": "pnpm validate:schemas && pnpm tokens:validate && pnpm validate:links && pnpm validate:secrets",
     "validate:links": "node scripts/validate-doc-links.mjs",
     "validate:schemas": "node scripts/validate-schemas.mjs",
     "validate:secrets": "node scripts/check-secrets.mjs",

@@ -10,7 +10,7 @@ This backlog is the traceability index. Detailed IOS-001 work is defined in the 
 | IOS-FND-004 | Configure GitHub branch protection              | IOS-FND-003                           | Verified ruleset evidence              | Governance approval       | Proposed  |
 | IOS-FND-005 | Approve repository license and security contact | IOS-FND-003                           | License and reporting policy           | Legal/governance approval | Proposed  |
 | IOS-FND-006 | Provision canonical Figma Design System file    | IOS-FND-003                           | File URL, access model, page structure | Design approval           | Proposed  |
-| IOS-001     | Design Foundations and Token Architecture       | IOS-FND-002, IOS-FND-003, IOS-FND-006 | See milestone breakdown                | Release approval          | Proposed  |
+| IOS-001     | Design Foundations and Token Architecture       | IOS-FND-002, IOS-FND-003, IOS-FND-006 | See milestone breakdown                | Release approval          | Active    |
 | IOS-002     | Component vertical slice                        | IOS-001                               | To be defined after IOS-001 review     | Milestone approval        | Blocked   |
 
 Backlog status is one of Proposed, Ready, Active, Blocked, In review, Done, or Cancelled. “Done” requires linked acceptance evidence, not only completed activity.

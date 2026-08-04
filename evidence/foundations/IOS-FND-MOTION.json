@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FND-MOTION",
+  "name": "Motion foundation",
+  "type": "foundation",
+  "status": "implementation",
+  "version": "0.1.0",
+  "owner": "unassigned",
+  "figmaUrl": null,
+  "figmaNodeId": null,
+  "documentationPath": "docs/design-system/tokens/theme-model.md",
+  "codePath": "packages/tokens/src/primitives/motion.tokens.json",
+  "storybookPath": null,
+  "aiMetadataPath": null,
+  "accessibilityStatus": "in-progress",
+  "reviewStatus": "draft",
+  "lastReviewedDate": null,
+  "dependencies": [{ "id": "IOS-FND-TOKEN-ARCHITECTURE" }],
+  "relatedItems": [],
+  "evidenceLinks": []
+}
