@@ -4,4 +4,6 @@ This directory stores governed evidence manifests and lightweight review artifac
 
 Subdirectories are organized by evidence purpose, not source-of-truth ownership. Do not place secrets, personal data, inaccessible Figma exports, or unapproved third-party assets here.
 
-`foundations/` contains the draft manifests for IOS-001 token and foundation domains. Null Figma mappings are intentional blockers, not evidence of synchronization.
+`foundations/` contains the draft manifests for IOS-001 token and foundation domains. The canonical Figma URL is registered; null external identifiers and `pending-human-capture` fields remain intentional blockers, not evidence of synchronization.
+
+`figma/` may contain schema-backed architecture and capture records in addition to evidence manifests. `interfaceos-design-system.architecture.json` records the manually created file structure without claiming that its external node or variable identifiers have been captured.

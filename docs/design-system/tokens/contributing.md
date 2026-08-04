@@ -21,4 +21,4 @@
 - Can every output be reproduced from the canonical source?
 - Are Figma and evidence references current, or explicitly blocked?
 
-Component tokens require a released component need and architecture approval. Stage 1 contributors must not add them.
+Component tokens require a released component need and architecture approval. IOS-001 contributors must not add them.

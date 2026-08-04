@@ -1,24 +1,51 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "id": "IOS-FND-TOKEN-ARCHITECTURE",
   "name": "Token architecture",
   "type": "foundation",
   "status": "implementation",
   "version": "0.1.0",
-  "owner": "unassigned",
-  "figmaUrl": null,
+  "owner": "Jai Singh",
+  "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
   "figmaNodeId": null,
+  "figmaEvidence": {
+    "captureStatus": "partial",
+    "pageUrl": { "status": "pending-human-capture", "value": null },
+    "pageNodeId": { "status": "pending-human-capture", "value": null },
+    "sectionNodeId": { "status": "pending-human-capture", "value": null },
+    "collectionIds": { "status": "pending-human-capture", "values": [] },
+    "variableIds": { "status": "pending-human-capture", "values": [] },
+    "screenshotPaths": { "status": "pending-human-capture", "values": [] },
+    "sourceRevision": { "status": "pending-human-capture", "value": null },
+    "figmaRevision": { "status": "pending-human-capture", "value": null },
+    "synchronizationChecksum": {
+      "status": "pending-human-capture",
+      "value": null
+    },
+    "review": {
+      "date": "2026-08-05",
+      "reviewer": "Jai Singh — temporary design/documentation/governance/release reviewer",
+      "approvalStatus": "in-review"
+    },
+    "drift": {
+      "status": "not-assessed",
+      "lastCheckedDate": null,
+      "resolutionOwner": "Jai Singh"
+    }
+  },
   "documentationPath": "docs/design-system/tokens/token-architecture.md",
   "codePath": "packages/tokens",
   "storybookPath": null,
   "aiMetadataPath": null,
   "accessibilityStatus": "in-progress",
-  "reviewStatus": "draft",
-  "lastReviewedDate": null,
+  "reviewStatus": "in-review",
+  "lastReviewedDate": "2026-08-05",
   "dependencies": [],
   "relatedItems": [],
   "evidenceLinks": [
     "schemas/token-file.schema.json",
-    "docs/decisions/0003-dtcg-token-format.md"
+    "docs/decisions/0003-dtcg-token-format.md",
+    "docs/decisions/0004-figma-foundation-representation.md",
+    "docs/decisions/0005-evidence-manifest-v2.md"
   ]
 }

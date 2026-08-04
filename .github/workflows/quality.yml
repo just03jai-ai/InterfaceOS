@@ -23,3 +23,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm quality
+      - run: pnpm build
+      - name: Upload generated token distributions
+        uses: actions/upload-artifact@v7
+        with:
+          name: interfaceos-token-distributions-${{ github.sha }}
+          path: packages/tokens/dist/
+          if-no-files-found: error

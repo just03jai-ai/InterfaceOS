@@ -1,21 +1,46 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "id": "IOS-FND-Z-INDEX",
   "name": "Z-index foundation",
   "type": "foundation",
   "status": "implementation",
   "version": "0.1.0",
-  "owner": "unassigned",
-  "figmaUrl": null,
+  "owner": "Jai Singh",
+  "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
   "figmaNodeId": null,
+  "figmaEvidence": {
+    "captureStatus": "partial",
+    "pageUrl": { "status": "pending-human-capture", "value": null },
+    "pageNodeId": { "status": "pending-human-capture", "value": null },
+    "sectionNodeId": { "status": "pending-human-capture", "value": null },
+    "collectionIds": { "status": "pending-human-capture", "values": [] },
+    "variableIds": { "status": "pending-human-capture", "values": [] },
+    "screenshotPaths": { "status": "pending-human-capture", "values": [] },
+    "sourceRevision": { "status": "pending-human-capture", "value": null },
+    "figmaRevision": { "status": "pending-human-capture", "value": null },
+    "synchronizationChecksum": {
+      "status": "pending-human-capture",
+      "value": null
+    },
+    "review": {
+      "date": "2026-08-05",
+      "reviewer": "Jai Singh — temporary design/documentation/governance/release reviewer",
+      "approvalStatus": "in-review"
+    },
+    "drift": {
+      "status": "not-assessed",
+      "lastCheckedDate": null,
+      "resolutionOwner": "Jai Singh"
+    }
+  },
   "documentationPath": "docs/design-system/tokens/naming-conventions.md",
   "codePath": "packages/tokens/src/primitives/z-index.tokens.json",
   "storybookPath": null,
   "aiMetadataPath": null,
-  "accessibilityStatus": "not-applicable",
-  "reviewStatus": "draft",
-  "lastReviewedDate": null,
+  "accessibilityStatus": "not-reviewed",
+  "reviewStatus": "in-review",
+  "lastReviewedDate": "2026-08-05",
   "dependencies": [{ "id": "IOS-FND-TOKEN-ARCHITECTURE" }],
   "relatedItems": [],
-  "evidenceLinks": []
+  "evidenceLinks": ["docs/decisions/0004-figma-foundation-representation.md"]
 }

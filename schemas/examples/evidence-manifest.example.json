@@ -1,13 +1,38 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "id": "IOS-FND-COLOR",
   "name": "Color foundation",
   "type": "foundation",
   "status": "research",
   "version": "0.1.0",
-  "owner": "unassigned",
-  "figmaUrl": null,
+  "owner": "Jai Singh",
+  "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
   "figmaNodeId": null,
+  "figmaEvidence": {
+    "captureStatus": "partial",
+    "pageUrl": { "status": "pending-human-capture", "value": null },
+    "pageNodeId": { "status": "pending-human-capture", "value": null },
+    "sectionNodeId": { "status": "pending-human-capture", "value": null },
+    "collectionIds": { "status": "pending-human-capture", "values": [] },
+    "variableIds": { "status": "pending-human-capture", "values": [] },
+    "screenshotPaths": { "status": "pending-human-capture", "values": [] },
+    "sourceRevision": { "status": "pending-human-capture", "value": null },
+    "figmaRevision": { "status": "pending-human-capture", "value": null },
+    "synchronizationChecksum": {
+      "status": "pending-human-capture",
+      "value": null
+    },
+    "review": {
+      "date": null,
+      "reviewer": null,
+      "approvalStatus": "pending"
+    },
+    "drift": {
+      "status": "not-assessed",
+      "lastCheckedDate": null,
+      "resolutionOwner": "Jai Singh"
+    }
+  },
   "documentationPath": "docs/roadmap/ios-001-design-foundations.md",
   "codePath": null,
   "storybookPath": null,

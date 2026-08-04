@@ -21,3 +21,15 @@ test('example evidence manifest satisfies the canonical schema', () => {
 test('evidence manifest rejects an invalid stable identifier', () => {
   assert.equal(validate({ ...example, id: 'button' }), false);
 });
+
+test('pending Figma evidence cannot contain identifier-shaped placeholders', () => {
+  const invalid = structuredClone(example);
+  invalid.figmaEvidence.pageNodeId.value = 'page-id-here';
+  assert.equal(validate(invalid), false);
+});
+
+test('captured Figma evidence requires a real non-empty value', () => {
+  const invalid = structuredClone(example);
+  invalid.figmaEvidence.pageNodeId.status = 'captured';
+  assert.equal(validate(invalid), false);
+});

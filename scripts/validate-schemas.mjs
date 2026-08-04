@@ -1,4 +1,4 @@
-import { readFile, readdir } from 'node:fs/promises';
+import { access, readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
@@ -21,6 +21,9 @@ for (const file of schemaFiles) {
 
 const evidenceSchema = ajv.getSchema(
   'https://interfaceos.dev/schemas/evidence-manifest.schema.json',
+);
+const figmaArchitectureSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-architecture-manifest.schema.json',
 );
 const example = JSON.parse(
   await readFile(
@@ -45,7 +48,22 @@ async function findJsonFiles(directory) {
   return files;
 }
 
-const evidenceFiles = await findJsonFiles(path.join(root, 'evidence'));
+const figmaArchitecturePath = path.join(
+  root,
+  'evidence/figma/interfaceos-design-system.architecture.json',
+);
+const figmaArchitecture = JSON.parse(
+  await readFile(figmaArchitecturePath, 'utf8'),
+);
+if (!figmaArchitectureSchema?.(figmaArchitecture)) {
+  throw new Error(
+    `Figma architecture manifest is invalid: ${ajv.errorsText(figmaArchitectureSchema?.errors)}`,
+  );
+}
+
+const evidenceFiles = (await findJsonFiles(path.join(root, 'evidence'))).filter(
+  (file) => !file.endsWith('.architecture.json'),
+);
 const manifests = [];
 for (const file of evidenceFiles) {
   const manifest = JSON.parse(await readFile(file, 'utf8'));
@@ -73,6 +91,54 @@ for (const { file, manifest } of manifests) {
   }
 }
 
+const fakeExternalValue =
+  /^(?:tbd|todo|unknown|pending|pending-human-capture|page-id|node-id|section-id|collection-id|variable-id)(?:$|[-_ :])/i;
+function assertNoFakeCapturedValues(value, location) {
+  if (!value || typeof value !== 'object') return;
+  if (
+    value.status === 'captured' &&
+    typeof value.value === 'string' &&
+    fakeExternalValue.test(value.value)
+  ) {
+    throw new Error(`${location} contains a fake captured external value.`);
+  }
+  if (value.status === 'captured' && Array.isArray(value.values)) {
+    for (const captured of value.values) {
+      if (fakeExternalValue.test(captured))
+        throw new Error(`${location} contains a fake captured external ID.`);
+    }
+  }
+  for (const [key, child] of Object.entries(value))
+    assertNoFakeCapturedValues(child, `${location}.${key}`);
+}
+
+for (const { file, manifest } of manifests)
+  assertNoFakeCapturedValues(manifest.figmaEvidence, path.relative(root, file));
+assertNoFakeCapturedValues(figmaArchitecture, 'Figma architecture manifest');
+
+for (const page of figmaArchitecture.pages) {
+  for (const item of page.items) {
+    for (const evidenceId of item.relatedEvidenceIds) {
+      if (!evidenceIds.has(evidenceId))
+        throw new Error(
+          `Figma architecture item ${page.name}/${item.name} references missing evidence ID ${evidenceId}.`,
+        );
+    }
+    for (const repositoryPath of [
+      ...item.plannedDocumentationPaths,
+      ...item.plannedTokenSourceMappings,
+    ]) {
+      try {
+        await access(path.join(root, repositoryPath));
+      } catch {
+        throw new Error(
+          `Figma architecture item ${page.name}/${item.name} references missing path ${repositoryPath}.`,
+        );
+      }
+    }
+  }
+}
+
 console.log(
-  `Validated ${schemaFiles.length} schemas, the evidence example, and ${manifests.length} evidence manifests.`,
+  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, and the Figma architecture manifest.`,
 );
