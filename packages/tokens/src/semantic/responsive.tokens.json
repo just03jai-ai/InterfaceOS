@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Responsive semantic aliases express layout intent independently of device names.",
+  "responsive": {
+    "semantic": {
+      "breakpoint": {
+        "compact-max": {
+          "$value": "{breakpoint.primitive.sm}",
+          "$type": "dimension",
+          "$description": "Upper reference for compact layouts; validate at intermediate widths.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "responsive", "status": "draft" }
+          }
+        },
+        "expanded-min": {
+          "$value": "{breakpoint.primitive.lg}",
+          "$type": "dimension",
+          "$description": "Reference for expanded layouts; use container queries when ownership is local.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "responsive", "status": "draft" }
+          }
+        }
+      },
+      "gutter": {
+        "compact": {
+          "$value": "{spacing.primitive.4}",
+          "$type": "dimension",
+          "$description": "Default compact canvas gutter.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "responsive", "status": "draft" }
+          }
+        },
+        "expanded": {
+          "$value": "{spacing.primitive.6}",
+          "$type": "dimension",
+          "$description": "Default expanded canvas gutter.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "responsive", "status": "draft" }
+          }
+        }
+      }
+    }
+  }
+}

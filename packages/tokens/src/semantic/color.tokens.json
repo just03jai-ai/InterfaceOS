@@ -1,0 +1,221 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Theme-independent semantic color API. Consumers use these names and never palette or theme names.",
+  "color": {
+    "semantic": {
+      "$type": "color",
+      "background": {
+        "canvas": {
+          "$value": "{color.theme.background.canvas}",
+          "$type": "color",
+          "$description": "Primary application canvas.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "surface": {
+          "$value": "{color.theme.background.surface}",
+          "$type": "color",
+          "$description": "Raised or grouped surface.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "subtle": {
+          "$value": "{color.theme.background.subtle}",
+          "$type": "color",
+          "$description": "Subtle differentiated region.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "inverse": {
+          "$value": "{color.theme.background.inverse}",
+          "$type": "color",
+          "$description": "High-contrast inverse surface.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.theme.text.primary}",
+          "$type": "color",
+          "$description": "Default readable text.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "secondary": {
+          "$value": "{color.theme.text.secondary}",
+          "$type": "color",
+          "$description": "Supporting text with AA contrast target.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "disabled": {
+          "$value": "{color.theme.text.disabled}",
+          "$type": "color",
+          "$description": "Unavailable content; state must have a non-color cue.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "inverse": {
+          "$value": "{color.theme.text.inverse}",
+          "$type": "color",
+          "$description": "Text on inverse surfaces.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.theme.border.default}",
+          "$type": "color",
+          "$description": "Default visible boundary.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "strong": {
+          "$value": "{color.theme.border.strong}",
+          "$type": "color",
+          "$description": "Emphasized visible boundary.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        }
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.theme.focus.ring}",
+          "$type": "color",
+          "$description": "Keyboard focus indicator requiring 3:1 adjacent contrast.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        }
+      },
+      "interactive": {
+        "primary": {
+          "default": {
+            "$value": "{color.theme.interactive.primary.default}",
+            "$type": "color",
+            "$description": "Primary interactive surface.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "hover": {
+            "$value": "{color.theme.interactive.primary.hover}",
+            "$type": "color",
+            "$description": "Primary interactive hover surface.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "active": {
+            "$value": "{color.theme.interactive.primary.active}",
+            "$type": "color",
+            "$description": "Primary interactive active surface.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.theme.interactive.primary.foreground}",
+            "$type": "color",
+            "$description": "Content on primary interactive surfaces.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          }
+        }
+      },
+      "status": {
+        "success": {
+          "background": {
+            "$value": "{color.theme.status.success.background}",
+            "$type": "color",
+            "$description": "Success surface; never the only success cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.theme.status.success.foreground}",
+            "$type": "color",
+            "$description": "Success content.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "border": {
+            "$value": "{color.theme.status.success.border}",
+            "$type": "color",
+            "$description": "Success boundary.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          }
+        },
+        "warning": {
+          "background": {
+            "$value": "{color.theme.status.warning.background}",
+            "$type": "color",
+            "$description": "Warning surface; never the only warning cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.theme.status.warning.foreground}",
+            "$type": "color",
+            "$description": "Warning content.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "border": {
+            "$value": "{color.theme.status.warning.border}",
+            "$type": "color",
+            "$description": "Warning boundary.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          }
+        },
+        "danger": {
+          "background": {
+            "$value": "{color.theme.status.danger.background}",
+            "$type": "color",
+            "$description": "Danger surface; never the only error cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.theme.status.danger.foreground}",
+            "$type": "color",
+            "$description": "Danger content.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          },
+          "border": {
+            "$value": "{color.theme.status.danger.border}",
+            "$type": "color",
+            "$description": "Danger boundary.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

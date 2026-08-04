@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/token-theme-contract.schema.json",
+  "title": "InterfaceOS Token Theme Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "themes", "requiredMappings", "contrastPairs"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "themes": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+    },
+    "requiredMappings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^color\\.theme(?:\\.[a-z0-9][a-z0-9-]*)+$"
+      }
+    },
+    "contrastPairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["foreground", "background", "minimum", "wcag"],
+        "properties": {
+          "foreground": { "type": "string" },
+          "background": { "type": "string" },
+          "minimum": { "type": "number", "minimum": 1, "maximum": 21 },
+          "wcag": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

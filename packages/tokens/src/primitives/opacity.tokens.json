@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Opacity primitives. Opacity must not be the sole communication channel for state.",
+  "opacity": {
+    "primitive": {
+      "$type": "number",
+      "0": {
+        "$value": 0,
+        "$type": "number",
+        "$description": "Fully transparent.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "8": {
+        "$value": 0.08,
+        "$type": "number",
+        "$description": "Subtle overlay strength.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "16": {
+        "$value": 0.16,
+        "$type": "number",
+        "$description": "Low overlay strength.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "40": {
+        "$value": 0.4,
+        "$type": "number",
+        "$description": "Muted content candidate requiring contrast review.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "64": {
+        "$value": 0.64,
+        "$type": "number",
+        "$description": "Strong translucent content candidate requiring contrast review.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "100": {
+        "$value": 1,
+        "$type": "number",
+        "$description": "Fully opaque.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

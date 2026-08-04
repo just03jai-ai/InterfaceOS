@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Sizing primitives alias the canonical spacing scale where dimensions intentionally coincide.",
+  "sizing": {
+    "primitive": {
+      "$type": "dimension",
+      "icon-sm": {
+        "$value": "{spacing.primitive.4}",
+        "$type": "dimension",
+        "$description": "Small icon box, 16px resolved.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "icon-md": {
+        "$value": "{spacing.primitive.6}",
+        "$type": "dimension",
+        "$description": "Default icon box, 24px resolved.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "icon-lg": {
+        "$value": "{spacing.primitive.8}",
+        "$type": "dimension",
+        "$description": "Large icon box, 32px resolved.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "control-sm": {
+        "$value": { "value": 32, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Compact control height; use only when target-size requirements are satisfied by surrounding hit area.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "control-md": {
+        "$value": { "value": 40, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Default compact control height.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "control-lg": {
+        "$value": { "value": 48, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Comfortable control height exceeding the WCAG 2.2 AA minimum target size.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "target-min": {
+        "$value": { "value": 24, "unit": "px" },
+        "$type": "dimension",
+        "$description": "WCAG 2.2 AA minimum target-size baseline before exceptions and spacing are evaluated.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

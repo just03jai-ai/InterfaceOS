@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FND-BORDER",
+  "name": "Border foundation",
+  "type": "foundation",
+  "status": "implementation",
+  "version": "0.1.0",
+  "owner": "unassigned",
+  "figmaUrl": null,
+  "figmaNodeId": null,
+  "documentationPath": "docs/design-system/tokens/naming-conventions.md",
+  "codePath": "packages/tokens/src/primitives/border.tokens.json",
+  "storybookPath": null,
+  "aiMetadataPath": null,
+  "accessibilityStatus": "in-progress",
+  "reviewStatus": "draft",
+  "lastReviewedDate": null,
+  "dependencies": [{ "id": "IOS-FND-TOKEN-ARCHITECTURE" }],
+  "relatedItems": [{ "type": "pairs-with", "targetId": "IOS-FND-COLOR" }],
+  "evidenceLinks": []
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Motion primitives and semantic aliases with an explicit reduced-motion path.",
+  "motion": {
+    "primitive": {
+      "duration": {
+        "instant": {
+          "$value": { "value": 0, "unit": "ms" },
+          "$type": "duration",
+          "$description": "No animated interpolation.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "fast": {
+          "$value": { "value": 120, "unit": "ms" },
+          "$type": "duration",
+          "$description": "Short feedback transition.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "moderate": {
+          "$value": { "value": 200, "unit": "ms" },
+          "$type": "duration",
+          "$description": "Default state transition.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "slow": {
+          "$value": { "value": 320, "unit": "ms" },
+          "$type": "duration",
+          "$description": "Deliberate spatial transition; requires reduced-motion handling.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      },
+      "easing": {
+        "standard": {
+          "$value": [0.2, 0, 0, 1],
+          "$type": "cubicBezier",
+          "$description": "Default state-change easing.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "enter": {
+          "$value": [0, 0, 0, 1],
+          "$type": "cubicBezier",
+          "$description": "Decelerating entrance easing.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "exit": {
+          "$value": [0.3, 0, 1, 1],
+          "$type": "cubicBezier",
+          "$description": "Accelerating exit easing.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      }
+    },
+    "semantic": {
+      "duration": {
+        "feedback": {
+          "$value": "{motion.primitive.duration.fast}",
+          "$type": "duration",
+          "$description": "Immediate non-spatial feedback.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "transition": {
+          "$value": "{motion.primitive.duration.moderate}",
+          "$type": "duration",
+          "$description": "Default state transition.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        },
+        "reduced": {
+          "$value": "{motion.primitive.duration.instant}",
+          "$type": "duration",
+          "$description": "Reduced-motion mapping for non-essential animation.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        }
+      },
+      "easing": {
+        "standard": {
+          "$value": "{motion.primitive.easing.standard}",
+          "$type": "cubicBezier",
+          "$description": "Default semantic easing.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+          }
+        }
+      }
+    }
+  }
+}

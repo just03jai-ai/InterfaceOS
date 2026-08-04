@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Shadow primitives support depth but must not be the only state or boundary cue.",
+  "shadow": {
+    "primitive": {
+      "$type": "shadow",
+      "none": {
+        "$value": [],
+        "$type": "shadow",
+        "$description": "No shadow.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "sm": {
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [0.082, 0.09, 0.11],
+              "alpha": 0.12,
+              "hex": "#15171c"
+            },
+            "offsetX": { "value": 0, "unit": "px" },
+            "offsetY": { "value": 1, "unit": "px" },
+            "blur": { "value": 2, "unit": "px" },
+            "spread": { "value": 0, "unit": "px" }
+          }
+        ],
+        "$type": "shadow",
+        "$description": "Low elevation shadow.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "md": {
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [0.082, 0.09, 0.11],
+              "alpha": 0.14,
+              "hex": "#15171c"
+            },
+            "offsetX": { "value": 0, "unit": "px" },
+            "offsetY": { "value": 4, "unit": "px" },
+            "blur": { "value": 12, "unit": "px" },
+            "spread": { "value": -2, "unit": "px" }
+          }
+        ],
+        "$type": "shadow",
+        "$description": "Raised surface shadow.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "lg": {
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [0.082, 0.09, 0.11],
+              "alpha": 0.18,
+              "hex": "#15171c"
+            },
+            "offsetX": { "value": 0, "unit": "px" },
+            "offsetY": { "value": 12, "unit": "px" },
+            "blur": { "value": 32, "unit": "px" },
+            "spread": { "value": -8, "unit": "px" }
+          }
+        ],
+        "$type": "shadow",
+        "$description": "Overlay shadow requiring a visible boundary fallback.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

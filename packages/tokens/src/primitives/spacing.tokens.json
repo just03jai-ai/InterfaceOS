@@ -1,0 +1,105 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "A 4px-root spacing scale with intermediate 2px and 6px steps for optical adjustment.",
+  "spacing": {
+    "primitive": {
+      "$type": "dimension",
+      "0": {
+        "$value": { "value": 0, "unit": "px" },
+        "$type": "dimension",
+        "$description": "No spatial separation.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "0-5": {
+        "$value": { "value": 2, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Optical micro-adjustment; not a default layout step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "1": {
+        "$value": { "value": 4, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Base spacing unit.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "1-5": {
+        "$value": { "value": 6, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Compact intermediate spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "2": {
+        "$value": { "value": 8, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Compact spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "3": {
+        "$value": { "value": 12, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Default inline spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "4": {
+        "$value": { "value": 16, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Default block spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "6": {
+        "$value": { "value": 24, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Related-group separation step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "8": {
+        "$value": { "value": 32, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Section spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "12": {
+        "$value": { "value": 48, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Large section spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "16": {
+        "$value": { "value": 64, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Page-region spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "24": {
+        "$value": { "value": 96, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Maximum initial layout spacing step.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

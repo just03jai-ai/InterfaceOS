@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Border width and stroke-style primitives.",
+  "border": {
+    "primitive": {
+      "width": {
+        "0": {
+          "$value": { "value": 0, "unit": "px" },
+          "$type": "dimension",
+          "$description": "No border width.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "1": {
+          "$value": { "value": 1, "unit": "px" },
+          "$type": "dimension",
+          "$description": "Default separator width.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "2": {
+          "$value": { "value": 2, "unit": "px" },
+          "$type": "dimension",
+          "$description": "Emphasis and focus width.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      },
+      "style": {
+        "solid": {
+          "$value": "solid",
+          "$type": "strokeStyle",
+          "$description": "Continuous stroke.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        },
+        "dashed": {
+          "$value": "dashed",
+          "$type": "strokeStyle",
+          "$description": "Dashed stroke reserved for non-status differentiation.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+          }
+        }
+      }
+    }
+  }
+}

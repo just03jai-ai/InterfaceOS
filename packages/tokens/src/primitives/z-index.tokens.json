@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Named stacking layers avoid arbitrary z-index escalation; local stacking contexts remain preferred.",
+  "z-index": {
+    "primitive": {
+      "$type": "number",
+      "base": {
+        "$value": 0,
+        "$type": "number",
+        "$description": "Default document layer.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "raised": {
+        "$value": 100,
+        "$type": "number",
+        "$description": "Locally raised content.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "sticky": {
+        "$value": 200,
+        "$type": "number",
+        "$description": "Sticky navigation or controls.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "overlay": {
+        "$value": 400,
+        "$type": "number",
+        "$description": "Blocking overlay backdrop.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "modal": {
+        "$value": 500,
+        "$type": "number",
+        "$description": "Modal surface above its overlay.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "toast": {
+        "$value": 600,
+        "$type": "number",
+        "$description": "Time-sensitive notification layer.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "maximum": {
+        "$value": 700,
+        "$type": "number",
+        "$description": "Reserved emergency layer; requires architecture review.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

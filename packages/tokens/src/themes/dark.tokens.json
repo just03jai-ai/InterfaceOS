@@ -1,0 +1,221 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Dark theme mappings from semantic slots to color primitives.",
+  "color": {
+    "theme": {
+      "$type": "color",
+      "background": {
+        "canvas": {
+          "$value": "{color.primitive.neutral.950}",
+          "$type": "color",
+          "$description": "Dark canvas mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "surface": {
+          "$value": "{color.primitive.neutral.900}",
+          "$type": "color",
+          "$description": "Dark surface mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "subtle": {
+          "$value": "{color.primitive.neutral.800}",
+          "$type": "color",
+          "$description": "Dark subtle background mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "inverse": {
+          "$value": "{color.primitive.neutral.0}",
+          "$type": "color",
+          "$description": "Dark inverse background mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.primitive.neutral.0}",
+          "$type": "color",
+          "$description": "Dark primary text mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "secondary": {
+          "$value": "{color.primitive.neutral.300}",
+          "$type": "color",
+          "$description": "Dark secondary text mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "disabled": {
+          "$value": "{color.primitive.neutral.500}",
+          "$type": "color",
+          "$description": "Dark disabled text mapping; contrast is not a disabled-state conformance claim.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "inverse": {
+          "$value": "{color.primitive.neutral.950}",
+          "$type": "color",
+          "$description": "Dark inverse text mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.primitive.neutral.700}",
+          "$type": "color",
+          "$description": "Dark default border mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        },
+        "strong": {
+          "$value": "{color.primitive.neutral.500}",
+          "$type": "color",
+          "$description": "Dark strong border mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        }
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.primitive.blue.400}",
+          "$type": "color",
+          "$description": "Dark focus ring mapping.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "theme", "status": "draft" }
+          }
+        }
+      },
+      "interactive": {
+        "primary": {
+          "default": {
+            "$value": "{color.primitive.blue.400}",
+            "$type": "color",
+            "$description": "Dark primary action mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "hover": {
+            "$value": "{color.primitive.blue.200}",
+            "$type": "color",
+            "$description": "Dark primary hover mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "active": {
+            "$value": "{color.primitive.blue.50}",
+            "$type": "color",
+            "$description": "Dark primary active mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.primitive.neutral.950}",
+            "$type": "color",
+            "$description": "Dark primary action content mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          }
+        }
+      },
+      "status": {
+        "success": {
+          "background": {
+            "$value": "{color.primitive.green.950}",
+            "$type": "color",
+            "$description": "Dark success background.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.primitive.green.200}",
+            "$type": "color",
+            "$description": "Dark success foreground.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "border": {
+            "$value": "{color.primitive.green.600}",
+            "$type": "color",
+            "$description": "Dark success border.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          }
+        },
+        "warning": {
+          "background": {
+            "$value": "{color.primitive.amber.950}",
+            "$type": "color",
+            "$description": "Dark warning background.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.primitive.amber.200}",
+            "$type": "color",
+            "$description": "Dark warning foreground.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "border": {
+            "$value": "{color.primitive.amber.600}",
+            "$type": "color",
+            "$description": "Dark warning border.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          }
+        },
+        "danger": {
+          "background": {
+            "$value": "{color.primitive.red.950}",
+            "$type": "color",
+            "$description": "Dark danger background.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "foreground": {
+            "$value": "{color.primitive.red.200}",
+            "$type": "color",
+            "$description": "Dark danger foreground.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          },
+          "border": {
+            "$value": "{color.primitive.red.600}",
+            "$type": "color",
+            "$description": "Dark danger border.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "draft" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

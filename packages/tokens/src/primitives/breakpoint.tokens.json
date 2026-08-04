@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "Content-driven viewport reference points; components must respond to available space rather than device labels.",
+  "breakpoint": {
+    "primitive": {
+      "$type": "dimension",
+      "xs": {
+        "$value": { "value": 320, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Minimum narrow-layout validation width.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "sm": {
+        "$value": { "value": 640, "unit": "px" },
+        "$type": "dimension",
+        "$description": "First content expansion reference.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "md": {
+        "$value": { "value": 768, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Intermediate layout reference.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "lg": {
+        "$value": { "value": 1024, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Wide layout reference.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "xl": {
+        "$value": { "value": 1280, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Large canvas reference.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      },
+      "2xl": {
+        "$value": { "value": 1536, "unit": "px" },
+        "$type": "dimension",
+        "$description": "Maximum initial canvas reference.",
+        "$extensions": {
+          "org.interfaceos": { "tier": "primitive", "status": "draft" }
+        }
+      }
+    }
+  }
+}

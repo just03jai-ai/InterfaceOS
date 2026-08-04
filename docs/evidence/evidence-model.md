@@ -32,6 +32,7 @@ Required fields are: ID, name, type, lifecycle status, semantic version, owner, 
 
 ```text
 evidence/
+  foundations/ governed foundation and token-system manifests
   figma/       design exports and references
   components/  component evidence manifests
   reviews/     review and accessibility evidence
