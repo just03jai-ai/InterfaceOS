@@ -1,18 +1,19 @@
 # Canonical Figma File Registration
 
-Status: Stage 2 decisions approved; Figma implementation and specialist review pending
+Status: IOS-002 Batch 1 repository preparation complete; Figma implementation and specialist review pending
 
-| Field                   | Registered value                                                                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| File name               | InterfaceOS — Design System                                                                                                                            |
-| File URL                | [Open canonical Figma file](https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1) |
-| Date registered         | 2026-08-04                                                                                                                                             |
-| Stage 2 decision date   | 2026-08-05                                                                                                                                             |
-| Interim owner           | Jai Singh                                                                                                                                              |
-| Current phase           | IOS-001 Stage 2 finalized                                                                                                                              |
-| Implementation status   | Stage 2 decisions approved; variables and foundations pending                                                                                          |
-| Publishing policy       | Private during foundations; publish only after mapping, visual review, evidence capture, and approval                                                  |
-| Machine-readable record | [`evidence/figma/interfaceos-design-system.architecture.json`](../../../evidence/figma/interfaceos-design-system.architecture.json)                    |
+| Field                    | Registered value                                                                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| File name                | InterfaceOS — Design System                                                                                                                            |
+| File URL                 | [Open canonical Figma file](https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1) |
+| Date registered          | 2026-08-04                                                                                                                                             |
+| Stage 2 decision date    | 2026-08-05                                                                                                                                             |
+| Interim owner            | Jai Singh                                                                                                                                              |
+| Current phase            | IOS-002 Batch 1 prepared                                                                                                                               |
+| Implementation status    | Access, collection-shell, and primitive-color execution prepared; human Figma work pending                                                             |
+| Publishing policy        | Private during foundations; publish only after mapping, visual review, evidence capture, and approval                                                  |
+| Machine-readable record  | [`evidence/figma/interfaceos-design-system.architecture.json`](../../../evidence/figma/interfaceos-design-system.architecture.json)                    |
+| Batch 1 execution record | [`evidence/figma/ios-002-batch-1.variable-execution.json`](../../../evidence/figma/ios-002-batch-1.variable-execution.json)                            |
 
 The supplied URL is recorded verbatim. InterfaceOS does not derive or assert a file key, page ID, node ID, collection ID, variable ID, library key, access model, or revision from URL text. Those values remain `pending-human-capture` until a human verifies them in Figma and records evidence.
 

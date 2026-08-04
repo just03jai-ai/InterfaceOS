@@ -46,5 +46,10 @@
   "relatedItems": [
     { "type": "implemented-by-theme", "targetId": "IOS-FND-THEME" }
   ],
-  "evidenceLinks": ["packages/tokens/src/contracts/theme-contract.json"]
+  "evidenceLinks": [
+    "packages/tokens/src/contracts/theme-contract.json",
+    "evidence/figma/ios-002-batch-1.variable-execution.json",
+    "docs/design-system/figma/ios-002-batch-1-execution-guide.md",
+    "docs/design-system/figma/ios-002-batch-1-primitive-colors.md"
+  ]
 }

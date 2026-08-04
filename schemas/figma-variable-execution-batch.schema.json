@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/figma-variable-execution-batch.schema.json",
+  "title": "InterfaceOS Figma Variable Execution Batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "milestone",
+    "batch",
+    "status",
+    "owner",
+    "canonicalFigmaFile",
+    "source",
+    "tasks",
+    "batchEvidence",
+    "exclusions"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-FIGMA-IOS-002-BATCH-1" },
+    "milestone": { "const": "IOS-002" },
+    "batch": { "const": 1 },
+    "status": {
+      "enum": [
+        "prepared-pending-human-execution",
+        "human-execution-in-progress",
+        "ready-for-review",
+        "blocked"
+      ]
+    },
+    "owner": { "const": "Jai Singh" },
+    "canonicalFigmaFile": { "$ref": "#/$defs/figmaFile" },
+    "source": { "$ref": "#/$defs/source" },
+    "tasks": { "$ref": "#/$defs/tasks" },
+    "batchEvidence": { "$ref": "#/$defs/batchEvidence" },
+    "exclusions": {
+      "type": "array",
+      "minItems": 8,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "pendingString": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "value": { "type": "null" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "captured" },
+            "value": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "pendingPaths": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "values": { "type": "array", "maxItems": 0 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "captured" },
+            "values": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
+    },
+    "figmaFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "url",
+        "fileKey",
+        "pageNodeId",
+        "sourceRevision",
+        "figmaRevision"
+      ],
+      "properties": {
+        "name": { "const": "InterfaceOS — Design System" },
+        "url": { "type": "string", "format": "uri" },
+        "fileKey": { "$ref": "#/$defs/pendingString" },
+        "pageNodeId": { "$ref": "#/$defs/pendingString" },
+        "sourceRevision": { "$ref": "#/$defs/pendingString" },
+        "figmaRevision": { "$ref": "#/$defs/pendingString" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "tokenCount"],
+      "properties": {
+        "path": { "const": "packages/tokens/src/primitives/color.tokens.json" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "tokenCount": { "const": 32 }
+      }
+    },
+    "tasks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accessVerification", "collectionShells", "primitiveColors"],
+      "properties": {
+        "accessVerification": { "$ref": "#/$defs/accessTask" },
+        "collectionShells": { "$ref": "#/$defs/collectionTask" },
+        "primitiveColors": { "$ref": "#/$defs/colorTask" }
+      }
+    },
+    "accessTask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "checks"],
+      "properties": {
+        "id": { "const": "FIG-VAR-001" },
+        "status": { "$ref": "#/$defs/taskStatus" },
+        "checks": {
+          "type": "array",
+          "minItems": 11,
+          "maxItems": 11,
+          "items": { "$ref": "#/$defs/accessCheck" }
+        }
+      }
+    },
+    "accessCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "label", "instruction", "capture", "screenshotPaths"],
+      "properties": {
+        "key": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$" },
+        "label": { "type": "string", "minLength": 1 },
+        "instruction": { "type": "string", "minLength": 1 },
+        "capture": { "$ref": "#/$defs/pendingString" },
+        "screenshotPaths": { "$ref": "#/$defs/pendingPaths" }
+      }
+    },
+    "collectionTask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "collections"],
+      "properties": {
+        "id": { "const": "FIG-VAR-002" },
+        "status": { "$ref": "#/$defs/taskStatus" },
+        "collections": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": { "$ref": "#/$defs/collection" }
+        }
+      }
+    },
+    "collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "displayName",
+        "purpose",
+        "authoredModes",
+        "figmaStorageModeRule",
+        "expectedFirstBatchContents",
+        "publishingState",
+        "evidence",
+        "validationCriteria"
+      ],
+      "properties": {
+        "displayName": {
+          "enum": ["Primitive", "Semantic", "Theme", "Responsive", "Motion"]
+        },
+        "purpose": { "type": "string", "minLength": 1 },
+        "authoredModes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["Light", "Dark"] }
+        },
+        "figmaStorageModeRule": { "type": "string", "minLength": 1 },
+        "expectedFirstBatchContents": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tokenDomain", "variableCount"],
+          "properties": {
+            "tokenDomain": { "enum": ["primitive-color", "none"] },
+            "variableCount": { "type": "integer", "minimum": 0, "maximum": 32 }
+          }
+        },
+        "publishingState": { "const": "private-unpublished" },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["collectionId", "modeIds", "screenshotPaths"],
+          "properties": {
+            "collectionId": { "$ref": "#/$defs/pendingString" },
+            "modeIds": { "$ref": "#/$defs/pendingPaths" },
+            "screenshotPaths": { "$ref": "#/$defs/pendingPaths" }
+          }
+        },
+        "validationCriteria": {
+          "type": "array",
+          "minItems": 5,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "colorTask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "expectedCount", "entries"],
+      "properties": {
+        "id": { "const": "FIG-VAR-003" },
+        "status": { "$ref": "#/$defs/taskStatus" },
+        "expectedCount": { "const": 32 },
+        "entries": {
+          "type": "array",
+          "minItems": 32,
+          "maxItems": 32,
+          "items": { "$ref": "#/$defs/colorEntry" }
+        }
+      }
+    },
+    "colorEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidenceId",
+        "canonicalTokenPath",
+        "figmaVariableName",
+        "figmaCollection",
+        "variableType",
+        "sourceValue",
+        "description",
+        "scopes",
+        "codeSyntax",
+        "aliasStatus",
+        "expectedModeBehavior",
+        "reviewStatus",
+        "collectionId",
+        "variableId"
+      ],
+      "properties": {
+        "evidenceId": { "const": "IOS-FND-COLOR" },
+        "canonicalTokenPath": {
+          "type": "string",
+          "pattern": "^color\\.primitive\\.[a-z]+\\.[0-9]+$"
+        },
+        "figmaVariableName": {
+          "type": "string",
+          "pattern": "^color/primitive/[a-z]+/[0-9]+$"
+        },
+        "figmaCollection": { "const": "Primitive" },
+        "variableType": { "const": "COLOR" },
+        "sourceValue": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["colorSpace", "components", "alpha", "hex"],
+          "properties": {
+            "colorSpace": { "const": "srgb" },
+            "components": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": { "type": "number", "minimum": 0, "maximum": 1 }
+            },
+            "alpha": { "type": "number", "minimum": 0, "maximum": 1 },
+            "hex": { "type": "string", "pattern": "^#[a-f0-9]{6}$" }
+          }
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "scopes": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": { "enum": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"] }
+        },
+        "codeSyntax": {
+          "type": "string",
+          "pattern": "^var\\(--ios-color-primitive-[a-z]+-[0-9]+\\)$"
+        },
+        "aliasStatus": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "target"],
+          "properties": {
+            "kind": { "const": "none" },
+            "target": { "type": "null" }
+          }
+        },
+        "expectedModeBehavior": { "type": "string", "minLength": 1 },
+        "reviewStatus": {
+          "enum": [
+            "pending-human-execution",
+            "pending-human-review",
+            "in-review",
+            "changes-requested",
+            "approved"
+          ]
+        },
+        "collectionId": { "$ref": "#/$defs/pendingString" },
+        "variableId": { "$ref": "#/$defs/pendingString" }
+      }
+    },
+    "batchEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "screenshotPaths",
+        "synchronizationChecksum",
+        "driftStatus",
+        "review"
+      ],
+      "properties": {
+        "screenshotPaths": { "$ref": "#/$defs/pendingPaths" },
+        "synchronizationChecksum": { "$ref": "#/$defs/pendingString" },
+        "driftStatus": {
+          "enum": [
+            "not-assessed",
+            "synchronized",
+            "changed",
+            "drifted",
+            "blocked",
+            "failed"
+          ]
+        },
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["design", "engineering", "accessibility", "release"],
+          "properties": {
+            "design": {
+              "enum": [
+                "pending-human-review",
+                "in-review",
+                "approved",
+                "changes-requested"
+              ]
+            },
+            "engineering": {
+              "enum": [
+                "pending-specialist-review",
+                "in-review",
+                "approved",
+                "changes-requested"
+              ]
+            },
+            "accessibility": {
+              "enum": [
+                "pending-specialist-review",
+                "in-review",
+                "approved",
+                "changes-requested"
+              ]
+            },
+            "release": { "enum": ["blocked", "in-review", "approved"] }
+          }
+        }
+      }
+    },
+    "taskStatus": {
+      "enum": [
+        "prepared-pending-human-execution",
+        "human-execution-in-progress",
+        "ready-for-review",
+        "blocked"
+      ]
+    }
+  }
+}

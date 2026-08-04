@@ -1,6 +1,6 @@
 # Figma Variable Mapping
 
-Status: Stage 2 mapping approved; variables pending human implementation
+Status: Stage 2 mapping approved; IOS-002 Batch 1 prepared for human implementation
 
 Canonical file: [InterfaceOS — Design System](https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1)
 
@@ -47,4 +47,4 @@ For each mapped foundation, record Figma file URL, page link, page and section n
 
 Keep the Figma library private during foundations. Publishing is blocked until variable mapping, visual review, evidence capture, and approval are complete. Generated distributions remain ignored in Git and reproducible through CI artifacts.
 
-The [human execution checklist](../figma/variable-execution-checklist.md) is the authority for the next manual step. This document does not claim that variables or synchronization exist.
+The [execution checklist](../figma/variable-execution-checklist.md) and [IOS-002 Batch 1 guide](../figma/ios-002-batch-1-execution-guide.md) are the authorities for the next manual step. Batch 1 prepares only the five shells and 32 primitive colors. This document does not claim that variables or synchronization exist.

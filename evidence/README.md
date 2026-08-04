@@ -6,4 +6,4 @@ Subdirectories are organized by evidence purpose, not source-of-truth ownership.
 
 `foundations/` contains the draft manifests for IOS-001 token and foundation domains. The canonical Figma URL is registered; null external identifiers and `pending-human-capture` fields remain intentional blockers, not evidence of synchronization.
 
-`figma/` may contain schema-backed architecture and capture records in addition to evidence manifests. `interfaceos-design-system.architecture.json` records the manually created file structure without claiming that its external node or variable identifiers have been captured.
+`figma/` may contain schema-backed architecture and capture records in addition to evidence manifests. `interfaceos-design-system.architecture.json` records the manually created file structure without claiming that its external node or variable identifiers have been captured. `ios-002-batch-1.variable-execution.json` is the canonical Batch 1 execution and capture record; its pending values do not claim that collection or variable creation has occurred.

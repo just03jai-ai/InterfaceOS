@@ -1,6 +1,6 @@
 # Design-to-Code Drift Management
 
-Status: Stage 2 contract approved; enforcement pending Figma execution
+Status: Stage 2 contract approved; IOS-002 Batch 1 enforcement prepared and human execution pending
 
 ## Comparison chain
 
@@ -46,6 +46,8 @@ Drift exists when two representations that should describe the same approved rev
 6. Classify differences, identify the authoritative source, assign an owner, and record `changed`, `drifted`, `blocked`, or `failed`.
 7. Resolve in the authoritative source, regenerate projections, repeat the full chain, and capture new evidence.
 8. Mark `synchronized` only when the reviewer signs the exact Git and Figma revisions and checksum.
+
+For IOS-002 Batch 1, run `pnpm figma:batch-1:check` before the manual comparison. The check proves that the execution plan still contains exactly the canonical 32 primitive colors and approved collection-shell contract; it does not prove that Figma artifacts or captured IDs exist.
 
 ## Release-blocking conditions
 

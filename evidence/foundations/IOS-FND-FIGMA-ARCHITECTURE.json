@@ -88,6 +88,8 @@
     "docs/design-system/figma/drift-management.md",
     "docs/decisions/0003-dtcg-token-format.md",
     "docs/decisions/0004-figma-foundation-representation.md",
-    "docs/decisions/0005-evidence-manifest-v2.md"
+    "docs/decisions/0005-evidence-manifest-v2.md",
+    "evidence/figma/ios-002-batch-1.variable-execution.json",
+    "docs/design-system/figma/ios-002-batch-1-execution-guide.md"
   ]
 }
