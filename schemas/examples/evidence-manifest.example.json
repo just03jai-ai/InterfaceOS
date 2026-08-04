@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FND-COLOR",
+  "name": "Color foundation",
+  "type": "foundation",
+  "status": "research",
+  "version": "0.1.0",
+  "owner": "unassigned",
+  "figmaUrl": null,
+  "figmaNodeId": null,
+  "documentationPath": "docs/roadmap/ios-001-design-foundations.md",
+  "codePath": null,
+  "storybookPath": null,
+  "aiMetadataPath": null,
+  "accessibilityStatus": "not-reviewed",
+  "reviewStatus": "draft",
+  "lastReviewedDate": null,
+  "dependencies": [],
+  "relatedItems": [],
+  "evidenceLinks": []
+}

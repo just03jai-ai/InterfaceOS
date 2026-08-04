@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/ai-metadata.schema.json",
+  "title": "InterfaceOS AI Metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "artifactId",
+    "summary",
+    "intent",
+    "keywords",
+    "capabilities",
+    "constraints",
+    "relationships",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "artifactId": {
+      "type": "string",
+      "pattern": "^IOS-(FND|TKN|ICO|CMP|PAT|TPL|PGE|FLW|DEC|REL)-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "intent": { "type": "string", "minLength": 1 },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "relationships": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "targetId"],
+        "properties": {
+          "type": { "type": "string", "minLength": 1 },
+          "targetId": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourcePath",
+        "sourceRevision",
+        "generatedBy",
+        "generatedAt",
+        "reviewStatus"
+      ],
+      "properties": {
+        "sourcePath": { "type": "string", "minLength": 1 },
+        "sourceRevision": { "type": "string", "minLength": 1 },
+        "generatedBy": { "type": "string", "minLength": 1 },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "reviewStatus": {
+          "enum": ["draft", "in-review", "approved", "rejected"]
+        }
+      }
+    }
+  }
+}
