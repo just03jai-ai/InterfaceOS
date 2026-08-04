@@ -2,6 +2,8 @@
 
 Status: Stage 2 contract approved; external capture values pending
 
+IOS-002 Batch 1 uses the specialized schema-backed record at `evidence/figma/ios-002-batch-1.variable-execution.json` to capture access checks, collection/mode IDs, and one variable ID per canonical primitive color. Its generated canonical projection remains reproducible while verified external fields may move from `pending-human-capture` to `captured`.
+
 ## Purpose
 
 Evidence connects an InterfaceOS stable ID to verified Figma, Git, documentation, accessibility, and review state. A URL or screenshot alone is not proof of synchronization.

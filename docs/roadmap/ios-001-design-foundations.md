@@ -121,7 +121,7 @@ Each foundation and token set has stable IDs, Figma file/node/revision, Git revi
 | Shadow, border, motion, typography, z-index, breakpoint, grid, and elevation representations decided | Approved with two open decisions | Font delivery/licensing and canonical grid-token source remain open |
 | Evidence schema 2.0 contract                                                                         | Approved                         | ADR-0005; all repository foundation manifests migrated              |
 | Private-foundations publishing policy                                                                | Approved                         | Publishing remains blocked until all stated gates pass              |
-| Human Figma tasks are source/count/mode/alias/evidence traceable                                     | Complete                         | FIG-VAR-001–020; all execution statuses remain Not started          |
+| Human Figma tasks are source/count/mode/alias/evidence traceable                                     | Complete                         | Stage 2 planning checklist; IOS-002 now owns batched execution      |
 | Foundation specimen requirements                                                                     | Complete                         | Sixteen requirements; no boards implemented                         |
 | Drift severity, ownership, resolution, and sign-off rules                                            | Complete                         | `docs/design-system/figma/drift-management.md`                      |
 | Interim design/documentation/governance/release ownership                                            | Assigned                         | Jai Singh; temporary and not independent final approval             |
@@ -129,7 +129,7 @@ Each foundation and token set has stable IDs, Figma file/node/revision, Git revi
 | Accessibility specialist review                                                                      | Pending                          | Required before accessibility or release approval                   |
 | Repository quality and build gates                                                                   | Complete                         | `pnpm quality` and `pnpm build` passed on 2026-08-05                |
 
-Stage 2 is finalized at the repository decision level. This does not approve Figma variable/style/specimen completion, IOS-002, public library publishing, accessibility conformance, or IOS-001 release.
+Stage 2 is finalized at the repository decision level. IOS-002 Batch 1 repository preparation is now active, but this does not approve Figma variable/style/specimen completion, public library publishing, accessibility conformance, or IOS-001 release.
 
 ## Explicit exclusions
 

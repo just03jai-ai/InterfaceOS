@@ -36,9 +36,9 @@
         "registeredDate": { "type": "string", "format": "date" },
         "owner": { "type": "string", "minLength": 1 },
         "status": {
-          "const": "Stage 2 decisions approved; variables and foundations pending"
+          "const": "IOS-002 Batch 1 prepared; human Figma execution pending"
         },
-        "phase": { "const": "IOS-001 Stage 2 finalized" },
+        "phase": { "const": "IOS-002 Batch 1 prepared" },
         "fileKey": { "$ref": "#/$defs/externalString" },
         "libraryKey": { "$ref": "#/$defs/externalString" },
         "accessPolicy": { "$ref": "#/$defs/externalString" }

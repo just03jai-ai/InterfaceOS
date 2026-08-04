@@ -25,6 +25,9 @@ const evidenceSchema = ajv.getSchema(
 const figmaArchitectureSchema = ajv.getSchema(
   'https://interfaceos.dev/schemas/figma-architecture-manifest.schema.json',
 );
+const figmaVariableBatchSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-variable-execution-batch.schema.json',
+);
 const example = JSON.parse(
   await readFile(
     path.join(schemasDir, 'examples/evidence-manifest.example.json'),
@@ -61,8 +64,23 @@ if (!figmaArchitectureSchema?.(figmaArchitecture)) {
   );
 }
 
+const figmaVariableBatchPath = path.join(
+  root,
+  'evidence/figma/ios-002-batch-1.variable-execution.json',
+);
+const figmaVariableBatch = JSON.parse(
+  await readFile(figmaVariableBatchPath, 'utf8'),
+);
+if (!figmaVariableBatchSchema?.(figmaVariableBatch)) {
+  throw new Error(
+    `Figma variable Batch 1 record is invalid: ${ajv.errorsText(figmaVariableBatchSchema?.errors)}`,
+  );
+}
+
 const evidenceFiles = (await findJsonFiles(path.join(root, 'evidence'))).filter(
-  (file) => !file.endsWith('.architecture.json'),
+  (file) =>
+    !file.endsWith('.architecture.json') &&
+    !file.endsWith('.variable-execution.json'),
 );
 const manifests = [];
 for (const file of evidenceFiles) {
@@ -115,6 +133,7 @@ function assertNoFakeCapturedValues(value, location) {
 for (const { file, manifest } of manifests)
   assertNoFakeCapturedValues(manifest.figmaEvidence, path.relative(root, file));
 assertNoFakeCapturedValues(figmaArchitecture, 'Figma architecture manifest');
+assertNoFakeCapturedValues(figmaVariableBatch, 'Figma variable Batch 1 record');
 
 for (const page of figmaArchitecture.pages) {
   for (const item of page.items) {
@@ -140,5 +159,5 @@ for (const page of figmaArchitecture.pages) {
 }
 
 console.log(
-  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, and the Figma architecture manifest.`,
+  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, and the IOS-002 Batch 1 execution record.`,
 );
