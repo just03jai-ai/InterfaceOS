@@ -1,0 +1,1145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FIGMA-ARCHITECTURE",
+  "name": "InterfaceOS canonical Figma architecture",
+  "figmaFile": {
+    "name": "InterfaceOS — Design System",
+    "url": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
+    "registeredDate": "2026-08-04",
+    "owner": "Jai Singh",
+    "status": "Stage 2 decisions approved; variables and foundations pending",
+    "phase": "IOS-001 Stage 2 finalized",
+    "fileKey": {
+      "status": "pending-human-capture",
+      "value": null
+    },
+    "libraryKey": {
+      "status": "pending-human-capture",
+      "value": null
+    },
+    "accessPolicy": {
+      "status": "pending-human-capture",
+      "value": null
+    }
+  },
+  "approvedDecisions": {
+    "status": "accepted",
+    "approvedDate": "2026-08-05",
+    "owner": "Jai Singh",
+    "canonicalTokenDecision": "ADR-0003",
+    "figmaRepresentationDecision": "ADR-0004",
+    "evidenceDecision": "ADR-0005",
+    "evidenceSchemaVersion": "2.0.0",
+    "collections": [
+      {
+        "name": "Primitive",
+        "authoredModes": [],
+        "implementationStatus": "not-started"
+      },
+      {
+        "name": "Semantic",
+        "authoredModes": [],
+        "implementationStatus": "not-started"
+      },
+      {
+        "name": "Theme",
+        "authoredModes": ["Light", "Dark"],
+        "implementationStatus": "not-started"
+      },
+      {
+        "name": "Responsive",
+        "authoredModes": [],
+        "implementationStatus": "not-started"
+      },
+      {
+        "name": "Motion",
+        "authoredModes": [],
+        "implementationStatus": "not-started"
+      }
+    ],
+    "representationPolicies": {
+      "shadows": "effect-styles",
+      "borders": "variables-with-composed-stroke-styles-only",
+      "cubicBezier": "technical-metadata",
+      "typography": "primary-available-font-with-code-fallback-stack",
+      "zIndex": "technical-metadata",
+      "breakpoints": "reference-variables",
+      "grid": "layout-grid-styles-with-open-token-decision",
+      "elevation": "documentation-concept-sharing-shadow-source"
+    },
+    "publishingPolicy": {
+      "visibility": "private-during-foundations",
+      "publishAfter": [
+        "variable-mapping",
+        "visual-review",
+        "evidence-capture",
+        "approval"
+      ]
+    },
+    "generatedDistributionPolicy": "gitignored-ci-reproducible",
+    "temporaryReviewRoles": [
+      "design",
+      "documentation",
+      "governance",
+      "release"
+    ],
+    "pendingSpecialistReviews": ["engineering", "accessibility"],
+    "openDecisions": [
+      "canonical-grid-token-source",
+      "font-delivery-and-licensing"
+    ]
+  },
+  "pages": [
+    {
+      "order": 0,
+      "name": "00 Cover",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 1,
+      "name": "01 Getting Started",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 2,
+      "name": "02 Design Principles",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 3,
+      "name": "03 Foundations",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": [
+        {
+          "name": "Colors",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE", "IOS-FND-COLOR"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/color.tokens.json",
+            "packages/tokens/src/semantic/color.tokens.json",
+            "packages/tokens/src/themes/light.tokens.json",
+            "packages/tokens/src/themes/dark.tokens.json"
+          ]
+        },
+        {
+          "name": "Typography",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-TYPOGRAPHY"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/typography.tokens.json"
+          ]
+        },
+        {
+          "name": "Spacing",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-SPACING"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/spacing.tokens.json"
+          ]
+        },
+        {
+          "name": "Sizing",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-SIZING"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/sizing.tokens.json"
+          ]
+        },
+        {
+          "name": "Grid",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-BREAKPOINT",
+            "IOS-FND-SPACING",
+            "IOS-FND-SIZING"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Radius",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-RADIUS"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/radius.tokens.json"
+          ]
+        },
+        {
+          "name": "Borders",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-BORDER",
+            "IOS-FND-COLOR"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/border.tokens.json",
+            "packages/tokens/src/semantic/color.tokens.json"
+          ]
+        },
+        {
+          "name": "Elevation",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-SHADOW-ELEVATION"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/shadow.tokens.json"
+          ]
+        },
+        {
+          "name": "Shadows",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-SHADOW-ELEVATION"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/shadow.tokens.json"
+          ]
+        },
+        {
+          "name": "Motion",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-MOTION"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/motion.tokens.json"
+          ]
+        },
+        {
+          "name": "Opacity",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-OPACITY"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/opacity.tokens.json"
+          ]
+        },
+        {
+          "name": "Breakpoints",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-BREAKPOINT"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/breakpoint.tokens.json",
+            "packages/tokens/src/semantic/responsive.tokens.json"
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "kind": "foundation-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-COLOR",
+            "IOS-FND-MOTION",
+            "IOS-FND-SIZING",
+            "IOS-FND-TYPOGRAPHY"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/foundation-specimens.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/contracts/theme-contract.json"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "name": "04 Variables",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": [
+        {
+          "name": "Primitive",
+          "kind": "variable-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-TOKEN-ARCHITECTURE"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/variable-execution-checklist.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/border.tokens.json",
+            "packages/tokens/src/primitives/breakpoint.tokens.json",
+            "packages/tokens/src/primitives/color.tokens.json",
+            "packages/tokens/src/primitives/opacity.tokens.json",
+            "packages/tokens/src/primitives/radius.tokens.json",
+            "packages/tokens/src/primitives/shadow.tokens.json",
+            "packages/tokens/src/primitives/sizing.tokens.json",
+            "packages/tokens/src/primitives/spacing.tokens.json",
+            "packages/tokens/src/primitives/typography.tokens.json",
+            "packages/tokens/src/primitives/z-index.tokens.json"
+          ]
+        },
+        {
+          "name": "Semantic",
+          "kind": "variable-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE", "IOS-FND-COLOR"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/variable-execution-checklist.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/semantic/color.tokens.json"
+          ]
+        },
+        {
+          "name": "Theme",
+          "kind": "variable-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE", "IOS-FND-THEME"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/variable-execution-checklist.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/themes/light.tokens.json",
+            "packages/tokens/src/themes/dark.tokens.json",
+            "packages/tokens/src/contracts/theme-contract.json"
+          ]
+        },
+        {
+          "name": "Responsive",
+          "kind": "variable-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-BREAKPOINT",
+            "IOS-FND-SPACING",
+            "IOS-FND-SIZING"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/variable-execution-checklist.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/semantic/responsive.tokens.json"
+          ]
+        },
+        {
+          "name": "Motion",
+          "kind": "variable-section",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": [
+            "IOS-FND-FIGMA-ARCHITECTURE",
+            "IOS-FND-MOTION"
+          ],
+          "plannedDocumentationPaths": [
+            "docs/design-system/figma/variable-execution-checklist.md"
+          ],
+          "plannedTokenSourceMappings": [
+            "packages/tokens/src/primitives/motion.tokens.json"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "name": "05 Icons",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 6,
+      "name": "06 Illustrations",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 7,
+      "name": "07 Components",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": [
+        {
+          "name": "Actions",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Inputs",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Selection",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Navigation",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Data Display",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Feedback",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Surfaces",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Layout",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Charts",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Commerce",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Enterprise",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "AI",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Utilities",
+          "kind": "component-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/component-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "name": "08 Patterns",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": [
+        {
+          "name": "Authentication",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "CRUD",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Dashboard",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Search",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Forms",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Analytics",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Checkout",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Settings",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Notifications",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Approval",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Workflow",
+          "kind": "pattern-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [
+            "docs/design-system/templates/pattern-specification.md"
+          ],
+          "plannedTokenSourceMappings": []
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "name": "09 Templates",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": [
+        {
+          "name": "CRM",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "ERP",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "HRMS",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Analytics",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Ecommerce",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Marketing",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Portfolio",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Admin",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Mobile",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Landing Page",
+          "kind": "template-category",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "name": "10 Playground",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": [
+        {
+          "name": "Theme Switch",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Variables",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Experiments",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Accessibility",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Animation",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Responsive",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        },
+        {
+          "name": "Sandbox",
+          "kind": "playground-area",
+          "status": "placeholder-created",
+          "nodeId": {
+            "status": "pending-human-capture",
+            "value": null
+          },
+          "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE"],
+          "plannedDocumentationPaths": [],
+          "plannedTokenSourceMappings": []
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "name": "11 Documentation",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 12,
+      "name": "12 Changelog",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 13,
+      "name": "13 Experiments",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    },
+    {
+      "order": 14,
+      "name": "14 Archive",
+      "status": "architecture-created",
+      "nodeId": {
+        "status": "pending-human-capture",
+        "value": null
+      },
+      "items": []
+    }
+  ]
+}

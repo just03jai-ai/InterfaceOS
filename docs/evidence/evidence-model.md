@@ -1,6 +1,6 @@
 # Evidence Model and Identifier Convention
 
-Status: Proposed
+Status: Evidence schema 2.0 accepted by [ADR-0005](../decisions/0005-evidence-manifest-v2.md); engineering review pending
 Schema: [`schemas/evidence-manifest.schema.json`](../../schemas/evidence-manifest.schema.json)
 
 ## Stable identifiers
@@ -26,7 +26,19 @@ Sequence numbers are zero-padded. A retired ID remains reserved. Environment, th
 
 Every governed item has one JSON manifest validated against the canonical schema. All fields are present; non-applicable mappings use `null` or an empty array so absence is explicit.
 
-Required fields are: ID, name, type, lifecycle status, semantic version, owner, Figma URL, Figma node ID, documentation path, code path, Storybook path, AI metadata path, accessibility status, review status, last reviewed date, dependencies, related items, and evidence links.
+Required fields are: ID, name, type, lifecycle status, semantic version, owner, Figma URL, Figma node ID, structured Figma evidence, documentation path, code path, Storybook path, AI metadata path, accessibility status, review status, last reviewed date, dependencies, related items, and evidence links.
+
+Schema version 2.0 adds the required `figmaEvidence` contract for page links and node IDs, section IDs, collection IDs, variable IDs, screenshots, Git/Figma revisions, synchronization checksum, human review, and drift. This is a major schema migration because existing manifests must add the field. Unknown external values use `pending-human-capture` with `null` or an empty array; fake placeholder strings are invalid evidence.
+
+### Version 1.0 to 2.0 migration
+
+- Change `schemaVersion` to `2.0.0`.
+- Add every required `figmaEvidence` field.
+- Use `partial` when the file URL is known but external IDs or review evidence remain uncaptured.
+- Preserve existing artifact IDs, artifact versions, lifecycle status, dependencies, and relationships.
+- Do not manufacture external values to satisfy the schema.
+
+All repository-owned foundation manifests migrate atomically with the schema. External consumers of version 1.0 must add explicit version dispatch before reading version 2.0; silent coercion is prohibited.
 
 ## Storage
 
@@ -41,7 +53,7 @@ evidence/
   releases/    immutable release manifests
 ```
 
-Machine-readable manifests use `{stable-id}.json`. Large binaries are referenced from an approved durable store rather than committed by default. Screenshots supplement but never replace editable Figma evidence or behavioral tests.
+Machine-readable manifests use `{stable-id}.json`. Specialized schema-backed Figma architecture records may use a descriptive `.architecture.json` suffix under `evidence/figma/`. Large binaries are referenced from an approved durable store rather than committed by default. Screenshots supplement but never replace editable Figma evidence or behavioral tests.
 
 ## Integrity and review
 

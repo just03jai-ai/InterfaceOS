@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/figma-architecture-manifest.schema.json",
+  "title": "InterfaceOS Figma Architecture Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "figmaFile",
+    "approvedDecisions",
+    "pages"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-FIGMA-ARCHITECTURE" },
+    "name": { "type": "string", "minLength": 1 },
+    "figmaFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "url",
+        "registeredDate",
+        "owner",
+        "status",
+        "phase",
+        "fileKey",
+        "libraryKey",
+        "accessPolicy"
+      ],
+      "properties": {
+        "name": { "const": "InterfaceOS — Design System" },
+        "url": { "type": "string", "format": "uri" },
+        "registeredDate": { "type": "string", "format": "date" },
+        "owner": { "type": "string", "minLength": 1 },
+        "status": {
+          "const": "Stage 2 decisions approved; variables and foundations pending"
+        },
+        "phase": { "const": "IOS-001 Stage 2 finalized" },
+        "fileKey": { "$ref": "#/$defs/externalString" },
+        "libraryKey": { "$ref": "#/$defs/externalString" },
+        "accessPolicy": { "$ref": "#/$defs/externalString" }
+      }
+    },
+    "approvedDecisions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "approvedDate",
+        "owner",
+        "canonicalTokenDecision",
+        "figmaRepresentationDecision",
+        "evidenceDecision",
+        "evidenceSchemaVersion",
+        "collections",
+        "representationPolicies",
+        "publishingPolicy",
+        "generatedDistributionPolicy",
+        "temporaryReviewRoles",
+        "pendingSpecialistReviews",
+        "openDecisions"
+      ],
+      "properties": {
+        "status": { "const": "accepted" },
+        "approvedDate": { "type": "string", "format": "date" },
+        "owner": { "const": "Jai Singh" },
+        "canonicalTokenDecision": { "const": "ADR-0003" },
+        "figmaRepresentationDecision": { "const": "ADR-0004" },
+        "evidenceDecision": { "const": "ADR-0005" },
+        "evidenceSchemaVersion": { "const": "2.0.0" },
+        "collections": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/collectionDecision" }
+        },
+        "representationPolicies": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadows",
+            "borders",
+            "cubicBezier",
+            "typography",
+            "zIndex",
+            "breakpoints",
+            "grid",
+            "elevation"
+          ],
+          "properties": {
+            "shadows": { "const": "effect-styles" },
+            "borders": {
+              "const": "variables-with-composed-stroke-styles-only"
+            },
+            "cubicBezier": { "const": "technical-metadata" },
+            "typography": {
+              "const": "primary-available-font-with-code-fallback-stack"
+            },
+            "zIndex": { "const": "technical-metadata" },
+            "breakpoints": { "const": "reference-variables" },
+            "grid": {
+              "const": "layout-grid-styles-with-open-token-decision"
+            },
+            "elevation": {
+              "const": "documentation-concept-sharing-shadow-source"
+            }
+          }
+        },
+        "publishingPolicy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["visibility", "publishAfter"],
+          "properties": {
+            "visibility": { "const": "private-during-foundations" },
+            "publishAfter": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 4,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "variable-mapping",
+                  "visual-review",
+                  "evidence-capture",
+                  "approval"
+                ]
+              }
+            }
+          }
+        },
+        "generatedDistributionPolicy": {
+          "const": "gitignored-ci-reproducible"
+        },
+        "temporaryReviewRoles": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["design", "documentation", "governance", "release"]
+          }
+        },
+        "pendingSpecialistReviews": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "enum": ["engineering", "accessibility"] }
+        },
+        "openDecisions": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "canonical-grid-token-source",
+              "font-delivery-and-licensing"
+            ]
+          }
+        }
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "$ref": "#/$defs/page" }
+    }
+  },
+  "$defs": {
+    "externalString": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "value": { "type": "null" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "captured" },
+            "value": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "repoPath": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*\\.\\.)[^\\s]+$"
+    },
+    "artifactId": {
+      "type": "string",
+      "pattern": "^IOS-(FND|TKN|ICO|CMP|PAT|TPL|PGE|FLW|DEC|REL)-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+    },
+    "collectionDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "authoredModes", "implementationStatus"],
+      "properties": {
+        "name": {
+          "enum": ["Primitive", "Semantic", "Theme", "Responsive", "Motion"]
+        },
+        "authoredModes": {
+          "type": "array",
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "enum": ["Light", "Dark"] }
+        },
+        "implementationStatus": { "const": "not-started" }
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "name", "status", "nodeId", "items"],
+      "properties": {
+        "order": { "type": "integer", "minimum": 0, "maximum": 14 },
+        "name": { "type": "string", "pattern": "^[0-9]{2} .+" },
+        "status": { "const": "architecture-created" },
+        "nodeId": { "$ref": "#/$defs/externalString" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "kind",
+        "status",
+        "nodeId",
+        "relatedEvidenceIds",
+        "plannedDocumentationPaths",
+        "plannedTokenSourceMappings"
+      ],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": [
+            "foundation-section",
+            "variable-section",
+            "component-category",
+            "pattern-category",
+            "template-category",
+            "playground-area"
+          ]
+        },
+        "status": { "const": "placeholder-created" },
+        "nodeId": { "$ref": "#/$defs/externalString" },
+        "relatedEvidenceIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/artifactId" }
+        },
+        "plannedDocumentationPaths": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/repoPath" }
+        },
+        "plannedTokenSourceMappings": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/repoPath" }
+        }
+      }
+    }
+  }
+}

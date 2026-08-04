@@ -14,6 +14,20 @@
 
 People may hold multiple roles, but author and final approver must be separate for governed releases.
 
+## IOS-001 interim assignments
+
+| Role                   | Assignment            | Status                                                     |
+| ---------------------- | --------------------- | ---------------------------------------------------------- |
+| Design System Owner    | Jai Singh             | Interim                                                    |
+| Design reviewer        | Jai Singh             | Temporary for Stage 2 decisions                            |
+| Documentation reviewer | Jai Singh             | Temporary for Stage 2 decisions                            |
+| Governance reviewer    | Jai Singh             | Temporary for Stage 2 decisions                            |
+| Release reviewer       | Jai Singh             | Temporary for Stage 2 planning; not final release approval |
+| Engineering reviewer   | Unassigned specialist | Pending                                                    |
+| Accessibility reviewer | Unassigned specialist | Pending                                                    |
+
+These temporary assignments do not waive independent final approval. Engineering and accessibility gates remain open, and Jai Singh cannot act as both author and final approver for an IOS-001 release.
+
 ## Lifecycle gates
 
 Research → Specification → Design → Review → Accessibility → Documentation → Implementation → Storybook → AI Metadata → Testing → Approval → Release.

@@ -4,7 +4,7 @@ InterfaceOS is an AI-native Design Intelligence Platform connecting visual desig
 
 ## Project status
 
-The repository is in **IOS-001 Stage 1 implementation** status. The code-side token foundation is under review; Figma execution and release remain blocked by milestone entry gates. No UI components or product application have been implemented. See [IOS-001 — Design Foundations and Token Architecture](docs/roadmap/ios-001-design-foundations.md).
+The repository is in **IOS-001 Stage 2 finalized** status. The code-side token foundation, canonical Figma file, placeholder architecture, representation decisions, and evidence contracts are recorded. Figma variable/style/specimen execution, engineering and accessibility specialist review, and release remain pending. No UI components or product application have been implemented. See [IOS-001 — Design Foundations and Token Architecture](docs/roadmap/ios-001-design-foundations.md).
 
 ## Sources of truth
 

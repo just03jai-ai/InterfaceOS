@@ -1,10 +1,10 @@
 # Token Architecture
 
-Status: Stage 1 draft
+Status: Stage 2 decision baseline accepted; engineering and accessibility review pending
 
 Version: 0.1.0
 
-Owner: Unassigned
+Owner: Jai Singh (interim)
 
 ## Purpose
 
@@ -46,6 +46,7 @@ Small files own one domain. Full token names remain globally unique after all se
 - Figma owns editable variable representations and visual evidence after synchronization.
 - Generated CSS, JSON, TypeScript, and Tailwind files are projections and are never edited.
 - Storybook will consume released outputs but does not own token values.
+- Generated distributions remain ignored in Git and reproducible through CI artifacts.
 
 This specializes, and does not replace, the repository [source-of-truth model](../../architecture/source-of-truth.md).
 
@@ -74,4 +75,4 @@ No component tokens are created in Stage 1. A component token is justified only 
 - Motion durations stay short and include a zero-duration reduced-motion alias.
 - Shadows never act as the only boundary or state cue.
 
-These values are implementation candidates until visual, accessibility, and Figma review evidence is approved.
+These values remain implementation candidates until visual, engineering, accessibility, and Figma review evidence is approved. Figma representations follow [ADR-0004](../../decisions/0004-figma-foundation-representation.md).

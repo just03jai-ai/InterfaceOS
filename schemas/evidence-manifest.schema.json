@@ -23,10 +23,11 @@
     "lastReviewedDate",
     "dependencies",
     "relatedItems",
-    "evidenceLinks"
+    "evidenceLinks",
+    "figmaEvidence"
   ],
   "properties": {
-    "schemaVersion": { "const": "1.0.0" },
+    "schemaVersion": { "const": "2.0.0" },
     "id": {
       "type": "string",
       "pattern": "^IOS-(FND|TKN|ICO|CMP|PAT|TPL|PGE|FLW|DEC|REL)-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
@@ -109,11 +110,18 @@
       "type": "array",
       "items": { "type": "string", "format": "uri-reference" },
       "uniqueItems": true
+    },
+    "figmaEvidence": {
+      "$ref": "#/$defs/figmaEvidence"
     }
   },
   "$defs": {
     "nullableRepoPath": {
       "type": ["string", "null"],
+      "pattern": "^(?!/)(?!.*\\.\\.)[^\\s]+$"
+    },
+    "repoPath": {
+      "type": "string",
       "pattern": "^(?!/)(?!.*\\.\\.)[^\\s]+$"
     },
     "artifactId": {
@@ -136,6 +144,214 @@
       "properties": {
         "type": { "type": "string", "minLength": 1 },
         "targetId": { "$ref": "#/$defs/artifactId" }
+      }
+    },
+    "pendingString": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "value": { "type": "null" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "captured" },
+            "value": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "not-applicable" },
+            "value": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "pendingUri": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "value": { "type": "null" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "captured" },
+            "value": { "type": "string", "format": "uri" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "value"],
+          "properties": {
+            "status": { "const": "not-applicable" },
+            "value": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "pendingIds": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "values": { "type": "array", "maxItems": 0 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "captured" },
+            "values": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "not-applicable" },
+            "values": { "type": "array", "maxItems": 0 }
+          }
+        }
+      ]
+    },
+    "pendingPaths": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "pending-human-capture" },
+            "values": { "type": "array", "maxItems": 0 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "captured" },
+            "values": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/repoPath" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "values"],
+          "properties": {
+            "status": { "const": "not-applicable" },
+            "values": { "type": "array", "maxItems": 0 }
+          }
+        }
+      ]
+    },
+    "figmaEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "captureStatus",
+        "pageUrl",
+        "pageNodeId",
+        "sectionNodeId",
+        "collectionIds",
+        "variableIds",
+        "screenshotPaths",
+        "sourceRevision",
+        "figmaRevision",
+        "synchronizationChecksum",
+        "review",
+        "drift"
+      ],
+      "properties": {
+        "captureStatus": {
+          "enum": [
+            "pending-human-capture",
+            "partial",
+            "captured",
+            "not-applicable"
+          ]
+        },
+        "pageUrl": { "$ref": "#/$defs/pendingUri" },
+        "pageNodeId": { "$ref": "#/$defs/pendingString" },
+        "sectionNodeId": { "$ref": "#/$defs/pendingString" },
+        "collectionIds": { "$ref": "#/$defs/pendingIds" },
+        "variableIds": { "$ref": "#/$defs/pendingIds" },
+        "screenshotPaths": { "$ref": "#/$defs/pendingPaths" },
+        "sourceRevision": { "$ref": "#/$defs/pendingString" },
+        "figmaRevision": { "$ref": "#/$defs/pendingString" },
+        "synchronizationChecksum": { "$ref": "#/$defs/pendingString" },
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["date", "reviewer", "approvalStatus"],
+          "properties": {
+            "date": { "type": ["string", "null"], "format": "date" },
+            "reviewer": { "type": ["string", "null"], "minLength": 1 },
+            "approvalStatus": {
+              "enum": [
+                "pending",
+                "in-review",
+                "approved",
+                "changes-requested",
+                "rejected"
+              ]
+            }
+          }
+        },
+        "drift": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "lastCheckedDate", "resolutionOwner"],
+          "properties": {
+            "status": {
+              "enum": [
+                "not-assessed",
+                "synchronized",
+                "changed",
+                "drifted",
+                "blocked",
+                "failed"
+              ]
+            },
+            "lastCheckedDate": { "type": ["string", "null"], "format": "date" },
+            "resolutionOwner": { "type": ["string", "null"], "minLength": 1 }
+          }
+        }
       }
     }
   }
