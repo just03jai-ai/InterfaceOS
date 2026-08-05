@@ -116,9 +116,9 @@ test('Stage 2 decisions encode collections, modes, representations, and unpublis
       implementationStatus,
     ]),
     [
-      ['Primitive', 'implemented-pending-human-review'],
-      ['Semantic', 'implemented-pending-human-review'],
-      ['Theme', 'implemented-pending-human-review'],
+      ['Primitive', 'reconciled-ready-for-approval'],
+      ['Semantic', 'reconciled-ready-for-approval'],
+      ['Theme', 'reconciled-ready-for-approval'],
       ['Responsive', 'approved-color-foundation-v1'],
       ['Motion', 'approved-color-foundation-v1'],
     ],
@@ -140,6 +140,17 @@ test('Stage 2 decisions encode collections, modes, representations, and unpublis
     decisions.collections.every(
       ({ collectionId }) => collectionId.status === 'captured',
     ),
+  );
+});
+
+test('IOS-003.3 architecture is ready for approval after human evidence closure', () => {
+  assert.equal(
+    manifest.figmaFile.status,
+    'IOS-003.3 color variables reconciled; ready for approval',
+  );
+  assert.equal(
+    manifest.pages.find(({ name }) => name === '03 Foundations').status,
+    'foundation-reconciliation-ready-for-approval',
   );
 });
 

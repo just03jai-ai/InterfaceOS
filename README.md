@@ -4,7 +4,7 @@ InterfaceOS is an AI-native Design Intelligence Platform connecting visual desig
 
 ## Project status
 
-The repository is in **IOS-003.2 Color Foundation V1 canonical promotion implemented; human review and Figma reconciliation pending** status. The exact approved IOS-003.1 values now exist in canonical hue and categorical data tokens with complete Light/Dark mappings and deterministic validation. The Figma library remains unpublished; its verified 80-variable baseline requires 90 additional variable representations after authenticated access resumes. File sharing permissions are separate from library publication governance. No UI component, specialist accessibility approval, or public release is claimed. See [IOS-003.2 — Color Token Promotion](docs/roadmap/ios-003-2-color-token-promotion.md).
+The repository is in **IOS-003.3 Figma color variable reconciliation ready for approval** status. The exact approved IOS-003.1 values exist in canonical hue and categorical data tokens with complete Light/Dark mappings and deterministic validation. Figma now contains the verified 170-variable color graph: 100 Primitive, 35 Semantic, and 35 Theme variables. Human review and unpublished-library verification are complete; file sharing permissions remain separate from library publication governance. No UI component, specialist accessibility approval, engineering specialist approval, library publication, or public release is claimed. See [IOS-003.3 — Figma Color Variable Reconciliation](docs/roadmap/ios-003-3-figma-color-reconciliation.md).
 
 ## Sources of truth
 

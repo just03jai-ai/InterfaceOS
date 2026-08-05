@@ -40,7 +40,8 @@
             "IOS-002 Batch 1 prepared; human Figma execution pending",
             "IOS-003.1 Color Foundation implemented; human review pending",
             "IOS-003.1 Color Foundation V1 visual baseline approved; token promotion pending",
-            "IOS-003.3 color variables reconciled; human review pending"
+            "IOS-003.3 color variables reconciled; human review pending",
+            "IOS-003.3 color variables reconciled; ready for approval"
           ]
         },
         "phase": {
@@ -243,6 +244,7 @@
           "enum": [
             "not-started",
             "implemented-pending-human-review",
+            "reconciled-ready-for-approval",
             "approved-color-foundation-v1"
           ]
         },
@@ -269,6 +271,7 @@
           "enum": [
             "architecture-created",
             "foundation-implementation-in-review",
+            "foundation-reconciliation-ready-for-approval",
             "foundation-v1-approved"
           ]
         },
@@ -307,6 +310,7 @@
           "enum": [
             "placeholder-created",
             "implemented-pending-human-review",
+            "reconciled-ready-for-approval",
             "approved-color-foundation-v1"
           ]
         },

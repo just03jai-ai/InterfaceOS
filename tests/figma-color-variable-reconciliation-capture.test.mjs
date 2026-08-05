@@ -102,6 +102,38 @@ test('captured screenshots exist and match their recorded checksums', async () =
   }
 });
 
+test('human review evidence proves final counts and current unpublished state', async () => {
+  assert.equal(current.status, 'ready-for-approval');
+  assert.equal(current.approvals.design, 'human-review-complete');
+  assert.deepEqual(current.humanReviewClosure.technicalBlockers, []);
+
+  const variablesEvidence = current.humanReviewClosure.variablesPanelEvidence;
+  assert.deepEqual(
+    {
+      primitive: variablesEvidence.primitiveCount,
+      semantic: variablesEvidence.semanticCount,
+      theme: variablesEvidence.themeCount,
+      total: variablesEvidence.totalColorVariableCount,
+    },
+    { primitive: 100, semantic: 35, theme: 35, total: 170 },
+  );
+
+  const publicationEvidence = current.humanReviewClosure.publicationEvidence;
+  assert.equal(publicationEvidence.verifiedState, 'unpublished');
+  assert.equal(
+    publicationEvidence.visibleIndicator,
+    'Publish action available',
+  );
+
+  for (const evidence of [variablesEvidence, publicationEvidence]) {
+    const bytes = await readFile(evidence.path);
+    assert.equal(
+      createHash('sha256').update(bytes).digest('hex'),
+      evidence.sha256,
+    );
+  }
+});
+
 test('release and specialist approvals remain pending', () => {
   assert.equal(current.approvals.accessibility, 'pending-specialist-review');
   assert.equal(current.approvals.engineering, 'pending-specialist-review');
@@ -110,7 +142,7 @@ test('release and specialist approvals remain pending', () => {
   assert.equal(current.library.publishAction, 'not-invoked');
 });
 
-test('unpublished library state uses governed human attestation', () => {
+test('unpublished library state uses governed human attestation and screenshot evidence', () => {
   assert.equal(
     current.library.fileSharingPermissionsGovernance,
     'separate-from-library-publication',
@@ -119,13 +151,11 @@ test('unpublished library state uses governed human attestation', () => {
     current.library.publicationStateVerification,
     'human-confirmed-unpublished',
   );
+  assert.equal(current.library.humanConfirmation.screenshotStatus, 'captured');
   assert.equal(current.library.humanConfirmation.confirmedDate, '2026-08-06');
-  assert.equal(
-    current.library.humanConfirmation.screenshotStatus,
-    'unavailable-workspace-ui-limitation',
-  );
+  assert.equal(current.library.humanConfirmation.screenshotStatus, 'captured');
   assert.match(
     current.library.humanConfirmation.limitation,
-    /Plugin API.*workspace.*unpublished-library screen/i,
+    /Publish action.*unpublished.*Plugin API.*publication history/i,
   );
 });
