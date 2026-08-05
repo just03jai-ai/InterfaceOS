@@ -22,6 +22,7 @@
     "screenshots",
     "evidenceLimitations",
     "verification",
+    "humanReviewClosure",
     "approvals"
   ],
   "properties": {
@@ -29,7 +30,7 @@
     "schemaVersion": { "const": "1.0.0" },
     "id": { "const": "IOS-003.3-FIGMA-COLOR-VARIABLE-CAPTURE" },
     "milestone": { "const": "IOS-003.3" },
-    "status": { "const": "implemented-pending-human-review" },
+    "status": { "const": "ready-for-approval" },
     "capturedAt": { "type": "string", "format": "date-time" },
     "operator": {
       "type": "object",
@@ -105,6 +106,8 @@
             "statement",
             "evidenceType",
             "screenshotStatus",
+            "screenshotPath",
+            "screenshotSha256",
             "limitation"
           ],
           "properties": {
@@ -115,9 +118,13 @@
             "statement": {
               "const": "The InterfaceOS library has not been published."
             },
-            "evidenceType": { "const": "human-attestation" },
-            "screenshotStatus": {
-              "const": "unavailable-workspace-ui-limitation"
+            "evidenceType": { "const": "human-attestation-and-screenshot" },
+            "screenshotStatus": { "const": "captured" },
+            "screenshotPath": {
+              "const": "evidence/screenshots/ios-003-3/library-unpublished.png"
+            },
+            "screenshotSha256": {
+              "const": "13a7ef901e9e81a2b526d024b35870ed015697994bb0e687a05657f3248904e4"
             },
             "limitation": { "type": "string", "minLength": 1 }
           }
@@ -199,6 +206,77 @@
         "driftStatus": { "const": "synchronized" }
       }
     },
+    "humanReviewClosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewDate",
+        "reviewer",
+        "result",
+        "variablesPanelEvidence",
+        "publicationEvidence",
+        "technicalBlockers",
+        "deferredItems",
+        "staleCanvasAnnotations"
+      ],
+      "properties": {
+        "reviewDate": { "const": "2026-08-06" },
+        "reviewer": { "const": "Jai Singh — Interim Design System Owner" },
+        "result": { "const": "complete-ready-for-approval" },
+        "variablesPanelEvidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "primitiveCount",
+            "semanticCount",
+            "themeCount",
+            "totalColorVariableCount"
+          ],
+          "properties": {
+            "path": {
+              "const": "evidence/screenshots/ios-003-3/variables-panel-170.png"
+            },
+            "sha256": {
+              "const": "1c1168e8aeca234fb6d38e81e889103f53663ca247d86d8c1f655813224db0b3"
+            },
+            "primitiveCount": { "const": 100 },
+            "semanticCount": { "const": 35 },
+            "themeCount": { "const": 35 },
+            "totalColorVariableCount": { "const": 170 }
+          }
+        },
+        "publicationEvidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256", "verifiedState", "visibleIndicator"],
+          "properties": {
+            "path": {
+              "const": "evidence/screenshots/ios-003-3/library-unpublished.png"
+            },
+            "sha256": {
+              "const": "13a7ef901e9e81a2b526d024b35870ed015697994bb0e687a05657f3248904e4"
+            },
+            "verifiedState": { "const": "unpublished" },
+            "visibleIndicator": { "const": "Publish action available" }
+          }
+        },
+        "technicalBlockers": { "type": "array", "maxItems": 0 },
+        "deferredItems": {
+          "type": "array",
+          "minItems": 5,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "staleCanvasAnnotations": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
     "approvals": {
       "type": "object",
       "additionalProperties": false,
@@ -210,7 +288,7 @@
         "release"
       ],
       "properties": {
-        "design": { "const": "pending-human-review" },
+        "design": { "const": "human-review-complete" },
         "accessibility": { "const": "pending-specialist-review" },
         "engineering": { "const": "pending-specialist-review" },
         "independentRelease": { "const": "pending" },

@@ -7,7 +7,7 @@
     "url": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
     "registeredDate": "2026-08-04",
     "owner": "Jai Singh",
-    "status": "IOS-003.3 color variables reconciled; human review pending",
+    "status": "IOS-003.3 color variables reconciled; ready for approval",
     "phase": "IOS-003.3 reconciliation",
     "fileKey": {
       "status": "captured",
@@ -34,7 +34,7 @@
       {
         "name": "Primitive",
         "authoredModes": [],
-        "implementationStatus": "implemented-pending-human-review",
+        "implementationStatus": "reconciled-ready-for-approval",
         "collectionId": {
           "status": "captured",
           "value": "VariableCollectionId:63:14"
@@ -46,7 +46,7 @@
       {
         "name": "Semantic",
         "authoredModes": [],
-        "implementationStatus": "implemented-pending-human-review",
+        "implementationStatus": "reconciled-ready-for-approval",
         "collectionId": {
           "status": "captured",
           "value": "VariableCollectionId:63:15"
@@ -58,7 +58,7 @@
       {
         "name": "Theme",
         "authoredModes": ["Light", "Dark"],
-        "implementationStatus": "implemented-pending-human-review",
+        "implementationStatus": "reconciled-ready-for-approval",
         "collectionId": {
           "status": "captured",
           "value": "VariableCollectionId:63:16"
@@ -159,7 +159,7 @@
     {
       "order": 3,
       "name": "03 Foundations",
-      "status": "foundation-implementation-in-review",
+      "status": "foundation-reconciliation-ready-for-approval",
       "nodeId": {
         "status": "captured",
         "value": "2:4"
@@ -168,7 +168,7 @@
         {
           "name": "Color",
           "kind": "foundation-section",
-          "status": "implemented-pending-human-review",
+          "status": "reconciled-ready-for-approval",
           "nodeId": {
             "status": "captured",
             "value": "26:14"
@@ -435,7 +435,7 @@
         {
           "name": "Primitive",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "reconciled-ready-for-approval",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -466,7 +466,7 @@
         {
           "name": "Semantic",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "reconciled-ready-for-approval",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -482,7 +482,7 @@
         {
           "name": "Theme",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "reconciled-ready-for-approval",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -500,7 +500,7 @@
         {
           "name": "Responsive",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "reconciled-ready-for-approval",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -521,7 +521,7 @@
         {
           "name": "Motion",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "reconciled-ready-for-approval",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null

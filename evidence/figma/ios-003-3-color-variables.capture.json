@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": "IOS-003.3-FIGMA-COLOR-VARIABLE-CAPTURE",
   "milestone": "IOS-003.3",
-  "status": "implemented-pending-human-review",
+  "status": "ready-for-approval",
   "capturedAt": "2026-08-05T18:15:42Z",
   "operator": {
     "name": "Codex",
@@ -35,9 +35,11 @@
       "reviewer": "Jai Singh — Interim Design System Owner",
       "confirmedDate": "2026-08-06",
       "statement": "The InterfaceOS library has not been published.",
-      "evidenceType": "human-attestation",
-      "screenshotStatus": "unavailable-workspace-ui-limitation",
-      "limitation": "The Figma Plugin API cannot expose file-level publication state, and the current Figma workspace does not expose an unpublished-library screen."
+      "evidenceType": "human-attestation-and-screenshot",
+      "screenshotStatus": "captured",
+      "screenshotPath": "evidence/screenshots/ios-003-3/library-unpublished.png",
+      "screenshotSha256": "13a7ef901e9e81a2b526d024b35870ed015697994bb0e687a05657f3248904e4",
+      "limitation": "The captured Figma Manage libraries interface shows an available Publish action, proving the current library is unpublished; the Plugin API does not expose publication history."
     }
   },
   "baseline": {
@@ -1677,8 +1679,8 @@
     }
   ],
   "evidenceLimitations": [
-    "The Figma Plugin API cannot capture the Variables sidebar or expose a verified file revision.",
-    "The Figma Plugin API cannot expose file-level publication state, and the current Figma workspace does not expose an unpublished-library screen; unpublished state is recorded through dated human attestation.",
+    "The Figma Plugin API cannot capture the Variables sidebar or expose a verified file revision; the Variables sidebar is covered by dated human screenshot evidence.",
+    "The Figma Plugin API cannot expose publication history; the current unpublished state is covered by dated human attestation and the Figma Manage libraries screenshot showing an available Publish action.",
     "Canvas screenshots retain IOS-003.1 candidate-era annotations and support visual provenance only; authenticated variable API results prove the IOS-003.3 counts and mappings."
   ],
   "verification": {
@@ -1699,8 +1701,40 @@
     "canonicalTokenDiff": "none",
     "driftStatus": "synchronized"
   },
+  "humanReviewClosure": {
+    "reviewDate": "2026-08-06",
+    "reviewer": "Jai Singh — Interim Design System Owner",
+    "result": "complete-ready-for-approval",
+    "variablesPanelEvidence": {
+      "path": "evidence/screenshots/ios-003-3/variables-panel-170.png",
+      "sha256": "1c1168e8aeca234fb6d38e81e889103f53663ca247d86d8c1f655813224db0b3",
+      "primitiveCount": 100,
+      "semanticCount": 35,
+      "themeCount": 35,
+      "totalColorVariableCount": 170
+    },
+    "publicationEvidence": {
+      "path": "evidence/screenshots/ios-003-3/library-unpublished.png",
+      "sha256": "13a7ef901e9e81a2b526d024b35870ed015697994bb0e687a05657f3248904e4",
+      "verifiedState": "unpublished",
+      "visibleIndicator": "Publish action available"
+    },
+    "technicalBlockers": [],
+    "deferredItems": [
+      "Engineering specialist review",
+      "Accessibility specialist review",
+      "Independent release approval",
+      "Named Figma version or revision",
+      "Public library publication"
+    ],
+    "staleCanvasAnnotations": [
+      "Primitive Families still describes candidates as provisional and reports pre-promotion source counts.",
+      "Semantic Colors still reports 24 canonical semantic variables and pending design review.",
+      "Theme Mapping still reports 24/24 mappings and uses the obsolete library-private label."
+    ]
+  },
   "approvals": {
-    "design": "pending-human-review",
+    "design": "human-review-complete",
     "accessibility": "pending-specialist-review",
     "engineering": "pending-specialist-review",
     "independentRelease": "pending",

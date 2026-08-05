@@ -148,7 +148,9 @@
         "evidence/screenshots/ios-003-3/teal.png",
         "evidence/screenshots/ios-003-3/data-01-11.png",
         "evidence/screenshots/ios-003-3/theme-light-dark.png",
-        "evidence/screenshots/ios-003-3/semantic-variables.png"
+        "evidence/screenshots/ios-003-3/semantic-variables.png",
+        "evidence/screenshots/ios-003-3/variables-panel-170.png",
+        "evidence/screenshots/ios-003-3/library-unpublished.png"
       ]
     },
     "sourceRevision": {
@@ -161,7 +163,7 @@
     },
     "synchronizationChecksum": {
       "status": "captured",
-      "value": "59da336ea64310d03a5ac90bf336aa31d75b120a525f26d0d7faf695e8c7389d"
+      "value": "a90fe57834c30357610eaec8c6585114911b9d873531757856ef6a398f8fed6d"
     },
     "review": {
       "date": "2026-08-06",
@@ -251,6 +253,9 @@
     "evidence/screenshots/ios-003-3/data-01-11.png",
     "evidence/screenshots/ios-003-3/theme-light-dark.png",
     "evidence/screenshots/ios-003-3/semantic-variables.png",
+    "evidence/screenshots/ios-003-3/variables-panel-170.png",
+    "evidence/screenshots/ios-003-3/library-unpublished.png",
+    "docs/design-system/figma/ios-003-3-final-milestone-report.md",
     "evidence/screenshots/ios-003-1/decision-log-approved.png",
     "evidence/screenshots/ios-003-1/review-approval-approved.png"
   ]

@@ -1,6 +1,6 @@
 # Figma Variable Mapping
 
-Status: IOS-003.3 color variable reconciliation complete; human review pending
+Status: IOS-003.3 color variable reconciliation complete; ready for approval
 
 Canonical file: [InterfaceOS — Design System](https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1)
 
@@ -38,7 +38,7 @@ For each mapped foundation, record Figma file URL, page link, page and section n
 ## Limitations and blocked work
 
 - The file key, Foundations page, Color section, five collection IDs, six storage/mode IDs, and all 80 baseline variable IDs are captured. Jai Singh confirmed ownership, project location, and unpublished library state, including a dated unpublished-state attestation on 2026-08-06 because the Plugin API does not expose file-level publication history. File sharing permissions are recorded separately and are not a publication gate. The library key remains uncaptured and a named Figma version is required before public release.
-- ADR-0006 approves the Figma visual extension. IOS-003.2 promoted those approved values into Git, and IOS-003.3 created and verified the exact missing 90-variable delta. The variable graph is synchronized; visual evidence review remains open.
+- ADR-0006 approves the Figma visual extension. IOS-003.2 promoted those approved values into Git, and IOS-003.3 created and verified the exact missing 90-variable delta. The variable graph is synchronized, and human review of the 170-variable panel and unpublished-library evidence is complete.
 - Figma number variables do not preserve CSS units; mapping must retain the DTCG type/unit in metadata.
 - Shadow composites use Effect Styles; typography fallback stacks remain canonical in code and Figma records only the approved primary available font.
 - Stroke styles and cubic-bezier values have no approved bindable Figma-variable representation; do not create lossy aliases to make counts match.

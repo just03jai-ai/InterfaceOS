@@ -1,6 +1,6 @@
 # Design-to-Code Drift Management
 
-Status: Approved contract; IOS-003.3 variable graph synchronized pending human review
+Status: Approved contract; IOS-003.3 variable graph synchronized and ready for approval
 
 ## Comparison chain
 
@@ -15,7 +15,7 @@ canonical token JSON
 
 The first four representations are deterministic Git projections. Figma variables, styles, and specimens are manually synchronized representations until an approved audited adapter exists.
 
-ADR-0006 created one explicit temporary exception for the approved Figma-only Color Foundation V1 values. IOS-003.2 resolved the Git side by promoting the approved evidence into canonical tokens. IOS-003.3 reconciled and re-read the Figma variable graph: 100 Primitive, 35 Theme, and 35 Semantic color variables now match canonical identity, value, alias, mode, scope, and syntax contracts. Public library release remains blocked pending human evidence review and specialist/release gates.
+ADR-0006 created one explicit temporary exception for the approved Figma-only Color Foundation V1 values. IOS-003.2 resolved the Git side by promoting the approved evidence into canonical tokens. IOS-003.3 reconciled and re-read the Figma variable graph: 100 Primitive, 35 Theme, and 35 Semantic color variables now match canonical identity, value, alias, mode, scope, and syntax contracts. Human review of the 170-variable panel and unpublished-library state is complete. Public library release remains blocked by specialist and independent-release gates.
 
 ## What counts as drift
 
@@ -51,7 +51,7 @@ Drift exists when two representations that should describe the same approved rev
 
 For IOS-002 Batch 1, run `pnpm figma:batch-1:check` before the manual comparison. The check proves that the execution plan still contains exactly the canonical 32 primitive colors and approved collection-shell contract; it does not prove that Figma artifacts or captured IDs exist.
 
-For IOS-003.3, run `pnpm figma:ios-003-2:check`. The deterministic reconciliation record proves the exact 90 created IDs complete the 80-variable baseline and reproduce the canonical 170-variable graph. The authenticated capture records API verification; human UI screenshots and approval remain separate evidence gates.
+For IOS-003.3, run `pnpm figma:ios-003-2:check`. The deterministic reconciliation record proves the exact 90 created IDs complete the 80-variable baseline and reproduce the canonical 170-variable graph. The authenticated capture records API verification; dated human UI screenshots verify the collection totals and current unpublished-library state. Final milestone approval remains separate from technical reconciliation.
 
 File-level publication state is a documented manual evidence boundary. The Plugin API exposes collection and variable `hiddenFromPublishing` flags but not file publication history. IOS-003.3 therefore records explicit unpublished-state evidence while retaining the prohibition on publication and the independent release gate. File sharing permissions are documented separately and neither satisfy nor block this publication control.
 
