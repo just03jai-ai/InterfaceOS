@@ -1,6 +1,6 @@
 # Design-to-Code Drift Management
 
-Status: Stage 2 contract approved; IOS-002 Batch 1 enforcement prepared and human execution pending
+Status: Approved contract; IOS-003.1 visual baseline recorded with controlled token-promotion drift
 
 ## Comparison chain
 
@@ -14,6 +14,8 @@ canonical token JSON
 ```
 
 The first four representations are deterministic Git projections. Figma variables, styles, and specimens are manually synchronized representations until an approved audited adapter exists.
+
+ADR-0006 creates one explicit temporary exception to ordinary synchronized-state language: approved Figma-only Color Foundation V1 values are classified as `changed — approved visual baseline pending canonical token promotion`. They are not canonical code tokens, may not be consumed as if synchronized, and block public library release until the promotion workflow reconciles both authorities.
 
 ## What counts as drift
 

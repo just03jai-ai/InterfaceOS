@@ -102,13 +102,33 @@ test('Stage 2 decisions encode collections, modes, representations, and private 
     decisions.publishingPolicy.visibility,
     'private-during-foundations',
   );
-  assert.deepEqual(decisions.pendingSpecialistReviews, [
-    'engineering',
-    'accessibility',
-  ]);
+  assert.deepEqual(decisions.pendingSpecialistReviews, ['accessibility']);
+  assert.equal(
+    decisions.specialistReviewPolicy,
+    'accessibility-audit-non-blocking-for-foundation-v1-required-before-public-release',
+  );
   assert.ok(
     decisions.collections.every(
-      ({ implementationStatus }) => implementationStatus === 'not-started',
+      ({ implementationStatus }) =>
+        implementationStatus === 'approved-color-foundation-v1',
+    ),
+  );
+  assert.deepEqual(
+    decisions.collections.map(({ name, colorVariableCount }) => [
+      name,
+      colorVariableCount,
+    ]),
+    [
+      ['Primitive', 32],
+      ['Semantic', 24],
+      ['Theme', 24],
+      ['Responsive', 0],
+      ['Motion', 0],
+    ],
+  );
+  assert.ok(
+    decisions.collections.every(
+      ({ collectionId }) => collectionId.status === 'captured',
     ),
   );
 });
@@ -137,17 +157,39 @@ test('Stage 2 evidence records temporary review without claiming specialist appr
   );
 });
 
-test('uncaptured Figma identifiers remain null instead of fake IDs', () => {
-  const locators = [
-    manifest.figmaFile.fileKey,
+test('verified Figma state is captured and unavailable identifiers remain null', () => {
+  assert.deepEqual(manifest.figmaFile.fileKey, {
+    status: 'captured',
+    value: 'OJqxFKoGjRh4rrSZCKdkzi',
+  });
+  const foundationsPage = manifest.pages.find(
+    (page) => page.name === '03 Foundations',
+  );
+  const color = foundationsPage.items.find((item) => item.name === 'Color');
+  assert.deepEqual(foundationsPage.nodeId, {
+    status: 'captured',
+    value: '2:4',
+  });
+  assert.deepEqual(color.nodeId, { status: 'captured', value: '26:14' });
+  assert.deepEqual(manifest.figmaFile.accessPolicy, {
+    status: 'captured',
+    value:
+      'Owner Jai Singh; InterfaceOS Design System project; private unpublished library; publishing permission confirmed; branching enabled',
+  });
+
+  const pendingLocators = [
     manifest.figmaFile.libraryKey,
-    manifest.figmaFile.accessPolicy,
-    ...manifest.pages.flatMap((page) => [
-      page.nodeId,
-      ...page.items.map((item) => item.nodeId),
-    ]),
+    ...manifest.pages
+      .filter((page) => page.name !== '03 Foundations')
+      .flatMap((page) => [
+        page.nodeId,
+        ...page.items.map((item) => item.nodeId),
+      ]),
+    ...foundationsPage.items
+      .filter((item) => item.name !== 'Color')
+      .map((item) => item.nodeId),
   ];
-  for (const locator of locators) {
+  for (const locator of pendingLocators) {
     assert.equal(locator.status, 'pending-human-capture');
     assert.equal(locator.value, null);
   }
