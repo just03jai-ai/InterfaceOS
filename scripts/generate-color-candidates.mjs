@@ -19,6 +19,7 @@ const standardStops = [
   '900',
   '950',
 ];
+const serializedNumberPrecision = 10;
 const canonicalDocument = JSON.parse(await readFile(sourcePath, 'utf8'));
 const sourceBytes = await readFile(sourcePath);
 const sourceSha256 = createHash('sha256').update(sourceBytes).digest('hex');
@@ -29,6 +30,20 @@ const canonical = canonicalDocument.color.primitive;
 
 const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
 const round = (value, places = 6) => Number(value.toFixed(places));
+
+function normalizeGeneratedNumbers(value) {
+  if (typeof value === 'number' && Number.isFinite(value))
+    return round(value, serializedNumberPrecision);
+  if (Array.isArray(value)) return value.map(normalizeGeneratedNumbers);
+  if (value && typeof value === 'object')
+    return Object.fromEntries(
+      Object.entries(value).map(([key, entry]) => [
+        key,
+        normalizeGeneratedNumbers(entry),
+      ]),
+    );
+  return value;
+}
 const radians = (degrees) => (degrees * Math.PI) / 180;
 const degrees = (radiansValue) => ((radiansValue * 180) / Math.PI + 360) % 360;
 
@@ -534,9 +549,12 @@ const result = {
 const checkOnly = process.argv.includes('--check');
 const existing = checkOnly ? await readFile(outputPath, 'utf8') : null;
 if (checkOnly) result.source.gitCommit = JSON.parse(existing).source.gitCommit;
-const serialized = await prettier.format(JSON.stringify(result), {
-  parser: 'json',
-});
+const serialized = await prettier.format(
+  JSON.stringify(normalizeGeneratedNumbers(result)),
+  {
+    parser: 'json',
+  },
+);
 if (checkOnly) {
   if (existing !== serialized)
     throw new Error(
