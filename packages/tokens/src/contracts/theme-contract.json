@@ -26,7 +26,18 @@
     "color.theme.status.warning.border",
     "color.theme.status.danger.background",
     "color.theme.status.danger.foreground",
-    "color.theme.status.danger.border"
+    "color.theme.status.danger.border",
+    "color.theme.data.categorical.01",
+    "color.theme.data.categorical.02",
+    "color.theme.data.categorical.03",
+    "color.theme.data.categorical.04",
+    "color.theme.data.categorical.05",
+    "color.theme.data.categorical.06",
+    "color.theme.data.categorical.07",
+    "color.theme.data.categorical.08",
+    "color.theme.data.categorical.09",
+    "color.theme.data.categorical.10",
+    "color.theme.data.categorical.11"
   ],
   "contrastPairs": [
     {

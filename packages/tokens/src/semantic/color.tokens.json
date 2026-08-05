@@ -10,7 +10,7 @@
           "$type": "color",
           "$description": "Primary application canvas.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "surface": {
@@ -18,7 +18,7 @@
           "$type": "color",
           "$description": "Raised or grouped surface.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "subtle": {
@@ -26,7 +26,7 @@
           "$type": "color",
           "$description": "Subtle differentiated region.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "inverse": {
@@ -34,7 +34,7 @@
           "$type": "color",
           "$description": "High-contrast inverse surface.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         }
       },
@@ -44,7 +44,7 @@
           "$type": "color",
           "$description": "Default readable text.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "secondary": {
@@ -52,7 +52,7 @@
           "$type": "color",
           "$description": "Supporting text with AA contrast target.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "disabled": {
@@ -60,7 +60,7 @@
           "$type": "color",
           "$description": "Unavailable content; state must have a non-color cue.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "inverse": {
@@ -68,7 +68,7 @@
           "$type": "color",
           "$description": "Text on inverse surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         }
       },
@@ -78,7 +78,7 @@
           "$type": "color",
           "$description": "Default visible boundary.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         },
         "strong": {
@@ -86,7 +86,7 @@
           "$type": "color",
           "$description": "Emphasized visible boundary.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         }
       },
@@ -96,7 +96,7 @@
           "$type": "color",
           "$description": "Keyboard focus indicator requiring 3:1 adjacent contrast.",
           "$extensions": {
-            "org.interfaceos": { "tier": "semantic", "status": "draft" }
+            "org.interfaceos": { "tier": "semantic", "status": "approved" }
           }
         }
       },
@@ -107,7 +107,7 @@
             "$type": "color",
             "$description": "Primary interactive surface.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "hover": {
@@ -115,7 +115,7 @@
             "$type": "color",
             "$description": "Primary interactive hover surface.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "active": {
@@ -123,7 +123,7 @@
             "$type": "color",
             "$description": "Primary interactive active surface.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "foreground": {
@@ -131,7 +131,7 @@
             "$type": "color",
             "$description": "Content on primary interactive surfaces.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           }
         }
@@ -143,7 +143,7 @@
             "$type": "color",
             "$description": "Success surface; never the only success cue.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "foreground": {
@@ -151,7 +151,7 @@
             "$type": "color",
             "$description": "Success content.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "border": {
@@ -159,7 +159,7 @@
             "$type": "color",
             "$description": "Success boundary.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           }
         },
@@ -169,7 +169,7 @@
             "$type": "color",
             "$description": "Warning surface; never the only warning cue.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "foreground": {
@@ -177,7 +177,7 @@
             "$type": "color",
             "$description": "Warning content.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "border": {
@@ -185,7 +185,7 @@
             "$type": "color",
             "$description": "Warning boundary.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           }
         },
@@ -195,7 +195,7 @@
             "$type": "color",
             "$description": "Danger surface; never the only error cue.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "foreground": {
@@ -203,7 +203,7 @@
             "$type": "color",
             "$description": "Danger content.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           },
           "border": {
@@ -211,7 +211,100 @@
             "$type": "color",
             "$description": "Danger boundary.",
             "$extensions": {
-              "org.interfaceos": { "tier": "semantic", "status": "draft" }
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          }
+        }
+      },
+      "data": {
+        "categorical": {
+          "10": {
+            "$value": "{color.theme.data.categorical.10}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 10; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "11": {
+            "$value": "{color.theme.data.categorical.11}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 11; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "$type": "color",
+          "01": {
+            "$value": "{color.theme.data.categorical.01}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 01; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "02": {
+            "$value": "{color.theme.data.categorical.02}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 02; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "03": {
+            "$value": "{color.theme.data.categorical.03}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 03; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "04": {
+            "$value": "{color.theme.data.categorical.04}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 04; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "05": {
+            "$value": "{color.theme.data.categorical.05}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 05; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "06": {
+            "$value": "{color.theme.data.categorical.06}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 06; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "07": {
+            "$value": "{color.theme.data.categorical.07}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 07; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "08": {
+            "$value": "{color.theme.data.categorical.08}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 08; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
+            }
+          },
+          "09": {
+            "$value": "{color.theme.data.categorical.09}",
+            "$type": "color",
+            "$description": "Theme-aware categorical data series 09; never use color as the only series cue.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "semantic", "status": "approved" }
             }
           }
         }

@@ -532,11 +532,12 @@ const result = {
 };
 
 const checkOnly = process.argv.includes('--check');
+const existing = checkOnly ? await readFile(outputPath, 'utf8') : null;
+if (checkOnly) result.source.gitCommit = JSON.parse(existing).source.gitCommit;
 const serialized = await prettier.format(JSON.stringify(result), {
   parser: 'json',
 });
 if (checkOnly) {
-  const existing = await readFile(outputPath, 'utf8');
   if (existing !== serialized)
     throw new Error(
       `${outputPath} is stale; run pnpm color:candidates:generate.`,

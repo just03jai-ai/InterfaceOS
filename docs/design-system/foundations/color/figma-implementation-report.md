@@ -30,7 +30,7 @@ The approved Primitive, Semantic, Theme, Responsive, and Motion collections are 
 
 ## Provisional scale completion
 
-The [candidate generation method](candidate-generation-method.md) and reproducible [candidate artifact](color-candidates.generated.json) govern the visual palette-completion pass. Generated fills are hardcoded Figma exploration values by design and are never treated as variables or production tokens. Primary mirrors Blue as an alias candidate; Data 01–11 is categorical rather than sequential.
+The [candidate generation method](candidate-generation-method.md) and frozen [approved V1 candidate artifact](color-candidates.approved-v1.json) govern the visual palette-completion evidence. Generated fills were hardcoded Figma exploration values by design and were not variables or production tokens during IOS-003.1. Primary mirrors Blue as an alias candidate; Data 01–11 is categorical rather than sequential.
 
 The completed board contains 111 visible swatches: 32 canonical anchors, 24 generated missing stops, 33 Indigo/Purple/Teal candidates, 11 Primary alias candidates, and 11 Data candidates. The separate [candidate mutation evidence](../../../../evidence/figma/ios-003-1-color-candidates.mutation.json) records node IDs, screenshots, hashes, and post-write boundary checks.
 

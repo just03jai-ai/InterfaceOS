@@ -59,6 +59,7 @@ function baseline(overrides = {}) {
         ['color.theme.background.canvas', black],
       ]),
     },
+    enforceApprovedV1Completeness: false,
     ...overrides,
   };
 }

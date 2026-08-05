@@ -2,21 +2,22 @@
   "$schema": "../../../../schemas/color-foundation-contract.schema.json",
   "schemaVersion": "1.0.0",
   "id": "IOS-FND-COLOR",
-  "milestone": "IOS-003.1",
-  "status": "approved-visual-baseline-pending-token-promotion",
+  "milestone": "IOS-003.2",
+  "status": "canonical-token-promotion-implemented-pending-review",
   "owner": "Jai Singh",
   "canonicalSources": [
     "packages/tokens/src/primitives/color.tokens.json",
+    "packages/tokens/src/primitives/color-data.tokens.json",
     "packages/tokens/src/semantic/color.tokens.json",
     "packages/tokens/src/themes/light.tokens.json",
     "packages/tokens/src/themes/dark.tokens.json",
     "packages/tokens/src/contracts/theme-contract.json"
   ],
   "currentBaseline": {
-    "primitiveCount": 32,
-    "semanticCount": 24,
+    "primitiveCount": 100,
+    "semanticCount": 35,
     "themes": ["light", "dark"],
-    "classification": "canonical-git-baseline-with-approved-figma-visual-extension"
+    "classification": "canonical-color-foundation-v1-promoted-private"
   },
   "primitiveArchitecture": {
     "namingPattern": "color.primitive.{family}.{step}",
@@ -183,6 +184,11 @@
         "name": "muted",
         "coverage": "partial-current",
         "intent": "Lower-emphasis content that still meets its declared contrast obligation."
+      },
+      {
+        "name": "data",
+        "coverage": "current",
+        "intent": "Categorical analytics series 01–11 with redundant labels, shapes, patterns, or a data table."
       }
     ]
   },
@@ -196,7 +202,13 @@
     "duplicate-primitive-values",
     "missing-dark-values",
     "contrast-obligations",
-    "naming-violations"
+    "naming-violations",
+    "full-stop-completeness",
+    "anchor-preservation",
+    "data-namespace-completeness",
+    "candidate-provenance",
+    "deterministic-generation",
+    "figma-token-drift"
   ],
   "approvalState": {
     "visual": "approved",

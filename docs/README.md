@@ -61,6 +61,7 @@ This index is the canonical navigation map. Each subject has one owning document
 - [IOS-001 milestone](roadmap/ios-001-design-foundations.md)
 - [IOS-002 milestone](roadmap/ios-002-figma-variable-execution.md)
 - [IOS-003.1 Color Foundation](roadmap/ios-003-1-color-foundation.md)
+- [IOS-003.2 Color Token Promotion](roadmap/ios-003-2-color-token-promotion.md)
 - [IOS-004 Typography Foundation](roadmap/ios-004-typography-foundation.md)
 - [IOS-003.1 Candidate Color Generation Method](design-system/foundations/color/candidate-generation-method.md)
 - [Evidence model](evidence/evidence-model.md)

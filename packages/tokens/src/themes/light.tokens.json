@@ -10,7 +10,7 @@
           "$type": "color",
           "$description": "Light canvas mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "surface": {
@@ -18,7 +18,7 @@
           "$type": "color",
           "$description": "Light surface mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "subtle": {
@@ -26,7 +26,7 @@
           "$type": "color",
           "$description": "Light subtle background mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "inverse": {
@@ -34,7 +34,7 @@
           "$type": "color",
           "$description": "Light inverse background mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         }
       },
@@ -44,7 +44,7 @@
           "$type": "color",
           "$description": "Light primary text mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "secondary": {
@@ -52,7 +52,7 @@
           "$type": "color",
           "$description": "Light secondary text mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "disabled": {
@@ -60,7 +60,7 @@
           "$type": "color",
           "$description": "Light disabled text mapping; contrast is not a disabled-state conformance claim.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "inverse": {
@@ -68,7 +68,7 @@
           "$type": "color",
           "$description": "Light inverse text mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         }
       },
@@ -78,7 +78,7 @@
           "$type": "color",
           "$description": "Light default border mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         },
         "strong": {
@@ -86,7 +86,7 @@
           "$type": "color",
           "$description": "Light strong border mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         }
       },
@@ -96,7 +96,7 @@
           "$type": "color",
           "$description": "Light focus ring mapping.",
           "$extensions": {
-            "org.interfaceos": { "tier": "theme", "status": "draft" }
+            "org.interfaceos": { "tier": "theme", "status": "approved" }
           }
         }
       },
@@ -107,7 +107,7 @@
             "$type": "color",
             "$description": "Light primary action mapping.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "hover": {
@@ -115,7 +115,7 @@
             "$type": "color",
             "$description": "Light primary hover mapping.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "active": {
@@ -123,7 +123,7 @@
             "$type": "color",
             "$description": "Light primary active mapping.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "foreground": {
@@ -131,7 +131,7 @@
             "$type": "color",
             "$description": "Light primary action content mapping.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           }
         }
@@ -143,7 +143,7 @@
             "$type": "color",
             "$description": "Light success background.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "foreground": {
@@ -151,7 +151,7 @@
             "$type": "color",
             "$description": "Light success foreground.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "border": {
@@ -159,7 +159,7 @@
             "$type": "color",
             "$description": "Light success border.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           }
         },
@@ -169,7 +169,7 @@
             "$type": "color",
             "$description": "Light warning background.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "foreground": {
@@ -177,7 +177,7 @@
             "$type": "color",
             "$description": "Light warning foreground.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "border": {
@@ -185,7 +185,7 @@
             "$type": "color",
             "$description": "Light warning border.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           }
         },
@@ -195,7 +195,7 @@
             "$type": "color",
             "$description": "Light danger background.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "foreground": {
@@ -203,7 +203,7 @@
             "$type": "color",
             "$description": "Light danger foreground.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           },
           "border": {
@@ -211,7 +211,100 @@
             "$type": "color",
             "$description": "Light danger border.",
             "$extensions": {
-              "org.interfaceos": { "tier": "theme", "status": "draft" }
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          }
+        }
+      },
+      "data": {
+        "categorical": {
+          "10": {
+            "$value": "{color.primitive.data.10}",
+            "$type": "color",
+            "$description": "Light categorical data series 10 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "11": {
+            "$value": "{color.primitive.data.11}",
+            "$type": "color",
+            "$description": "Light categorical data series 11 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "$type": "color",
+          "01": {
+            "$value": "{color.primitive.data.01}",
+            "$type": "color",
+            "$description": "Light categorical data series 01 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "02": {
+            "$value": "{color.primitive.data.02}",
+            "$type": "color",
+            "$description": "Light categorical data series 02 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "03": {
+            "$value": "{color.primitive.data.03}",
+            "$type": "color",
+            "$description": "Light categorical data series 03 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "04": {
+            "$value": "{color.primitive.data.04}",
+            "$type": "color",
+            "$description": "Light categorical data series 04 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "05": {
+            "$value": "{color.primitive.data.05}",
+            "$type": "color",
+            "$description": "Light categorical data series 05 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "06": {
+            "$value": "{color.primitive.data.06}",
+            "$type": "color",
+            "$description": "Light categorical data series 06 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "07": {
+            "$value": "{color.primitive.data.07}",
+            "$type": "color",
+            "$description": "Light categorical data series 07 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "08": {
+            "$value": "{color.primitive.data.08}",
+            "$type": "color",
+            "$description": "Light categorical data series 08 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
+            }
+          },
+          "09": {
+            "$value": "{color.primitive.data.09}",
+            "$type": "color",
+            "$description": "Light categorical data series 09 mapping.",
+            "$extensions": {
+              "org.interfaceos": { "tier": "theme", "status": "approved" }
             }
           }
         }

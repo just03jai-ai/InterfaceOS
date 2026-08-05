@@ -9,6 +9,7 @@ import {
   canonicalBatchProjection,
   PLAN_PATH,
   renderPrimitiveColorTable,
+  SNAPSHOT_PATH,
   SOURCE_PATH,
   TABLE_PATH,
 } from '../scripts/lib/figma-variable-batch-1.mjs';
@@ -18,7 +19,7 @@ const [schema, plan, source] = await Promise.all([
     JSON.parse,
   ),
   readFile(PLAN_PATH, 'utf8').then(JSON.parse),
-  readFile(SOURCE_PATH, 'utf8').then(JSON.parse),
+  readFile(SNAPSHOT_PATH, 'utf8').then(JSON.parse),
 ]);
 const canonicalEntries = flattenDocument(source, SOURCE_PATH);
 const executionEntries = plan.tasks.primitiveColors.entries;

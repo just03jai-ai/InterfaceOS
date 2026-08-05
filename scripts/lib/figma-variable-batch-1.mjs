@@ -7,6 +7,8 @@ import {
 } from '../../packages/tokens/lib/token-core.mjs';
 
 export const SOURCE_PATH = 'packages/tokens/src/primitives/color.tokens.json';
+export const SNAPSHOT_PATH =
+  'evidence/snapshots/ios-003-1-canonical-color.tokens.json';
 export const PLAN_PATH =
   'evidence/figma/ios-002-batch-1.variable-execution.json';
 export const TABLE_PATH =
@@ -164,7 +166,7 @@ const collections = [
 }));
 
 export async function buildBatchOnePlan(root = process.cwd()) {
-  const sourceFile = path.join(root, SOURCE_PATH);
+  const sourceFile = path.join(root, SNAPSHOT_PATH);
   const sourceText = await readFile(sourceFile, 'utf8');
   const document = JSON.parse(sourceText);
   const tokens = flattenDocument(document, SOURCE_PATH).sort((a, b) =>

@@ -4,7 +4,7 @@
   "name": "Light and dark theme foundation",
   "type": "foundation",
   "status": "implementation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "owner": "Jai Singh",
   "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
   "figmaNodeId": null,
@@ -28,8 +28,8 @@
       "approvalStatus": "in-review"
     },
     "drift": {
-      "status": "not-assessed",
-      "lastCheckedDate": null,
+      "status": "changed",
+      "lastCheckedDate": "2026-08-05",
       "resolutionOwner": "Jai Singh"
     }
   },
@@ -47,6 +47,8 @@
   "relatedItems": [],
   "evidenceLinks": [
     "packages/tokens/src/contracts/theme-contract.json",
-    "docs/design-system/tokens/figma-mapping.md"
+    "docs/design-system/tokens/figma-mapping.md",
+    "docs/design-system/foundations/color/color-token-promotion.manifest.json",
+    "evidence/figma/ios-003-2-color-token-reconciliation.json"
   ]
 }

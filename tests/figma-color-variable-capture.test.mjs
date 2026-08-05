@@ -13,9 +13,10 @@ const [schema, capture, primitive, semantic, light, dark] = await Promise.all([
     'evidence/figma/ios-003-1-color-variables.capture.json',
     'utf8',
   ).then(JSON.parse),
-  readFile('packages/tokens/src/primitives/color.tokens.json', 'utf8').then(
-    JSON.parse,
-  ),
+  readFile(
+    'evidence/snapshots/ios-003-1-canonical-color.tokens.json',
+    'utf8',
+  ).then(JSON.parse),
   readFile('packages/tokens/src/semantic/color.tokens.json', 'utf8').then(
     JSON.parse,
   ),
@@ -41,10 +42,12 @@ test('captured primitive, semantic, and theme names exactly match canonical sour
     .sort();
   const expectedSemantic = flattenDocument(semantic)
     .map(({ name }) => name)
+    .filter((name) => !name.startsWith('color.semantic.data.'))
     .sort();
   const expectedTheme = flattenDocument(light)
     .filter(({ name }) => name.startsWith('color.theme.'))
     .map(({ name }) => name)
+    .filter((name) => !name.startsWith('color.theme.data.'))
     .sort();
   assert.deepEqual(
     capture.primitiveVariables

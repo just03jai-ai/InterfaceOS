@@ -58,10 +58,16 @@ for (const theme of contract.themes) {
   if (result.resolved) resolvedByMode[theme] = result.resolved;
 }
 
-const primitiveColorEntries = flattenDocument(
-  await readJson(path.join(sourceRoot, 'primitives/color.tokens.json')),
-  'packages/tokens/src/primitives/color.tokens.json',
-);
+const primitiveColorEntries = [
+  ...flattenDocument(
+    await readJson(path.join(sourceRoot, 'primitives/color.tokens.json')),
+    'packages/tokens/src/primitives/color.tokens.json',
+  ),
+  ...flattenDocument(
+    await readJson(path.join(sourceRoot, 'primitives/color-data.tokens.json')),
+    'packages/tokens/src/primitives/color-data.tokens.json',
+  ),
+];
 const semanticColorEntries = flattenDocument(
   await readJson(path.join(sourceRoot, 'semantic/color.tokens.json')),
   'packages/tokens/src/semantic/color.tokens.json',

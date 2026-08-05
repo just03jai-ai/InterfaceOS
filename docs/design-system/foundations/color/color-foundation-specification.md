@@ -1,9 +1,13 @@
 # InterfaceOS Color Foundation Specification
 
-Status: Color Foundation V1 visual baseline approved; token promotion and public release pending  
-Milestone: IOS-003.1  
-Evidence ID: `IOS-FND-COLOR`  
-Owner: Jai Singh (interim Design System Owner)  
+Status: Color Foundation V1 promoted to canonical Git tokens; Figma reconciliation and public release pending
+
+Milestone: IOS-003.2
+
+Evidence ID: `IOS-FND-COLOR`
+
+Owner: Jai Singh (interim Design System Owner)
+
 Machine-readable contract: [`color-foundation.contract.json`](color-foundation.contract.json)
 External reference assessment: [`framepad-reference-assessment.md`](framepad-reference-assessment.md)
 
@@ -11,7 +15,7 @@ External reference assessment: [`framepad-reference-assessment.md`](framepad-ref
 
 InterfaceOS color exists to preserve meaning, hierarchy, operability, and trust across dense enterprise experiences. It is not a decoration layer or a fixed brand palette. Consumers choose stable semantic intent; themes provide reviewed values; primitives remain implementation material rather than a product API.
 
-The current canonical Git sources contain 32 primitives, 24 semantic aliases, and complete Light/Dark mappings. Their names and values remain unchanged in IOS-003.1. ADR-0006 approves the expanded Figma visual baseline; Figma-only values remain pending governed token promotion and are not canonical runtime tokens by implication.
+The canonical Git sources now contain 100 color primitives: 89 approved hue-family stops and 11 categorical data tokens. They also contain 35 semantic aliases and 35 complete Theme mappings in each Light/Dark resolver context. IOS-003.2 derives every promoted value from the frozen IOS-003.1 approval artifact, preserves all 32 previous anchors exactly, and keeps the Figma library private while its 90 missing variable representations await authenticated reconciliation.
 
 ## Objectives
 
@@ -76,7 +80,7 @@ flowchart TD
 
 Use perceptually reviewed families with predictable progression, not mathematically even RGB interpolation. Each approved scale must demonstrate capability for subtle surfaces, interactive surfaces, boundaries, solid emphasis, readable foregrounds, and Light/Dark theme mapping. Luminance progression, chroma behavior, hue drift, adjacent-step distinction, and gamut clipping must be documented.
 
-Recommended future chromatic stops are `50`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, and `950`. Neutral may also retain the existing `0` endpoint. These are names and ordering anchors, not color values. Existing partial scales remain unchanged until a later approved token proposal determines whether missing stops are necessary.
+Approved V1 chromatic stops are `50`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, and `950`. Neutral also retains the `0` endpoint. These are ordering anchors, not semantic usage guarantees. Data 01–11 uses the separate `color.primitive.data.{01-11}` namespace and is not a hue or lightness scale.
 
 ### Candidate families
 
@@ -94,7 +98,7 @@ Recommended future chromatic stops are `50`, `100`, `200`, `300`, `400`, `500`, 
 | Yellow  | Not selected for V1  | Future evaluation only                                                        | Yellow is not presumed readable with light text.       |
 | Pink    | Not selected for V1  | Future evaluation only                                                        | Pink is not a default marketing accent.                |
 
-The existing `amber` family is preserved as Warning for V1. Orange, Yellow, and Pink remain outside the approved V1 baseline. No canonical rename, split, or token addition occurs in IOS-003.1; approved additions move through the token-promotion proposal.
+The existing `amber` family is preserved as Warning for V1. Orange, Yellow, and Pink remain outside the approved V1 baseline. IOS-003.2 adds only approved missing stops, Indigo, Purple, Teal, and Data 01–11; it introduces no family beyond the signed IOS-003.1 evidence.
 
 ### Stop responsibilities
 

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/color-token-promotion.schema.json",
+  "title": "InterfaceOS Color Token Promotion Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "id",
+    "milestone",
+    "status",
+    "owner",
+    "source",
+    "counts",
+    "retainedAnchors",
+    "promotedStops",
+    "primaryAlias",
+    "dataArchitecture",
+    "controls"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-003.2-COLOR-TOKEN-PROMOTION" },
+    "milestone": { "const": "IOS-003.2" },
+    "status": { "const": "implemented-pending-human-review" },
+    "owner": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approval",
+        "approvedPalette",
+        "approvedPaletteSha256",
+        "frozenCanonicalBaseline",
+        "frozenCanonicalSha256"
+      ],
+      "properties": {
+        "approval": { "type": "string" },
+        "approvedPalette": { "type": "string" },
+        "approvedPaletteSha256": { "$ref": "#/$defs/sha256" },
+        "frozenCanonicalBaseline": { "type": "string" },
+        "frozenCanonicalSha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "retainedAnchors",
+        "promotedHueStops",
+        "primitiveHueTokens",
+        "dataTokens",
+        "dataAliases",
+        "dataDirectValues",
+        "semanticDataTokens",
+        "themeDataMappingsPerMode"
+      ],
+      "properties": {
+        "retainedAnchors": { "const": 32 },
+        "promotedHueStops": { "const": 57 },
+        "primitiveHueTokens": { "const": 89 },
+        "dataTokens": { "const": 11 },
+        "dataAliases": { "const": 8 },
+        "dataDirectValues": { "const": 3 },
+        "semanticDataTokens": { "const": 11 },
+        "themeDataMappingsPerMode": { "const": 11 }
+      }
+    },
+    "retainedAnchors": {
+      "type": "array",
+      "minItems": 32,
+      "maxItems": 32,
+      "items": { "$ref": "#/$defs/tokenHex" }
+    },
+    "promotedStops": {
+      "type": "array",
+      "minItems": 57,
+      "maxItems": 57,
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/tokenHex" },
+          {
+            "type": "object",
+            "required": ["evidenceId"],
+            "properties": {
+              "evidenceId": { "type": "string", "pattern": "^IOS-FND-COLOR" }
+            }
+          }
+        ]
+      }
+    },
+    "primaryAlias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primitiveFamilyCreated",
+        "sourceFamily",
+        "existingThemeMappings"
+      ],
+      "properties": {
+        "primitiveFamilyCreated": { "const": false },
+        "sourceFamily": { "const": "color.primitive.blue" },
+        "existingThemeMappings": { "type": "object" }
+      }
+    },
+    "dataArchitecture": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["token", "value", "semantic", "theme"],
+        "properties": {
+          "token": {
+            "type": "string",
+            "pattern": "^color\\.primitive\\.data\\.(?:0[1-9]|1[01])$"
+          },
+          "value": { "type": "string" },
+          "semantic": { "type": "string" },
+          "theme": { "type": "string" }
+        }
+      }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approvedValuesChanged",
+        "existingAnchorValuesChanged",
+        "duplicatePrimaryPrimitiveCreated",
+        "libraryPublished",
+        "accessibilitySpecialistApproval",
+        "independentPublicReleaseApproval"
+      ],
+      "properties": {
+        "approvedValuesChanged": { "const": false },
+        "existingAnchorValuesChanged": { "const": false },
+        "duplicatePrimaryPrimitiveCreated": { "const": false },
+        "libraryPublished": { "const": false },
+        "accessibilitySpecialistApproval": { "const": "pending" },
+        "independentPublicReleaseApproval": { "const": "pending" }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "tokenHex": {
+      "type": "object",
+      "required": ["token", "hex"],
+      "properties": {
+        "token": { "type": "string", "pattern": "^color\\.primitive\\." },
+        "hex": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+      }
+    }
+  }
+}

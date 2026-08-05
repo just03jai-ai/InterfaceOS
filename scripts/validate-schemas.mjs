@@ -52,6 +52,12 @@ const figmaColorCandidateMutationSchema = ajv.getSchema(
 const colorFoundationApprovalSchema = ajv.getSchema(
   'https://interfaceos.dev/schemas/color-foundation-approval.schema.json',
 );
+const colorTokenPromotionSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/color-token-promotion.schema.json',
+);
+const figmaColorTokenReconciliationSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-color-token-reconciliation.schema.json',
+);
 const example = JSON.parse(
   await readFile(
     path.join(schemasDir, 'examples/evidence-manifest.example.json'),
@@ -166,7 +172,7 @@ if (!figmaColorVariableCaptureSchema?.(figmaColorVariableCapture)) {
 
 const colorCandidatePalettePath = path.join(
   root,
-  'docs/design-system/foundations/color/color-candidates.generated.json',
+  'docs/design-system/foundations/color/color-candidates.approved-v1.json',
 );
 const colorCandidatePalette = JSON.parse(
   await readFile(colorCandidatePalettePath, 'utf8'),
@@ -174,6 +180,48 @@ const colorCandidatePalette = JSON.parse(
 if (!colorCandidatePaletteSchema?.(colorCandidatePalette)) {
   throw new Error(
     `Color candidate palette is invalid: ${ajv.errorsText(colorCandidatePaletteSchema?.errors)}`,
+  );
+}
+
+const currentColorCandidatePalette = JSON.parse(
+  await readFile(
+    path.join(
+      root,
+      'docs/design-system/foundations/color/color-candidates.generated.json',
+    ),
+    'utf8',
+  ),
+);
+if (!colorCandidatePaletteSchema?.(currentColorCandidatePalette)) {
+  throw new Error(
+    `Current color candidate projection is invalid: ${ajv.errorsText(colorCandidatePaletteSchema?.errors)}`,
+  );
+}
+
+const colorTokenPromotion = JSON.parse(
+  await readFile(
+    path.join(
+      root,
+      'docs/design-system/foundations/color/color-token-promotion.manifest.json',
+    ),
+    'utf8',
+  ),
+);
+if (!colorTokenPromotionSchema?.(colorTokenPromotion)) {
+  throw new Error(
+    `Color token promotion manifest is invalid: ${ajv.errorsText(colorTokenPromotionSchema?.errors)}`,
+  );
+}
+
+const figmaColorTokenReconciliation = JSON.parse(
+  await readFile(
+    path.join(root, 'evidence/figma/ios-003-2-color-token-reconciliation.json'),
+    'utf8',
+  ),
+);
+if (!figmaColorTokenReconciliationSchema?.(figmaColorTokenReconciliation)) {
+  throw new Error(
+    `Figma color token reconciliation is invalid: ${ajv.errorsText(figmaColorTokenReconciliationSchema?.errors)}`,
   );
 }
 
@@ -205,10 +253,12 @@ if (!colorFoundationApprovalSchema?.(colorFoundationApproval)) {
 
 const evidenceFiles = (await findJsonFiles(path.join(root, 'evidence'))).filter(
   (file) =>
+    !file.includes(`${path.sep}snapshots${path.sep}`) &&
     !file.endsWith('.architecture.json') &&
     !file.endsWith('.variable-execution.json') &&
     !file.endsWith('.mutation.json') &&
     !file.endsWith('.capture.json') &&
+    !file.endsWith('-reconciliation.json') &&
     file !== colorFoundationApprovalPath,
 );
 const manifests = [];
@@ -275,6 +325,10 @@ assertNoFakeCapturedValues(
   figmaColorCandidateMutation,
   'Figma color candidate mutation evidence',
 );
+assertNoFakeCapturedValues(
+  figmaColorTokenReconciliation,
+  'Figma color token reconciliation',
+);
 
 for (const page of figmaArchitecture.pages) {
   for (const item of page.items) {
@@ -300,5 +354,5 @@ for (const page of figmaArchitecture.pages) {
 }
 
 console.log(
-  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003.1 color foundation contract, the external color reference assessment, the Figma Color Foundation blueprint, the Figma Color Foundation mutation record, the Figma color variable capture, the provisional color candidate palette, its Figma mutation evidence, and the Color Foundation V1 approval record.`,
+  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003.2 color foundation contract, the external color reference assessment, the Figma Color Foundation blueprint, the Figma Color Foundation mutation record, the Figma color variable capture, the frozen and current color candidate palettes, the IOS-003.2 promotion manifest and Figma reconciliation plan, the IOS-003.1 Figma mutation evidence, and the Color Foundation V1 approval record.`,
 );

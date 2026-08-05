@@ -3,8 +3,8 @@
   "id": "IOS-FND-COLOR",
   "name": "Color foundation",
   "type": "foundation",
-  "status": "approval",
-  "version": "1.0.0",
+  "status": "implementation",
+  "version": "1.1.0",
   "owner": "Jai Singh",
   "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=26-14",
   "figmaNodeId": "26:14",
@@ -159,7 +159,7 @@
     "review": {
       "date": "2026-08-05",
       "reviewer": "Jai Singh — Interim Design System Owner",
-      "approvalStatus": "approved"
+      "approvalStatus": "in-review"
     },
     "drift": {
       "status": "changed",
@@ -171,8 +171,8 @@
   "codePath": "packages/tokens/src/primitives/color.tokens.json",
   "storybookPath": null,
   "aiMetadataPath": null,
-  "accessibilityStatus": "passed",
-  "reviewStatus": "approved",
+  "accessibilityStatus": "in-progress",
+  "reviewStatus": "in-review",
   "lastReviewedDate": "2026-08-05",
   "dependencies": [
     {
@@ -202,7 +202,7 @@
     "docs/roadmap/ios-003-1-color-foundation.md",
     "evidence/figma/ios-003-1-color-variables.capture.json",
     "docs/design-system/foundations/color/candidate-generation-method.md",
-    "docs/design-system/foundations/color/color-candidates.generated.json",
+    "docs/design-system/foundations/color/color-candidates.approved-v1.json",
     "evidence/figma/ios-003-1-color-candidates.mutation.json",
     "evidence/screenshots/ios-003-1/primitive-families.png",
     "evidence/screenshots/ios-003-1/semantic-colors.png",
@@ -227,6 +227,13 @@
     "docs/decisions/0006-color-foundation-v1-visual-baseline.md",
     "evidence/reviews/IOS-003-1-COLOR-FOUNDATION-APPROVAL.json",
     "docs/design-system/foundations/color/token-promotion-proposal.md",
+    "docs/design-system/foundations/color/color-token-promotion.manifest.json",
+    "packages/tokens/src/primitives/color-data.tokens.json",
+    "evidence/snapshots/ios-003-1-canonical-color.tokens.json",
+    "evidence/figma/ios-003-2-color-token-reconciliation.json",
+    "docs/design-system/figma/ios-003-2-color-token-reconciliation.md",
+    "scripts/promote-color-foundation-v1.mjs",
+    "scripts/generate-figma-color-token-reconciliation.mjs",
     "evidence/screenshots/ios-003-1/decision-log-approved.png",
     "evidence/screenshots/ios-003-1/review-approval-approved.png"
   ]

@@ -1,0 +1,438 @@
+{
+  "$schema": "../../../../schemas/color-token-promotion.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-003.2-COLOR-TOKEN-PROMOTION",
+  "milestone": "IOS-003.2",
+  "status": "implemented-pending-human-review",
+  "owner": "Jai Singh",
+  "source": {
+    "approval": "evidence/reviews/IOS-003-1-COLOR-FOUNDATION-APPROVAL.json",
+    "approvedPalette": "docs/design-system/foundations/color/color-candidates.approved-v1.json",
+    "approvedPaletteSha256": "683f7fabbdf27824d4ffc03f3bcd7d6e66a69067b1826c3b4ff271df2fad6517",
+    "frozenCanonicalBaseline": "evidence/snapshots/ios-003-1-canonical-color.tokens.json",
+    "frozenCanonicalSha256": "9545fd4fe5d7694995bc6adb774f370b7bfb30f16bf6248cebb417f3b93d98f9"
+  },
+  "counts": {
+    "retainedAnchors": 32,
+    "promotedHueStops": 57,
+    "primitiveHueTokens": 89,
+    "dataTokens": 11,
+    "dataAliases": 8,
+    "dataDirectValues": 3,
+    "semanticDataTokens": 11,
+    "themeDataMappingsPerMode": 11
+  },
+  "retainedAnchors": [
+    { "token": "color.primitive.neutral.0", "hex": "#ffffff" },
+    { "token": "color.primitive.neutral.50", "hex": "#f7f8fa" },
+    { "token": "color.primitive.neutral.100", "hex": "#eceef2" },
+    { "token": "color.primitive.neutral.200", "hex": "#dadde3" },
+    { "token": "color.primitive.neutral.300", "hex": "#c9cdd5" },
+    { "token": "color.primitive.neutral.500", "hex": "#737985" },
+    { "token": "color.primitive.neutral.700", "hex": "#464b55" },
+    { "token": "color.primitive.neutral.800", "hex": "#30343c" },
+    { "token": "color.primitive.neutral.900", "hex": "#1e2127" },
+    { "token": "color.primitive.neutral.950", "hex": "#15171c" },
+    { "token": "color.primitive.blue.50", "hex": "#eff4ff" },
+    { "token": "color.primitive.blue.200", "hex": "#bdd1ff" },
+    { "token": "color.primitive.blue.400", "hex": "#5986ed" },
+    { "token": "color.primitive.blue.600", "hex": "#2d64d7" },
+    { "token": "color.primitive.blue.700", "hex": "#2457d6" },
+    { "token": "color.primitive.blue.800", "hex": "#1b43ab" },
+    { "token": "color.primitive.blue.900", "hex": "#15317d" },
+    { "token": "color.primitive.green.50", "hex": "#ecfbf2" },
+    { "token": "color.primitive.green.200", "hex": "#9ce5b9" },
+    { "token": "color.primitive.green.600", "hex": "#158547" },
+    { "token": "color.primitive.green.800", "hex": "#09522a" },
+    { "token": "color.primitive.green.950", "hex": "#041f11" },
+    { "token": "color.primitive.amber.50", "hex": "#fff8e5" },
+    { "token": "color.primitive.amber.200", "hex": "#fed466" },
+    { "token": "color.primitive.amber.600", "hex": "#b76f04" },
+    { "token": "color.primitive.amber.800", "hex": "#673c02" },
+    { "token": "color.primitive.amber.950", "hex": "#261500" },
+    { "token": "color.primitive.red.50", "hex": "#fff2f2" },
+    { "token": "color.primitive.red.200", "hex": "#ffb3b3" },
+    { "token": "color.primitive.red.600", "hex": "#c81f27" },
+    { "token": "color.primitive.red.800", "hex": "#7a0f15" },
+    { "token": "color.primitive.red.950", "hex": "#2e0508" }
+  ],
+  "promotedStops": [
+    {
+      "token": "color.primitive.neutral.400",
+      "hex": "#9DA2AC",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-NEUTRAL-400"
+    },
+    {
+      "token": "color.primitive.neutral.600",
+      "hex": "#5C626D",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-NEUTRAL-600"
+    },
+    {
+      "token": "color.primitive.blue.100",
+      "hex": "#D6E3FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-BLUE-100"
+    },
+    {
+      "token": "color.primitive.blue.300",
+      "hex": "#8BACF7",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-BLUE-300"
+    },
+    {
+      "token": "color.primitive.blue.500",
+      "hex": "#4475E2",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-BLUE-500"
+    },
+    {
+      "token": "color.primitive.blue.950",
+      "hex": "#09183F",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-BLUE-950"
+    },
+    {
+      "token": "color.primitive.green.100",
+      "hex": "#C5F0D6",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-GREEN-100"
+    },
+    {
+      "token": "color.primitive.green.300",
+      "hex": "#7DCC9C",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-GREEN-300"
+    },
+    {
+      "token": "color.primitive.green.400",
+      "hex": "#5FB47F",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-GREEN-400"
+    },
+    {
+      "token": "color.primitive.green.500",
+      "hex": "#3E9C63",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-GREEN-500"
+    },
+    {
+      "token": "color.primitive.green.700",
+      "hex": "#0F6B38",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-GREEN-700"
+    },
+    {
+      "token": "color.primitive.green.900",
+      "hex": "#05381E",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-GREEN-900"
+    },
+    {
+      "token": "color.primitive.amber.100",
+      "hex": "#FEE7AA",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-AMBER-100"
+    },
+    {
+      "token": "color.primitive.amber.300",
+      "hex": "#EDBA4F",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-AMBER-300"
+    },
+    {
+      "token": "color.primitive.amber.400",
+      "hex": "#DCA039",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-AMBER-400"
+    },
+    {
+      "token": "color.primitive.amber.500",
+      "hex": "#CA8722",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-AMBER-500"
+    },
+    {
+      "token": "color.primitive.amber.700",
+      "hex": "#8E5503",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-AMBER-700"
+    },
+    {
+      "token": "color.primitive.amber.900",
+      "hex": "#452800",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-AMBER-900"
+    },
+    {
+      "token": "color.primitive.red.100",
+      "hex": "#FFD3D3",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-RED-100"
+    },
+    {
+      "token": "color.primitive.red.300",
+      "hex": "#F39392",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-RED-300"
+    },
+    {
+      "token": "color.primitive.red.400",
+      "hex": "#E67270",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-RED-400"
+    },
+    {
+      "token": "color.primitive.red.500",
+      "hex": "#D84E4E",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-RED-500"
+    },
+    {
+      "token": "color.primitive.red.700",
+      "hex": "#A0171E",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-RED-700"
+    },
+    {
+      "token": "color.primitive.red.900",
+      "hex": "#520A10",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-RED-900"
+    },
+    {
+      "token": "color.primitive.indigo.50",
+      "hex": "#F4F5FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-50"
+    },
+    {
+      "token": "color.primitive.indigo.100",
+      "hex": "#E7E9FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-100"
+    },
+    {
+      "token": "color.primitive.indigo.200",
+      "hex": "#D2D5FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-200"
+    },
+    {
+      "token": "color.primitive.indigo.300",
+      "hex": "#B6BAFF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-300"
+    },
+    {
+      "token": "color.primitive.indigo.400",
+      "hex": "#9797FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-400"
+    },
+    {
+      "token": "color.primitive.indigo.500",
+      "hex": "#7B72F9",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-500"
+    },
+    {
+      "token": "color.primitive.indigo.600",
+      "hex": "#6556E3",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-600"
+    },
+    {
+      "token": "color.primitive.indigo.700",
+      "hex": "#5242C1",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-700"
+    },
+    {
+      "token": "color.primitive.indigo.800",
+      "hex": "#3F3399",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-800"
+    },
+    {
+      "token": "color.primitive.indigo.900",
+      "hex": "#2E266E",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-900"
+    },
+    {
+      "token": "color.primitive.indigo.950",
+      "hex": "#18153B",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-INDIGO-950"
+    },
+    {
+      "token": "color.primitive.purple.50",
+      "hex": "#FAF4FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-50"
+    },
+    {
+      "token": "color.primitive.purple.100",
+      "hex": "#F3E5FF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-100"
+    },
+    {
+      "token": "color.primitive.purple.200",
+      "hex": "#E9CEFF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-200"
+    },
+    {
+      "token": "color.primitive.purple.300",
+      "hex": "#DBABFF",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-300"
+    },
+    {
+      "token": "color.primitive.purple.400",
+      "hex": "#C886F6",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-400"
+    },
+    {
+      "token": "color.primitive.purple.500",
+      "hex": "#B362E6",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-500"
+    },
+    {
+      "token": "color.primitive.purple.600",
+      "hex": "#9A46CD",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-600"
+    },
+    {
+      "token": "color.primitive.purple.700",
+      "hex": "#7F32AD",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-700"
+    },
+    {
+      "token": "color.primitive.purple.800",
+      "hex": "#632488",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-800"
+    },
+    {
+      "token": "color.primitive.purple.900",
+      "hex": "#471B61",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-900"
+    },
+    {
+      "token": "color.primitive.purple.950",
+      "hex": "#261034",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-PURPLE-950"
+    },
+    {
+      "token": "color.primitive.teal.50",
+      "hex": "#EAFBF9",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-50"
+    },
+    {
+      "token": "color.primitive.teal.100",
+      "hex": "#D3F5F2",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-100"
+    },
+    {
+      "token": "color.primitive.teal.200",
+      "hex": "#A8EBE6",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-200"
+    },
+    {
+      "token": "color.primitive.teal.300",
+      "hex": "#6FDBD4",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-300"
+    },
+    {
+      "token": "color.primitive.teal.400",
+      "hex": "#1BC5BE",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-400"
+    },
+    {
+      "token": "color.primitive.teal.500",
+      "hex": "#00A8A2",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-500"
+    },
+    {
+      "token": "color.primitive.teal.600",
+      "hex": "#008B86",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-600"
+    },
+    {
+      "token": "color.primitive.teal.700",
+      "hex": "#00716D",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-700"
+    },
+    {
+      "token": "color.primitive.teal.800",
+      "hex": "#005854",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-800"
+    },
+    {
+      "token": "color.primitive.teal.900",
+      "hex": "#00403D",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-900"
+    },
+    {
+      "token": "color.primitive.teal.950",
+      "hex": "#002321",
+      "evidenceId": "IOS-FND-COLOR-CANDIDATE-TEAL-950"
+    }
+  ],
+  "primaryAlias": {
+    "primitiveFamilyCreated": false,
+    "sourceFamily": "color.primitive.blue",
+    "existingThemeMappings": {
+      "light": {
+        "default": "color.primitive.blue.700",
+        "hover": "color.primitive.blue.800",
+        "active": "color.primitive.blue.900"
+      },
+      "dark": {
+        "default": "color.primitive.blue.400",
+        "hover": "color.primitive.blue.200",
+        "active": "color.primitive.blue.50"
+      }
+    }
+  },
+  "dataArchitecture": [
+    {
+      "token": "color.primitive.data.01",
+      "value": "{color.primitive.blue.600}",
+      "semantic": "color.semantic.data.categorical.01",
+      "theme": "color.theme.data.categorical.01"
+    },
+    {
+      "token": "color.primitive.data.02",
+      "value": "{color.primitive.amber.600}",
+      "semantic": "color.semantic.data.categorical.02",
+      "theme": "color.theme.data.categorical.02"
+    },
+    {
+      "token": "color.primitive.data.03",
+      "value": "{color.primitive.purple.600}",
+      "semantic": "color.semantic.data.categorical.03",
+      "theme": "color.theme.data.categorical.03"
+    },
+    {
+      "token": "color.primitive.data.04",
+      "value": "{color.primitive.green.700}",
+      "semantic": "color.semantic.data.categorical.04",
+      "theme": "color.theme.data.categorical.04"
+    },
+    {
+      "token": "color.primitive.data.05",
+      "value": "{color.primitive.indigo.500}",
+      "semantic": "color.semantic.data.categorical.05",
+      "theme": "color.theme.data.categorical.05"
+    },
+    {
+      "token": "color.primitive.data.06",
+      "value": "{color.primitive.red.600}",
+      "semantic": "color.semantic.data.categorical.06",
+      "theme": "color.theme.data.categorical.06"
+    },
+    {
+      "token": "color.primitive.data.07",
+      "value": "{color.primitive.teal.500}",
+      "semantic": "color.semantic.data.categorical.07",
+      "theme": "color.theme.data.categorical.07"
+    },
+    {
+      "token": "color.primitive.data.08",
+      "value": "#D03765",
+      "semantic": "color.semantic.data.categorical.08",
+      "theme": "color.theme.data.categorical.08"
+    },
+    {
+      "token": "color.primitive.data.09",
+      "value": "#1FACCE",
+      "semantic": "color.semantic.data.categorical.09",
+      "theme": "color.theme.data.categorical.09"
+    },
+    {
+      "token": "color.primitive.data.10",
+      "value": "#8FB43F",
+      "semantic": "color.semantic.data.categorical.10",
+      "theme": "color.theme.data.categorical.10"
+    },
+    {
+      "token": "color.primitive.data.11",
+      "value": "{color.primitive.neutral.500}",
+      "semantic": "color.semantic.data.categorical.11",
+      "theme": "color.theme.data.categorical.11"
+    }
+  ],
+  "controls": {
+    "approvedValuesChanged": false,
+    "existingAnchorValuesChanged": false,
+    "duplicatePrimaryPrimitiveCreated": false,
+    "libraryPublished": false,
+    "accessibilitySpecialistApproval": "pending",
+    "independentPublicReleaseApproval": "pending"
+  }
+}

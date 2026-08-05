@@ -15,7 +15,7 @@
     "worktreeState": "dirty-uncommitted",
     "canonicalPath": "packages/tokens/src/primitives/color.tokens.json",
     "canonicalSha256": "9545fd4fe5d7694995bc6adb774f370b7bfb30f16bf6248cebb417f3b93d98f9",
-    "candidatePath": "docs/design-system/foundations/color/color-candidates.generated.json",
+    "candidatePath": "docs/design-system/foundations/color/color-candidates.approved-v1.json",
     "candidateSha256": "683f7fabbdf27824d4ffc03f3bcd7d6e66a69067b1826c3b4ff271df2fad6517"
   },
   "file": {
