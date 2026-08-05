@@ -4,7 +4,7 @@ InterfaceOS is an AI-native Design Intelligence Platform connecting visual desig
 
 ## Project status
 
-The repository is in **IOS-003.1 Color Foundation V1 approved; token promotion pending** status. The Figma visual baseline, Light and Dark themes, semantic systems, enterprise dashboard use, chart palette, and V1 accessibility review are approved. Canonical token values remain unchanged until the governed [token promotion proposal](docs/design-system/foundations/color/token-promotion-proposal.md) is approved and executed. The Figma library is private and unpublished; no UI component or public release is claimed. Next: [IOS-004 — Typography Foundation](docs/roadmap/ios-004-typography-foundation.md).
+The repository is in **IOS-002 Batch 1 prepared** status. IOS-001 Stage 2 architecture and governance are merged, and the schema-backed access, five-collection shell, and 32 primitive-color execution plan is ready for manual Figma work. No Figma mutation is claimed: real IDs, screenshots, permissions, drift review, engineering review, accessibility review, and release approval remain pending. No UI components or product application have been implemented. See [IOS-002 — Figma Variable Execution](docs/roadmap/ios-002-figma-variable-execution.md).
 
 ## Sources of truth
 

@@ -36,19 +36,9 @@
         "registeredDate": { "type": "string", "format": "date" },
         "owner": { "type": "string", "minLength": 1 },
         "status": {
-          "enum": [
-            "IOS-002 Batch 1 prepared; human Figma execution pending",
-            "IOS-003.1 Color Foundation implemented; human review pending",
-            "IOS-003.1 Color Foundation V1 visual baseline approved; token promotion pending"
-          ]
+          "const": "IOS-002 Batch 1 prepared; human Figma execution pending"
         },
-        "phase": {
-          "enum": [
-            "IOS-002 Batch 1 prepared",
-            "IOS-003.1 implementation",
-            "IOS-003.1 approved"
-          ]
-        },
+        "phase": { "const": "IOS-002 Batch 1 prepared" },
         "fileKey": { "$ref": "#/$defs/externalString" },
         "libraryKey": { "$ref": "#/$defs/externalString" },
         "accessPolicy": { "$ref": "#/$defs/externalString" }
@@ -71,7 +61,6 @@
         "generatedDistributionPolicy",
         "temporaryReviewRoles",
         "pendingSpecialistReviews",
-        "specialistReviewPolicy",
         "openDecisions"
       ],
       "properties": {
@@ -157,12 +146,10 @@
         },
         "pendingSpecialistReviews": {
           "type": "array",
+          "minItems": 2,
           "maxItems": 2,
           "uniqueItems": true,
           "items": { "enum": ["engineering", "accessibility"] }
-        },
-        "specialistReviewPolicy": {
-          "const": "accessibility-audit-non-blocking-for-foundation-v1-required-before-public-release"
         },
         "openDecisions": {
           "type": "array",
@@ -218,15 +205,7 @@
     "collectionDecision": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "name",
-        "authoredModes",
-        "implementationStatus",
-        "collectionId",
-        "storageModes",
-        "colorVariableCount",
-        "publishingState"
-      ],
+      "required": ["name", "authoredModes", "implementationStatus"],
       "properties": {
         "name": {
           "enum": ["Primitive", "Semantic", "Theme", "Responsive", "Motion"]
@@ -237,23 +216,7 @@
           "uniqueItems": true,
           "items": { "enum": ["Light", "Dark"] }
         },
-        "implementationStatus": {
-          "enum": [
-            "not-started",
-            "implemented-pending-human-review",
-            "approved-color-foundation-v1"
-          ]
-        },
-        "collectionId": { "$ref": "#/$defs/externalString" },
-        "storageModes": {
-          "type": "array",
-          "minItems": 1,
-          "maxItems": 2,
-          "uniqueItems": true,
-          "items": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" }
-        },
-        "colorVariableCount": { "enum": [0, 24, 32] },
-        "publishingState": { "const": "private-unpublished" }
+        "implementationStatus": { "const": "not-started" }
       }
     },
     "page": {
@@ -263,13 +226,7 @@
       "properties": {
         "order": { "type": "integer", "minimum": 0, "maximum": 14 },
         "name": { "type": "string", "pattern": "^[0-9]{2} .+" },
-        "status": {
-          "enum": [
-            "architecture-created",
-            "foundation-implementation-in-review",
-            "foundation-v1-approved"
-          ]
-        },
+        "status": { "const": "architecture-created" },
         "nodeId": { "$ref": "#/$defs/externalString" },
         "items": {
           "type": "array",
@@ -301,13 +258,7 @@
             "playground-area"
           ]
         },
-        "status": {
-          "enum": [
-            "placeholder-created",
-            "implemented-pending-human-review",
-            "approved-color-foundation-v1"
-          ]
-        },
+        "status": { "const": "placeholder-created" },
         "nodeId": { "$ref": "#/$defs/externalString" },
         "relatedEvidenceIds": {
           "type": "array",

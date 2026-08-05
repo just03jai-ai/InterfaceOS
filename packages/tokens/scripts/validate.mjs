@@ -9,7 +9,6 @@ import {
   readJson,
   validateTokenEntries,
 } from '../lib/token-core.mjs';
-import { validateColorFoundation } from '../lib/color-foundation-validator.mjs';
 
 const packageRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -48,48 +47,13 @@ if (!validateContract(contract))
     `${path.relative(repositoryRoot, contractPath)}: ${ajv.errorsText(validateContract.errors)}`,
   );
 
-const resolvedByMode = {};
 for (const theme of contract.themes) {
   const result = validateTokenEntries(
     await loadThemeEntries(sourceRoot, theme),
     contract,
   );
   failures.push(...result.errors.map((error) => `${theme}: ${error}`));
-  if (result.resolved) resolvedByMode[theme] = result.resolved;
 }
-
-const primitiveColorEntries = flattenDocument(
-  await readJson(path.join(sourceRoot, 'primitives/color.tokens.json')),
-  'packages/tokens/src/primitives/color.tokens.json',
-);
-const semanticColorEntries = flattenDocument(
-  await readJson(path.join(sourceRoot, 'semantic/color.tokens.json')),
-  'packages/tokens/src/semantic/color.tokens.json',
-);
-const themeEntriesByMode = Object.fromEntries(
-  await Promise.all(
-    contract.themes.map(async (theme) => [
-      theme,
-      flattenDocument(
-        await readJson(path.join(sourceRoot, `themes/${theme}.tokens.json`)),
-        `packages/tokens/src/themes/${theme}.tokens.json`,
-      ),
-    ]),
-  ),
-);
-failures.push(
-  ...validateColorFoundation({
-    primitiveEntries: primitiveColorEntries,
-    semanticEntries: semanticColorEntries,
-    themeEntriesByMode,
-    requiredSemanticMappings: contract.requiredMappings.map((name) =>
-      name.replace('color.theme.', 'color.semantic.'),
-    ),
-    requiredThemeMappings: contract.requiredMappings,
-    contrastObligations: contract.contrastPairs,
-    resolvedByMode,
-  }),
-);
 
 if (failures.length)
   throw new Error(`Token validation failed:\n${failures.join('\n')}`);

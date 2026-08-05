@@ -7,19 +7,19 @@
     "url": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
     "registeredDate": "2026-08-04",
     "owner": "Jai Singh",
-    "status": "IOS-003.1 Color Foundation V1 visual baseline approved; token promotion pending",
-    "phase": "IOS-003.1 approved",
+    "status": "IOS-002 Batch 1 prepared; human Figma execution pending",
+    "phase": "IOS-002 Batch 1 prepared",
     "fileKey": {
-      "status": "captured",
-      "value": "OJqxFKoGjRh4rrSZCKdkzi"
+      "status": "pending-human-capture",
+      "value": null
     },
     "libraryKey": {
       "status": "pending-human-capture",
       "value": null
     },
     "accessPolicy": {
-      "status": "captured",
-      "value": "Owner Jai Singh; InterfaceOS Design System project; private unpublished library; publishing permission confirmed; branching enabled"
+      "status": "pending-human-capture",
+      "value": null
     }
   },
   "approvedDecisions": {
@@ -34,62 +34,27 @@
       {
         "name": "Primitive",
         "authoredModes": [],
-        "implementationStatus": "approved-color-foundation-v1",
-        "collectionId": {
-          "status": "captured",
-          "value": "VariableCollectionId:63:14"
-        },
-        "storageModes": ["63:0"],
-        "colorVariableCount": 32,
-        "publishingState": "private-unpublished"
+        "implementationStatus": "not-started"
       },
       {
         "name": "Semantic",
         "authoredModes": [],
-        "implementationStatus": "approved-color-foundation-v1",
-        "collectionId": {
-          "status": "captured",
-          "value": "VariableCollectionId:63:15"
-        },
-        "storageModes": ["63:1"],
-        "colorVariableCount": 24,
-        "publishingState": "private-unpublished"
+        "implementationStatus": "not-started"
       },
       {
         "name": "Theme",
         "authoredModes": ["Light", "Dark"],
-        "implementationStatus": "approved-color-foundation-v1",
-        "collectionId": {
-          "status": "captured",
-          "value": "VariableCollectionId:63:16"
-        },
-        "storageModes": ["63:2", "63:5"],
-        "colorVariableCount": 24,
-        "publishingState": "private-unpublished"
+        "implementationStatus": "not-started"
       },
       {
         "name": "Responsive",
         "authoredModes": [],
-        "implementationStatus": "approved-color-foundation-v1",
-        "collectionId": {
-          "status": "captured",
-          "value": "VariableCollectionId:63:17"
-        },
-        "storageModes": ["63:3"],
-        "colorVariableCount": 0,
-        "publishingState": "private-unpublished"
+        "implementationStatus": "not-started"
       },
       {
         "name": "Motion",
         "authoredModes": [],
-        "implementationStatus": "approved-color-foundation-v1",
-        "collectionId": {
-          "status": "captured",
-          "value": "VariableCollectionId:63:18"
-        },
-        "storageModes": ["63:4"],
-        "colorVariableCount": 0,
-        "publishingState": "private-unpublished"
+        "implementationStatus": "not-started"
       }
     ],
     "representationPolicies": {
@@ -118,8 +83,7 @@
       "governance",
       "release"
     ],
-    "pendingSpecialistReviews": ["accessibility"],
-    "specialistReviewPolicy": "accessibility-audit-non-blocking-for-foundation-v1-required-before-public-release",
+    "pendingSpecialistReviews": ["engineering", "accessibility"],
     "openDecisions": [
       "canonical-grid-token-source",
       "font-delivery-and-licensing"
@@ -159,25 +123,23 @@
     {
       "order": 3,
       "name": "03 Foundations",
-      "status": "foundation-v1-approved",
+      "status": "architecture-created",
       "nodeId": {
-        "status": "captured",
-        "value": "2:4"
+        "status": "pending-human-capture",
+        "value": null
       },
       "items": [
         {
-          "name": "Color",
+          "name": "Colors",
           "kind": "foundation-section",
-          "status": "approved-color-foundation-v1",
+          "status": "placeholder-created",
           "nodeId": {
-            "status": "captured",
-            "value": "26:14"
+            "status": "pending-human-capture",
+            "value": null
           },
           "relatedEvidenceIds": ["IOS-FND-FIGMA-ARCHITECTURE", "IOS-FND-COLOR"],
           "plannedDocumentationPaths": [
-            "docs/design-system/figma/foundation-specimens.md",
-            "docs/design-system/foundations/color/color-foundation-specification.md",
-            "docs/design-system/foundations/color/figma-page-blueprint.md"
+            "docs/design-system/figma/foundation-specimens.md"
           ],
           "plannedTokenSourceMappings": [
             "packages/tokens/src/primitives/color.tokens.json",
@@ -434,7 +396,7 @@
         {
           "name": "Primitive",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "placeholder-created",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -464,7 +426,7 @@
         {
           "name": "Semantic",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "placeholder-created",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -480,7 +442,7 @@
         {
           "name": "Theme",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "placeholder-created",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -498,7 +460,7 @@
         {
           "name": "Responsive",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "placeholder-created",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -519,7 +481,7 @@
         {
           "name": "Motion",
           "kind": "variable-section",
-          "status": "implemented-pending-human-review",
+          "status": "placeholder-created",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null

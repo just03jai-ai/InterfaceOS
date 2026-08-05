@@ -1,6 +1,6 @@
 # Figma Variable Mapping
 
-Status: Approved mapping; IOS-003.1 Color Foundation V1 visual baseline approved and token promotion pending
+Status: Stage 2 mapping approved; IOS-002 Batch 1 prepared for human implementation
 
 Canonical file: [InterfaceOS — Design System](https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1)
 
@@ -37,15 +37,14 @@ For each mapped foundation, record Figma file URL, page link, page and section n
 
 ## Limitations and blocked work
 
-- The file key, Foundations page, Color section, five collection IDs, six storage/mode IDs, and all 80 current color variable IDs are captured. Jai Singh confirmed ownership, project location, private unpublished library state, publishing permission, and branching availability. The library key remains uncaptured and a named Figma version is required before public release.
-- ADR-0006 approves the Figma visual extension. Figma-only approved values remain controlled drift until the token-promotion proposal is reviewed and executed; they are not canonical code tokens by implication.
+- The Figma file URL and private-during-foundations publishing policy are registered, but file key, team/library key, page and section IDs, collection and variable IDs, revision, and access verification await human capture.
 - Figma number variables do not preserve CSS units; mapping must retain the DTCG type/unit in metadata.
 - Shadow composites use Effect Styles; typography fallback stacks remain canonical in code and Figma records only the approved primary available font.
 - Stroke styles and cubic-bezier values have no approved bindable Figma-variable representation; do not create lossy aliases to make counts match.
-- Unattended automated write-back remains prohibited by ADR-0002. The IOS-003.1 mutation was an explicitly authorized, authenticated, audited operation; future mutation still requires scoped authorization and verification.
+- Automated write-back remains prohibited by ADR-0002 until permissions, rollback, and audit are approved.
 
 ## Publishing
 
 Keep the Figma library private during foundations. Publishing is blocked until variable mapping, visual review, evidence capture, and approval are complete. Generated distributions remain ignored in Git and reproducible through CI artifacts.
 
-The [execution checklist](../figma/variable-execution-checklist.md), [IOS-002 Batch 1 guide](../figma/ios-002-batch-1-execution-guide.md), and [IOS-003.1 implementation report](../foundations/color/figma-implementation-report.md) preserve planning and execution history. The current verified graph contains 32 Primitive colors, 24 Theme variables, and 24 Semantic variables; Responsive and Motion contain zero color variables.
+The [execution checklist](../figma/variable-execution-checklist.md) and [IOS-002 Batch 1 guide](../figma/ios-002-batch-1-execution-guide.md) are the authorities for the next manual step. Batch 1 prepares only the five shells and 32 primitive colors. This document does not claim that variables or synchronization exist.
