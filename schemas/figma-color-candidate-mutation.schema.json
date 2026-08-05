@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/figma-color-candidate-mutation.schema.json",
+  "title": "InterfaceOS Figma provisional color candidate mutation evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "id",
+    "milestone",
+    "status",
+    "mutationTimestamp",
+    "operator",
+    "sourceRevision",
+    "file",
+    "page",
+    "board",
+    "nodes",
+    "counts",
+    "screenshots",
+    "verification",
+    "warnings",
+    "approvals"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-003.1-FIGMA-COLOR-CANDIDATE-MUTATION" },
+    "milestone": { "const": "IOS-003.1" },
+    "status": { "const": "implemented-pending-human-review" },
+    "mutationTimestamp": { "type": "string", "format": "date-time" },
+    "operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "mechanism", "authenticated"],
+      "properties": {
+        "name": { "const": "Codex" },
+        "mechanism": {
+          "const": "Authenticated Figma Plugin API integration"
+        },
+        "authenticated": { "const": true }
+      }
+    },
+    "sourceRevision": {
+      "type": "object",
+      "required": [
+        "gitCommit",
+        "worktreeState",
+        "canonicalPath",
+        "canonicalSha256",
+        "candidatePath",
+        "candidateSha256"
+      ],
+      "properties": {
+        "gitCommit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "worktreeState": { "const": "dirty-uncommitted" },
+        "canonicalPath": {
+          "const": "packages/tokens/src/primitives/color.tokens.json"
+        },
+        "canonicalSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "candidatePath": {
+          "const": "docs/design-system/foundations/color/color-candidates.generated.json"
+        },
+        "candidateSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "name"],
+      "properties": {
+        "key": { "const": "OJqxFKoGjRh4rrSZCKdkzi" },
+        "name": { "const": "InterfaceOS — Design System" }
+      }
+    },
+    "page": { "$ref": "#/$defs/node" },
+    "board": { "$ref": "#/$defs/measuredNode" },
+    "nodes": {
+      "type": "object",
+      "required": ["lanes", "created"],
+      "properties": {
+        "lanes": {
+          "type": "object",
+          "minProperties": 10,
+          "additionalProperties": { "$ref": "#/$defs/nodeId" }
+        },
+        "created": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nodeId" }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonicalAnchors",
+        "generatedMissingStops",
+        "newFamilyCandidates",
+        "primaryAliasCandidates",
+        "dataCandidates",
+        "visibleSwatches",
+        "variablesBefore",
+        "variablesAfter",
+        "componentsAfter"
+      ],
+      "properties": {
+        "canonicalAnchors": { "const": 32 },
+        "generatedMissingStops": { "const": 24 },
+        "newFamilyCandidates": { "const": 33 },
+        "primaryAliasCandidates": { "const": 11 },
+        "dataCandidates": { "const": 11 },
+        "visibleSwatches": { "const": 111 },
+        "variablesBefore": { "const": 80 },
+        "variablesAfter": { "const": 80 },
+        "componentsAfter": { "const": 0 }
+      }
+    },
+    "screenshots": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": { "$ref": "#/$defs/screenshot" }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": {
+        "anyOf": [
+          { "type": "boolean" },
+          { "type": "string" },
+          { "type": "null" }
+        ]
+      }
+    },
+    "warnings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gamutAdjusted",
+        "adjacentDistinction",
+        "accessibilityApproval"
+      ],
+      "properties": {
+        "gamutAdjusted": { "type": "string", "minLength": 1 },
+        "adjacentDistinction": { "type": "string", "minLength": 1 },
+        "accessibilityApproval": { "type": "string", "minLength": 1 }
+      }
+    },
+    "approvals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["design", "accessibility", "engineering", "release"],
+      "properties": {
+        "design": { "const": "pending-human-review" },
+        "accessibility": { "const": "pending-specialist-review" },
+        "engineering": { "const": "pending-specialist-review" },
+        "release": { "const": "not-approved" }
+      }
+    }
+  },
+  "$defs": {
+    "nodeId": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+    "node": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/nodeId" },
+        "name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "measuredNode": {
+      "allOf": [
+        { "$ref": "#/$defs/node" },
+        {
+          "type": "object",
+          "required": ["width", "height"],
+          "properties": {
+            "width": { "type": "number", "exclusiveMinimum": 0 },
+            "height": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        }
+      ]
+    },
+    "screenshot": {
+      "type": "object",
+      "required": ["nodeId", "path", "sha256"],
+      "properties": {
+        "nodeId": { "$ref": "#/$defs/nodeId" },
+        "path": {
+          "type": "string",
+          "pattern": "^evidence/screenshots/ios-003-1/"
+        },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    }
+  }
+}

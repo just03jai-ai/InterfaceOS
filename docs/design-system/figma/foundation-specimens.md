@@ -1,8 +1,10 @@
 # Figma Foundation Specimen Requirements
 
-Status: Requirements approved; visual boards not implemented
+Status: IOS-003.1 Color Foundation V1 visual baseline approved; other visual foundations not implemented
 
 These requirements govern future manual boards on `03 Foundations`. They reference canonical sources and intentionally do not duplicate token values. Every board must use editable Figma variables/styles where an approved mapping exists and must link its InterfaceOS evidence ID.
+
+IOS-003.1 specializes FSP-001 through FSP-003 with the [Color Foundation page blueprint](../foundations/color/figma-page-blueprint.md). The visual baseline is approved under ADR-0006. Figma-only approved values remain pending canonical token promotion, and public library release remains blocked.
 
 ## FSP-001 — Color primitives
 
@@ -145,7 +147,7 @@ These requirements govern future manual boards on `03 Foundations`. They referen
 - **Accessibility checks:** Focus order, reading order, and assistive-technology order must remain logical independently of visual stacking.
 - **Required annotations:** Canonical paths, code-only limitations, and evidence ID `IOS-FND-Z-INDEX`.
 - **Evidence screenshots:** Full layer diagram and caveat callout.
-- **Approval criteria:** All seven source tokens are accounted for as technical metadata, zero fake visual variables exist, and a new `03 Foundations` section is captured because none currently exists.
+- **Approval criteria:** All seven source tokens are accounted for as technical metadata, zero fake visual variables exist, and the future Z-index section ID is captured without conflating it with the implemented Color section.
 
 ## FSP-014 — Motion
 
