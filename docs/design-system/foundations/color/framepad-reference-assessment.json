@@ -1,0 +1,252 @@
+{
+  "$schema": "../../../../schemas/color-reference-assessment.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FND-COLOR-REF-FRAMEPAD",
+  "source": {
+    "name": "Framepad Color Foundation preview",
+    "url": "https://www.framepad.co/preview/foundations/color",
+    "assessedDate": "2026-08-05"
+  },
+  "policy": "architecture-and-requirement-coverage-only-no-values-assets-or-token-names-adopted",
+  "semanticPatterns": [
+    {
+      "name": "neutral",
+      "observedResponsibilities": [
+        "main-surface",
+        "subtle-surface",
+        "strong-surface",
+        "inverse-surfaces",
+        "stroke",
+        "inverse-stroke"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate ordered neutral surfaces, boundaries, and inverse relationships in both themes without copying fixed mappings."
+    },
+    {
+      "name": "primary-brand",
+      "observedResponsibilities": [
+        "subtle-surface",
+        "strong-surface",
+        "default-emphasis",
+        "hover",
+        "active",
+        "strong-emphasis"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate a complete primary interaction relationship set while keeping product action separate from future brand expression."
+    },
+    {
+      "name": "secondary",
+      "observedResponsibilities": [
+        "subtle-surface",
+        "strong-surface",
+        "default-emphasis",
+        "hover",
+        "active",
+        "strong-emphasis"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate supporting emphasis and interaction states only if a distinct product responsibility is demonstrated."
+    },
+    {
+      "name": "tertiary",
+      "observedResponsibilities": [
+        "subtle-surface",
+        "strong-surface",
+        "default-emphasis",
+        "hover",
+        "active",
+        "strong-emphasis"
+      ],
+      "disposition": "deferred",
+      "interfaceOSRequirement": "Compare tertiary, accent, and muted responsibilities before adding a third emphasis tier."
+    },
+    {
+      "name": "success",
+      "observedResponsibilities": [
+        "subtle-surface",
+        "strong-surface",
+        "default-emphasis",
+        "hover",
+        "active",
+        "strong-emphasis"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate complete success relationships, including foreground and boundary obligations plus non-color cues."
+    },
+    {
+      "name": "warning",
+      "observedResponsibilities": [
+        "subtle-surface",
+        "strong-surface",
+        "default-emphasis",
+        "hover",
+        "active",
+        "strong-emphasis"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate warning relationships independently from error, destructive, pending, and informational states."
+    },
+    {
+      "name": "danger",
+      "observedResponsibilities": [
+        "subtle-surface",
+        "strong-surface",
+        "default-emphasis",
+        "hover",
+        "active",
+        "strong-emphasis"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate destructive danger separately from validation error before deciding whether they share mappings."
+    },
+    {
+      "name": "text",
+      "observedResponsibilities": [
+        "main",
+        "subtle",
+        "subtlest",
+        "inverse-main",
+        "inverse-subtle",
+        "inverse-subtlest"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Evaluate ordered text emphasis and inverse pairs on every permitted surface with explicit contrast obligations."
+    },
+    {
+      "name": "alpha",
+      "observedResponsibilities": [
+        "default-translucent",
+        "inverse-translucent",
+        "default-transparent",
+        "inverse-transparent"
+      ],
+      "disposition": "adapted",
+      "interfaceOSRequirement": "Define compositing responsibilities and transparent endpoints without adopting external opacity percentages or source colors."
+    }
+  ],
+  "baseFamilyCandidates": [
+    {
+      "name": "neutral",
+      "disposition": "existing-candidate",
+      "rationale": "Already represented in the InterfaceOS baseline; visual approval remains pending."
+    },
+    {
+      "name": "success",
+      "disposition": "rejected-as-primitive-name",
+      "rationale": "Success is semantic intent; the underlying primitive family must remain hue-based."
+    },
+    {
+      "name": "warning",
+      "disposition": "rejected-as-primitive-name",
+      "rationale": "Warning is semantic intent; the underlying primitive family must remain hue-based."
+    },
+    {
+      "name": "danger",
+      "disposition": "rejected-as-primitive-name",
+      "rationale": "Danger is semantic intent; the underlying primitive family must remain hue-based."
+    },
+    {
+      "name": "slate",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate as a neutral temperature direction, not as an automatically required family."
+    },
+    {
+      "name": "grey",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate naming and neutral temperature against the existing neutral family."
+    },
+    {
+      "name": "zinc",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate as a neutral temperature direction, not as an automatically required family."
+    },
+    {
+      "name": "stone",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate as a neutral temperature direction, not as an automatically required family."
+    },
+    {
+      "name": "orange",
+      "disposition": "evaluation-only",
+      "rationale": "Already an InterfaceOS open decision for attention, progress, or visualization."
+    },
+    {
+      "name": "yellow",
+      "disposition": "evaluation-only",
+      "rationale": "Already an InterfaceOS open decision with foreground-contrast risk."
+    },
+    {
+      "name": "lime",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate only if chart, categorization, or identity requirements justify it."
+    },
+    {
+      "name": "emerald",
+      "disposition": "evaluation-only",
+      "rationale": "Compare with the existing green family before considering expansion."
+    },
+    {
+      "name": "teal",
+      "disposition": "evaluation-only",
+      "rationale": "Already an InterfaceOS open decision; must remain distinct from success."
+    },
+    {
+      "name": "cyan",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate only if information or visualization requirements distinguish it from teal and blue."
+    },
+    {
+      "name": "sky",
+      "disposition": "evaluation-only",
+      "rationale": "Compare with the existing blue family before considering expansion."
+    },
+    {
+      "name": "blue",
+      "disposition": "existing-candidate",
+      "rationale": "Already represented in the InterfaceOS baseline; primary and information responsibilities remain open."
+    },
+    {
+      "name": "indigo",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate only if interaction, identity, or visualization requirements distinguish it from blue and purple."
+    },
+    {
+      "name": "purple",
+      "disposition": "evaluation-only",
+      "rationale": "Already an InterfaceOS open decision; no automatic AI or brand meaning."
+    },
+    {
+      "name": "fuchsia",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate only if categorization or visualization requirements distinguish it from purple and pink."
+    },
+    {
+      "name": "pink",
+      "disposition": "evaluation-only",
+      "rationale": "Already an InterfaceOS open decision; not a default marketing accent."
+    },
+    {
+      "name": "rose",
+      "disposition": "evaluation-only",
+      "rationale": "Evaluate only if identity or visualization requirements distinguish it from red and pink."
+    }
+  ],
+  "scaleObservation": {
+    "observedStops": [
+      "50",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "950"
+    ],
+    "disposition": "architecture-already-covered",
+    "interfaceOSRequirement": "Retain the independently recommended stop labels as evaluation anchors; do not adopt Framepad values or fixed Light/Dark pairings."
+  }
+}
