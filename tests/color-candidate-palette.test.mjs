@@ -10,10 +10,10 @@ const [schema, palette, canonicalBytes] = await Promise.all([
     JSON.parse,
   ),
   readFile(
-    'docs/design-system/foundations/color/color-candidates.generated.json',
+    'docs/design-system/foundations/color/color-candidates.approved-v1.json',
     'utf8',
   ).then(JSON.parse),
-  readFile('packages/tokens/src/primitives/color.tokens.json'),
+  readFile('evidence/snapshots/ios-003-1-canonical-color.tokens.json'),
 ]);
 const ajv = new Ajv2020({ allErrors: true, strict: true });
 addFormats(ajv);

@@ -1,14 +1,16 @@
 # IOS-003.1 Token Promotion Proposal
 
-Status: Proposed — implementation requires a separate approved change  
-Owner: Jai Singh  
+Status: Implemented in IOS-003.2 — pending human review and Figma reconciliation
+
+Owner: Jai Singh
+
 Decision source: [ADR-0006](../../../decisions/0006-color-foundation-v1-visual-baseline.md)
 
 ## Purpose
 
 Promote the approved Color Foundation V1 visual baseline into canonical, generated, and consumable token artifacts without manually copying Figma values or weakening the Git source-of-truth model.
 
-This document is a promotion plan, not a token mutation. Canonical token names and values are unchanged in this milestone.
+This document records the executed promotion plan. Canonical mutations are generated deterministically from the frozen approved V1 artifact and validated by [`color-token-promotion.manifest.json`](color-token-promotion.manifest.json); no approved value is manually transcribed.
 
 ## Approved visual baseline
 
@@ -24,7 +26,7 @@ This document is a promotion plan, not a token mutation. Canonical token names a
 ## Proposed promotion sequence
 
 1. Freeze the approved Figma review evidence and candidate artifact checksums.
-2. Produce a machine-readable promotion manifest by joining approved Figma nodes to `color-candidates.generated.json`; no visual value may be transcribed by hand.
+2. Produce a machine-readable promotion manifest by joining approved Figma nodes to the frozen `color-candidates.approved-v1.json`; no visual value may be transcribed by hand.
 3. Classify each candidate as `add-primitive`, `add-data-token`, `add-alias`, `retain-canonical`, or `no-code-token`.
 4. Run duplicate-value, naming, reference, circularity, theme-completeness, contrast-obligation, and migration-impact validation before editing canonical sources.
 5. Present the exact token diff, alias graph, generated CSS/JSON/TypeScript/Tailwind diff, and consumer impact for human approval.
@@ -43,13 +45,13 @@ This document is a promotion plan, not a token mutation. Canonical token names a
 - Accessibility specialist audit remains required before public-release claims.
 - The library stays private until token promotion, named-version capture, drift validation, and independent release approval are complete.
 
-## Required human approval before execution
+## Remaining human approval and release gates
 
-- Exact namespace for extended and categorical data tokens.
-- Whether approved missing stops extend existing families in V1 or are introduced as a later minor version.
-- Semantic aliases to add versus relationships that remain documentation-only.
-- Migration treatment for any consumer-visible alias change.
-- Named engineering reviewer and independent release approver for publication.
+- Review `color.primitive.data.{01-11}` and `color.semantic.data.categorical.{01-11}` as the implemented categorical namespace.
+- Review the generated canonical diff and confirm the 32 anchors remain unchanged.
+- Complete the pending 90-variable Figma reconciliation and capture real IDs.
+- Obtain the named accessibility specialist audit and independent release approval.
+- Capture a named Figma version before any library publication.
 
 ## Acceptance evidence
 
@@ -57,5 +59,6 @@ This document is a promotion plan, not a token mutation. Canonical token names a
 - Canonical-source diff with unchanged unrelated tokens.
 - Generated output checksums.
 - Figma variable/node ID map with zero unsupported aliases.
+- Deterministic pending reconciliation guide: [`../../figma/ios-003-2-color-token-reconciliation.md`](../../figma/ios-003-2-color-token-reconciliation.md).
 - Light/Dark completeness and declared contrast results.
 - Design, engineering, accessibility disposition, governance, and independent release records.

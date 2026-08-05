@@ -23,9 +23,9 @@
     "$schema": { "type": "string", "format": "uri-reference" },
     "schemaVersion": { "const": "1.0.0" },
     "id": { "const": "IOS-FND-COLOR" },
-    "milestone": { "const": "IOS-003.1" },
+    "milestone": { "const": "IOS-003.2" },
     "status": {
-      "const": "approved-visual-baseline-pending-token-promotion"
+      "const": "canonical-token-promotion-implemented-pending-review"
     },
     "owner": { "const": "Jai Singh" },
     "canonicalSources": {
@@ -44,8 +44,8 @@
         "classification"
       ],
       "properties": {
-        "primitiveCount": { "const": 32 },
-        "semanticCount": { "const": 24 },
+        "primitiveCount": { "const": 100 },
+        "semanticCount": { "const": 35 },
         "themes": {
           "type": "array",
           "prefixItems": [{ "const": "light" }, { "const": "dark" }],
@@ -53,7 +53,7 @@
           "maxItems": 2
         },
         "classification": {
-          "const": "canonical-git-baseline-with-approved-figma-visual-extension"
+          "const": "canonical-color-foundation-v1-promoted-private"
         }
       }
     },
@@ -101,8 +101,8 @@
         },
         "categories": {
           "type": "array",
-          "minItems": 18,
-          "maxItems": 18,
+          "minItems": 19,
+          "maxItems": 19,
           "items": { "$ref": "#/$defs/semanticCategory" }
         }
       }
@@ -142,7 +142,13 @@
           "duplicate-primitive-values",
           "missing-dark-values",
           "contrast-obligations",
-          "naming-violations"
+          "naming-violations",
+          "full-stop-completeness",
+          "anchor-preservation",
+          "data-namespace-completeness",
+          "candidate-provenance",
+          "deterministic-generation",
+          "figma-token-drift"
         ]
       }
     },
@@ -219,7 +225,8 @@
             "overlay",
             "disabled",
             "inverse",
-            "muted"
+            "muted",
+            "data"
           ]
         },
         "coverage": {

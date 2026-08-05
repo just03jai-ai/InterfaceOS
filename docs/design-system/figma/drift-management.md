@@ -1,6 +1,6 @@
 # Design-to-Code Drift Management
 
-Status: Approved contract; IOS-003.1 visual baseline recorded with controlled token-promotion drift
+Status: Approved contract; IOS-003.2 canonical promotion complete with Figma reconciliation blocked
 
 ## Comparison chain
 
@@ -15,7 +15,7 @@ canonical token JSON
 
 The first four representations are deterministic Git projections. Figma variables, styles, and specimens are manually synchronized representations until an approved audited adapter exists.
 
-ADR-0006 creates one explicit temporary exception to ordinary synchronized-state language: approved Figma-only Color Foundation V1 values are classified as `changed — approved visual baseline pending canonical token promotion`. They are not canonical code tokens, may not be consumed as if synchronized, and block public library release until the promotion workflow reconciles both authorities.
+ADR-0006 created one explicit temporary exception for the approved Figma-only Color Foundation V1 values. IOS-003.2 resolves the Git side of that exception by promoting the exact approved evidence into canonical tokens. Figma remains `changed — canonical promotion complete, variable reconciliation pending` because authenticated execution was blocked by the integration usage limit. Public library release remains blocked.
 
 ## What counts as drift
 
@@ -50,6 +50,8 @@ Drift exists when two representations that should describe the same approved rev
 8. Mark `synchronized` only when the reviewer signs the exact Git and Figma revisions and checksum.
 
 For IOS-002 Batch 1, run `pnpm figma:batch-1:check` before the manual comparison. The check proves that the execution plan still contains exactly the canonical 32 primitive colors and approved collection-shell contract; it does not prove that Figma artifacts or captured IDs exist.
+
+For IOS-003.2, run `pnpm figma:ios-003-2:check`. The deterministic plan preserves the 80 verified variable IDs and identifies 90 missing representations required to reach 100 Primitive, 35 Theme, and 35 Semantic color variables. It does not claim those pending variables exist.
 
 ## Release-blocking conditions
 

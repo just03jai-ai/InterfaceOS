@@ -60,7 +60,7 @@
         },
         "canonicalSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
         "candidatePath": {
-          "const": "docs/design-system/foundations/color/color-candidates.generated.json"
+          "const": "docs/design-system/foundations/color/color-candidates.approved-v1.json"
         },
         "candidateSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
       }

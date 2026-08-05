@@ -15,6 +15,7 @@ Aliases use an exact curly-brace path: `{color.primitive.neutral.950}`. Embedded
 | Domain             | Pattern                                               | Example                              |
 | ------------------ | ----------------------------------------------------- | ------------------------------------ |
 | Color primitive    | `color.primitive.{family}.{step}`                     | `color.primitive.blue.700`           |
+| Data primitive     | `color.primitive.data.{01-11}`                        | `color.primitive.data.01`            |
 | Color semantic     | `color.semantic.{purpose}.{role}.{state?}`            | `color.semantic.text.primary`        |
 | Theme slot         | `color.theme.{purpose}.{role}.{state?}`               | `color.theme.background.canvas`      |
 | Typography         | `typography.primitive.{property}.{step-or-role}`      | `typography.primitive.font-size.300` |
@@ -40,6 +41,7 @@ The component example defines syntax only; it is not an implemented component to
 - Platform names such as `web-color-primary`.
 - Theme names in semantic paths such as `color.semantic.dark-text`.
 - Ambiguous buckets such as `misc`, `other`, `default-2`, or `special`.
+- Data-series tokens expressed as hue-scale stops such as `color.primitive.data.500`.
 - Case-only differences and underscores.
 
 Renaming a released token is breaking. Add the replacement, deprecate the old token with migration guidance, and remove it only through the release policy.

@@ -5,21 +5,26 @@ import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { flattenDocument } from '../packages/tokens/lib/token-core.mjs';
 
-const [schema, contract, primitiveSource, semanticSource] = await Promise.all([
-  readFile('schemas/color-foundation-contract.schema.json', 'utf8').then(
-    JSON.parse,
-  ),
-  readFile(
-    'docs/design-system/foundations/color/color-foundation.contract.json',
-    'utf8',
-  ).then(JSON.parse),
-  readFile('packages/tokens/src/primitives/color.tokens.json', 'utf8').then(
-    JSON.parse,
-  ),
-  readFile('packages/tokens/src/semantic/color.tokens.json', 'utf8').then(
-    JSON.parse,
-  ),
-]);
+const [schema, contract, primitiveSource, dataPrimitiveSource, semanticSource] =
+  await Promise.all([
+    readFile('schemas/color-foundation-contract.schema.json', 'utf8').then(
+      JSON.parse,
+    ),
+    readFile(
+      'docs/design-system/foundations/color/color-foundation.contract.json',
+      'utf8',
+    ).then(JSON.parse),
+    readFile('packages/tokens/src/primitives/color.tokens.json', 'utf8').then(
+      JSON.parse,
+    ),
+    readFile(
+      'packages/tokens/src/primitives/color-data.tokens.json',
+      'utf8',
+    ).then(JSON.parse),
+    readFile('packages/tokens/src/semantic/color.tokens.json', 'utf8').then(
+      JSON.parse,
+    ),
+  ]);
 const ajv = new Ajv2020({ allErrors: true });
 addFormats(ajv);
 const validate = ajv.compile(schema);
@@ -31,7 +36,8 @@ test('IOS-003.1 color foundation contract satisfies its schema', () => {
 test('color foundation baseline counts derive from canonical sources', () => {
   assert.equal(
     contract.currentBaseline.primitiveCount,
-    flattenDocument(primitiveSource).length,
+    flattenDocument(primitiveSource).length +
+      flattenDocument(dataPrimitiveSource).length,
   );
   assert.equal(
     contract.currentBaseline.semanticCount,
@@ -43,17 +49,20 @@ test('color foundation contract introduces no visual color values', () => {
   assert.doesNotMatch(JSON.stringify(contract), /#[a-f0-9]{3,8}\b/i);
   assert.equal(
     contract.currentBaseline.classification,
-    'canonical-git-baseline-with-approved-figma-visual-extension',
+    'canonical-color-foundation-v1-promoted-private',
   );
 });
 
-test('visual approval does not claim token promotion or public release', () => {
+test('token promotion does not claim public release', () => {
   assert.equal(contract.approvalState.visual, 'approved');
   assert.equal(
     contract.approvalState.release,
     'blocked-pending-independent-approval',
   );
-  assert.match(contract.status, /pending-token-promotion$/);
+  assert.equal(
+    contract.status,
+    'canonical-token-promotion-implemented-pending-review',
+  );
 });
 
 test('approved and deferred primitive families match the V1 decision', () => {
@@ -110,6 +119,7 @@ test('primitive and semantic category inventories are complete and ordered', () 
       'disabled',
       'inverse',
       'muted',
+      'data',
     ],
   );
 });

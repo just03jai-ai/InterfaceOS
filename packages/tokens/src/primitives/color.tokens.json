@@ -15,7 +15,7 @@
           "$type": "color",
           "$description": "White endpoint.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "50": {
@@ -28,7 +28,7 @@
           "$type": "color",
           "$description": "Lightest neutral surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "100": {
@@ -41,7 +41,7 @@
           "$type": "color",
           "$description": "Subtle neutral surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "200": {
@@ -54,7 +54,7 @@
           "$type": "color",
           "$description": "Light neutral separator step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "300": {
@@ -67,7 +67,20 @@
           "$type": "color",
           "$description": "Neutral border step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.615686, 0.635294, 0.67451],
+            "alpha": 1,
+            "hex": "#9da2ac"
+          },
+          "$type": "color",
+          "$description": "Neutral 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "500": {
@@ -80,7 +93,20 @@
           "$type": "color",
           "$description": "Mid neutral step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.360784, 0.384314, 0.427451],
+            "alpha": 1,
+            "hex": "#5c626d"
+          },
+          "$type": "color",
+          "$description": "Neutral 600 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "700": {
@@ -93,7 +119,7 @@
           "$type": "color",
           "$description": "Strong neutral content step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "800": {
@@ -106,7 +132,7 @@
           "$type": "color",
           "$description": "Dark neutral surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "900": {
@@ -119,7 +145,7 @@
           "$type": "color",
           "$description": "Darker neutral surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "950": {
@@ -132,7 +158,7 @@
           "$type": "color",
           "$description": "Darkest neutral endpoint.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         }
       },
@@ -147,7 +173,20 @@
           "$type": "color",
           "$description": "Light blue tint.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.839216, 0.890196, 1],
+            "alpha": 1,
+            "hex": "#d6e3ff"
+          },
+          "$type": "color",
+          "$description": "Blue 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "200": {
@@ -160,7 +199,20 @@
           "$type": "color",
           "$description": "Light blue content step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.545098, 0.67451, 0.968627],
+            "alpha": 1,
+            "hex": "#8bacf7"
+          },
+          "$type": "color",
+          "$description": "Blue 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "400": {
@@ -173,7 +225,20 @@
           "$type": "color",
           "$description": "Blue emphasis step for dark surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.266667, 0.458824, 0.886275],
+            "alpha": 1,
+            "hex": "#4475e2"
+          },
+          "$type": "color",
+          "$description": "Blue 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "600": {
@@ -186,7 +251,7 @@
           "$type": "color",
           "$description": "Blue action step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "700": {
@@ -199,7 +264,7 @@
           "$type": "color",
           "$description": "Blue accessible action step on light surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "800": {
@@ -212,7 +277,7 @@
           "$type": "color",
           "$description": "Blue hover step on light surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "900": {
@@ -225,7 +290,20 @@
           "$type": "color",
           "$description": "Dark blue emphasis step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.035294, 0.094118, 0.247059],
+            "alpha": 1,
+            "hex": "#09183f"
+          },
+          "$type": "color",
+          "$description": "Blue 950 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         }
       },
@@ -240,7 +318,20 @@
           "$type": "color",
           "$description": "Light success tint.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.772549, 0.941176, 0.839216],
+            "alpha": 1,
+            "hex": "#c5f0d6"
+          },
+          "$type": "color",
+          "$description": "Green 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "200": {
@@ -253,7 +344,46 @@
           "$type": "color",
           "$description": "Light success content step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.490196, 0.8, 0.611765],
+            "alpha": 1,
+            "hex": "#7dcc9c"
+          },
+          "$type": "color",
+          "$description": "Green 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.372549, 0.705882, 0.498039],
+            "alpha": 1,
+            "hex": "#5fb47f"
+          },
+          "$type": "color",
+          "$description": "Green 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.243137, 0.611765, 0.388235],
+            "alpha": 1,
+            "hex": "#3e9c63"
+          },
+          "$type": "color",
+          "$description": "Green 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "600": {
@@ -266,7 +396,20 @@
           "$type": "color",
           "$description": "Success border and action step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.058824, 0.419608, 0.219608],
+            "alpha": 1,
+            "hex": "#0f6b38"
+          },
+          "$type": "color",
+          "$description": "Green 700 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "800": {
@@ -279,7 +422,20 @@
           "$type": "color",
           "$description": "Success text step on light surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.019608, 0.219608, 0.117647],
+            "alpha": 1,
+            "hex": "#05381e"
+          },
+          "$type": "color",
+          "$description": "Green 900 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "950": {
@@ -292,7 +448,7 @@
           "$type": "color",
           "$description": "Dark success surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         }
       },
@@ -307,7 +463,20 @@
           "$type": "color",
           "$description": "Light danger tint.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [1, 0.827451, 0.827451],
+            "alpha": 1,
+            "hex": "#ffd3d3"
+          },
+          "$type": "color",
+          "$description": "Red 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "200": {
@@ -320,7 +489,46 @@
           "$type": "color",
           "$description": "Light danger content step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.952941, 0.576471, 0.572549],
+            "alpha": 1,
+            "hex": "#f39392"
+          },
+          "$type": "color",
+          "$description": "Red 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.901961, 0.447059, 0.439216],
+            "alpha": 1,
+            "hex": "#e67270"
+          },
+          "$type": "color",
+          "$description": "Red 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.847059, 0.305882, 0.305882],
+            "alpha": 1,
+            "hex": "#d84e4e"
+          },
+          "$type": "color",
+          "$description": "Red 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "600": {
@@ -333,7 +541,20 @@
           "$type": "color",
           "$description": "Danger border and action step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.627451, 0.090196, 0.117647],
+            "alpha": 1,
+            "hex": "#a0171e"
+          },
+          "$type": "color",
+          "$description": "Red 700 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "800": {
@@ -346,7 +567,20 @@
           "$type": "color",
           "$description": "Danger text step on light surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.321569, 0.039216, 0.062745],
+            "alpha": 1,
+            "hex": "#520a10"
+          },
+          "$type": "color",
+          "$description": "Red 900 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "950": {
@@ -359,7 +593,7 @@
           "$type": "color",
           "$description": "Dark danger surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         }
       },
@@ -374,7 +608,20 @@
           "$type": "color",
           "$description": "Light warning tint.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.996078, 0.905882, 0.666667],
+            "alpha": 1,
+            "hex": "#fee7aa"
+          },
+          "$type": "color",
+          "$description": "Amber 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "200": {
@@ -387,7 +634,46 @@
           "$type": "color",
           "$description": "Light warning content step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.929412, 0.729412, 0.309804],
+            "alpha": 1,
+            "hex": "#edba4f"
+          },
+          "$type": "color",
+          "$description": "Amber 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.862745, 0.627451, 0.223529],
+            "alpha": 1,
+            "hex": "#dca039"
+          },
+          "$type": "color",
+          "$description": "Amber 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.792157, 0.529412, 0.133333],
+            "alpha": 1,
+            "hex": "#ca8722"
+          },
+          "$type": "color",
+          "$description": "Amber 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "600": {
@@ -400,7 +686,20 @@
           "$type": "color",
           "$description": "Warning border step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.556863, 0.333333, 0.011765],
+            "alpha": 1,
+            "hex": "#8e5503"
+          },
+          "$type": "color",
+          "$description": "Amber 700 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "800": {
@@ -413,7 +712,20 @@
           "$type": "color",
           "$description": "Warning text step on light surfaces.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.270588, 0.156863, 0],
+            "alpha": 1,
+            "hex": "#452800"
+          },
+          "$type": "color",
+          "$description": "Amber 900 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         },
         "950": {
@@ -426,7 +738,442 @@
           "$type": "color",
           "$description": "Dark warning surface step.",
           "$extensions": {
-            "org.interfaceos": { "tier": "primitive", "status": "draft" }
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        }
+      },
+      "indigo": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.956863, 0.960784, 1],
+            "alpha": 1,
+            "hex": "#f4f5ff"
+          },
+          "$type": "color",
+          "$description": "Indigo 50 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.905882, 0.913725, 1],
+            "alpha": 1,
+            "hex": "#e7e9ff"
+          },
+          "$type": "color",
+          "$description": "Indigo 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.823529, 0.835294, 1],
+            "alpha": 1,
+            "hex": "#d2d5ff"
+          },
+          "$type": "color",
+          "$description": "Indigo 200 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.713725, 0.729412, 1],
+            "alpha": 1,
+            "hex": "#b6baff"
+          },
+          "$type": "color",
+          "$description": "Indigo 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.592157, 0.592157, 1],
+            "alpha": 1,
+            "hex": "#9797ff"
+          },
+          "$type": "color",
+          "$description": "Indigo 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.482353, 0.447059, 0.976471],
+            "alpha": 1,
+            "hex": "#7b72f9"
+          },
+          "$type": "color",
+          "$description": "Indigo 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.396078, 0.337255, 0.890196],
+            "alpha": 1,
+            "hex": "#6556e3"
+          },
+          "$type": "color",
+          "$description": "Indigo 600 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.321569, 0.258824, 0.756863],
+            "alpha": 1,
+            "hex": "#5242c1"
+          },
+          "$type": "color",
+          "$description": "Indigo 700 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.247059, 0.2, 0.6],
+            "alpha": 1,
+            "hex": "#3f3399"
+          },
+          "$type": "color",
+          "$description": "Indigo 800 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.180392, 0.14902, 0.431373],
+            "alpha": 1,
+            "hex": "#2e266e"
+          },
+          "$type": "color",
+          "$description": "Indigo 900 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.094118, 0.082353, 0.231373],
+            "alpha": 1,
+            "hex": "#18153b"
+          },
+          "$type": "color",
+          "$description": "Indigo 950 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        }
+      },
+      "purple": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.980392, 0.956863, 1],
+            "alpha": 1,
+            "hex": "#faf4ff"
+          },
+          "$type": "color",
+          "$description": "Purple 50 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.952941, 0.898039, 1],
+            "alpha": 1,
+            "hex": "#f3e5ff"
+          },
+          "$type": "color",
+          "$description": "Purple 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.913725, 0.807843, 1],
+            "alpha": 1,
+            "hex": "#e9ceff"
+          },
+          "$type": "color",
+          "$description": "Purple 200 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.858824, 0.670588, 1],
+            "alpha": 1,
+            "hex": "#dbabff"
+          },
+          "$type": "color",
+          "$description": "Purple 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.784314, 0.52549, 0.964706],
+            "alpha": 1,
+            "hex": "#c886f6"
+          },
+          "$type": "color",
+          "$description": "Purple 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.701961, 0.384314, 0.901961],
+            "alpha": 1,
+            "hex": "#b362e6"
+          },
+          "$type": "color",
+          "$description": "Purple 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.603922, 0.27451, 0.803922],
+            "alpha": 1,
+            "hex": "#9a46cd"
+          },
+          "$type": "color",
+          "$description": "Purple 600 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.498039, 0.196078, 0.678431],
+            "alpha": 1,
+            "hex": "#7f32ad"
+          },
+          "$type": "color",
+          "$description": "Purple 700 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.388235, 0.141176, 0.533333],
+            "alpha": 1,
+            "hex": "#632488"
+          },
+          "$type": "color",
+          "$description": "Purple 800 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.278431, 0.105882, 0.380392],
+            "alpha": 1,
+            "hex": "#471b61"
+          },
+          "$type": "color",
+          "$description": "Purple 900 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.14902, 0.062745, 0.203922],
+            "alpha": 1,
+            "hex": "#261034"
+          },
+          "$type": "color",
+          "$description": "Purple 950 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        }
+      },
+      "teal": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.917647, 0.984314, 0.976471],
+            "alpha": 1,
+            "hex": "#eafbf9"
+          },
+          "$type": "color",
+          "$description": "Teal 50 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.827451, 0.960784, 0.94902],
+            "alpha": 1,
+            "hex": "#d3f5f2"
+          },
+          "$type": "color",
+          "$description": "Teal 100 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.658824, 0.921569, 0.901961],
+            "alpha": 1,
+            "hex": "#a8ebe6"
+          },
+          "$type": "color",
+          "$description": "Teal 200 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.435294, 0.858824, 0.831373],
+            "alpha": 1,
+            "hex": "#6fdbd4"
+          },
+          "$type": "color",
+          "$description": "Teal 300 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.105882, 0.772549, 0.745098],
+            "alpha": 1,
+            "hex": "#1bc5be"
+          },
+          "$type": "color",
+          "$description": "Teal 400 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0, 0.658824, 0.635294],
+            "alpha": 1,
+            "hex": "#00a8a2"
+          },
+          "$type": "color",
+          "$description": "Teal 500 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0, 0.545098, 0.52549],
+            "alpha": 1,
+            "hex": "#008b86"
+          },
+          "$type": "color",
+          "$description": "Teal 600 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0, 0.443137, 0.427451],
+            "alpha": 1,
+            "hex": "#00716d"
+          },
+          "$type": "color",
+          "$description": "Teal 700 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "800": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0, 0.345098, 0.329412],
+            "alpha": 1,
+            "hex": "#005854"
+          },
+          "$type": "color",
+          "$description": "Teal 800 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0, 0.25098, 0.239216],
+            "alpha": 1,
+            "hex": "#00403d"
+          },
+          "$type": "color",
+          "$description": "Teal 900 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "950": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0, 0.137255, 0.129412],
+            "alpha": 1,
+            "hex": "#002321"
+          },
+          "$type": "color",
+          "$description": "Teal 950 approved Color Foundation V1 scale step.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
           }
         }
       }

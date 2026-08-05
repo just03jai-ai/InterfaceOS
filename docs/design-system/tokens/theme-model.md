@@ -4,6 +4,8 @@
 
 Light and dark are resolver contexts implementing one semantic contract. Semantic token names stay constant; only `color.theme.*` mappings change.
 
+IOS-003.2 adds `color.theme.data.categorical.01–11` in both modes and exposes them through `color.semantic.data.categorical.01–11`. V1 intentionally resolves to the same approved categorical primitives in Light and Dark; future theme-specific chart adjustments must preserve token identity and pass the same drift and accessibility gates.
+
 ```text
 consumer -> color.semantic.text.primary
                   -> color.theme.text.primary

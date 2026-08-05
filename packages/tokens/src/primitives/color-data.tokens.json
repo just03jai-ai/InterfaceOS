@@ -1,0 +1,114 @@
+{
+  "$schema": "../../../../../schemas/token-file.schema.json",
+  "$description": "InterfaceOS categorical data-visualization primitives. Numeric labels identify stable series positions, not hue-scale lightness.",
+  "color": {
+    "primitive": {
+      "data": {
+        "10": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.560784, 0.705882, 0.247059],
+            "alpha": 1,
+            "hex": "#8fb43f"
+          },
+          "$type": "color",
+          "$description": "Approved categorical data series 10; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "11": {
+          "$value": "{color.primitive.neutral.500}",
+          "$type": "color",
+          "$description": "Approved categorical data series 11; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "$type": "color",
+        "01": {
+          "$value": "{color.primitive.blue.600}",
+          "$type": "color",
+          "$description": "Approved categorical data series 01; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "02": {
+          "$value": "{color.primitive.amber.600}",
+          "$type": "color",
+          "$description": "Approved categorical data series 02; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "03": {
+          "$value": "{color.primitive.purple.600}",
+          "$type": "color",
+          "$description": "Approved categorical data series 03; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "04": {
+          "$value": "{color.primitive.green.700}",
+          "$type": "color",
+          "$description": "Approved categorical data series 04; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "05": {
+          "$value": "{color.primitive.indigo.500}",
+          "$type": "color",
+          "$description": "Approved categorical data series 05; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "06": {
+          "$value": "{color.primitive.red.600}",
+          "$type": "color",
+          "$description": "Approved categorical data series 06; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "07": {
+          "$value": "{color.primitive.teal.500}",
+          "$type": "color",
+          "$description": "Approved categorical data series 07; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "08": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.815686, 0.215686, 0.396078],
+            "alpha": 1,
+            "hex": "#d03765"
+          },
+          "$type": "color",
+          "$description": "Approved categorical data series 08; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        },
+        "09": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [0.121569, 0.67451, 0.807843],
+            "alpha": 1,
+            "hex": "#1facce"
+          },
+          "$type": "color",
+          "$description": "Approved categorical data series 09; pair with labels, shapes, patterns, or a data table.",
+          "$extensions": {
+            "org.interfaceos": { "tier": "primitive", "status": "approved" }
+          }
+        }
+      }
+    }
+  }
+}

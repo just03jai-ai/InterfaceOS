@@ -1,6 +1,6 @@
 # Token Architecture
 
-Status: Stage 2 decision baseline accepted; engineering and accessibility review pending
+Status: IOS-003.2 Color Foundation V1 canonical promotion implemented; human review and specialist accessibility review pending
 
 Version: 0.1.0
 
@@ -39,6 +39,8 @@ packages/tokens/
 ```
 
 Small files own one domain. Full token names remain globally unique after all selected files are merged.
+
+Color hue scales remain in `primitives/color.tokens.json`. The categorical Data 01–11 system is isolated in `primitives/color-data.tokens.json`; eight entries alias approved hue primitives and three retain direct approved V1 values. This keeps data-series identity stable without pretending it is a 50–950 hue scale.
 
 ## Source-of-truth ownership
 

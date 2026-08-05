@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 
 const palette = JSON.parse(
   await readFile(
-    'docs/design-system/foundations/color/color-candidates.generated.json',
+    'docs/design-system/foundations/color/color-candidates.approved-v1.json',
     'utf8',
   ),
 );

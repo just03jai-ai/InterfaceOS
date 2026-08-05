@@ -28,7 +28,7 @@ flowchart LR
 
 Run `pnpm color:candidates:generate` to reproduce the provisional palette and `pnpm color:candidates:check` to detect drift. Candidate tests verify canonical hashes, exact anchor preservation, family counts and order, monotonic OKLCH lightness, duplicate HEX values, Primary-to-Blue equality, categorical Data labels, and the non-canonical approval boundary.
 
-Gamut mapping, contrast, adjacent-step, and approximate color-vision diagnostics are stored per swatch in [`color-candidates.generated.json`](color-candidates.generated.json). Automated passes are evidence for review, never accessibility approval.
+Gamut mapping, contrast, adjacent-step, and approximate color-vision diagnostics are frozen per approved swatch in [`color-candidates.approved-v1.json`](color-candidates.approved-v1.json). The current reproducible diagnostic projection remains [`color-candidates.generated.json`](color-candidates.generated.json). Automated passes are evidence for review, never accessibility approval.
 
 `packages/tokens/lib/color-foundation-validator.mjs` and the token validation pipeline now reject:
 

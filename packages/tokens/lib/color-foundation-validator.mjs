@@ -1,8 +1,11 @@
 import { contrastRatio } from './token-core.mjs';
 
-const PRIMITIVE_NAME = /^color\.primitive\.[a-z][a-z0-9-]*\.(?:0|[1-9][0-9]*)$/;
-const SEMANTIC_NAME = /^color\.semantic(?:\.[a-z][a-z0-9-]*){2,}$/;
-const THEME_NAME = /^color\.theme(?:\.[a-z][a-z0-9-]*){2,}$/;
+const PRIMITIVE_NAME =
+  /^color\.primitive\.(?:data\.(?:0[1-9]|1[01])|[a-z][a-z0-9-]*\.(?:0|[1-9][0-9]*))$/;
+const SEMANTIC_NAME =
+  /^(?:color\.semantic\.data\.categorical\.(?:0[1-9]|1[01])|color\.semantic(?:\.[a-z][a-z0-9-]*){2,})$/;
+const THEME_NAME =
+  /^(?:color\.theme\.data\.categorical\.(?:0[1-9]|1[01])|color\.theme(?:\.[a-z][a-z0-9-]*){2,})$/;
 
 function colorValueKey(value) {
   if (!value || value.colorSpace !== 'srgb' || !Array.isArray(value.components))
@@ -23,8 +26,22 @@ export function validateColorFoundation({
   contrastObligations,
   resolvedByMode,
   duplicateExceptions = [],
+  enforceApprovedV1Completeness = true,
 }) {
   const errors = [];
+  const expectedScaleStops = [
+    '50',
+    '100',
+    '200',
+    '300',
+    '400',
+    '500',
+    '600',
+    '700',
+    '800',
+    '900',
+    '950',
+  ];
   const allowedDuplicates = new Set(
     duplicateExceptions.map((names) => [...names].sort().join('|')),
   );
@@ -33,6 +50,47 @@ export function validateColorFoundation({
     if (!PRIMITIVE_NAME.test(entry.name))
       errors.push(`Invalid primitive color name "${entry.name}".`);
   }
+  const primitiveNames = new Set(primitiveEntries.map((entry) => entry.name));
+  if (enforceApprovedV1Completeness)
+    for (const family of [
+      'blue',
+      'green',
+      'amber',
+      'red',
+      'indigo',
+      'purple',
+      'teal',
+    ]) {
+      for (const stop of expectedScaleStops) {
+        const name = `color.primitive.${family}.${stop}`;
+        if (!primitiveNames.has(name))
+          errors.push(`Missing approved primitive color stop "${name}".`);
+      }
+    }
+  if (enforceApprovedV1Completeness)
+    for (const stop of ['0', ...expectedScaleStops]) {
+      const name = `color.primitive.neutral.${stop}`;
+      if (!primitiveNames.has(name))
+        errors.push(`Missing approved primitive color stop "${name}".`);
+    }
+  if (enforceApprovedV1Completeness)
+    for (const stop of [
+      '01',
+      '02',
+      '03',
+      '04',
+      '05',
+      '06',
+      '07',
+      '08',
+      '09',
+      '10',
+      '11',
+    ]) {
+      const name = `color.primitive.data.${stop}`;
+      if (!primitiveNames.has(name))
+        errors.push(`Missing approved categorical data token "${name}".`);
+    }
   for (const entry of semanticEntries) {
     if (!SEMANTIC_NAME.test(entry.name))
       errors.push(`Invalid semantic color name "${entry.name}".`);

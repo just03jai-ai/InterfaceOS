@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/figma-color-token-reconciliation.schema.json",
+  "title": "InterfaceOS Figma Color Token Reconciliation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "id",
+    "milestone",
+    "status",
+    "fileKey",
+    "libraryState",
+    "access",
+    "baseline",
+    "target",
+    "reconciliation",
+    "controls"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-003.2-FIGMA-COLOR-TOKEN-RECONCILIATION" },
+    "milestone": { "const": "IOS-003.2" },
+    "status": { "const": "blocked-pending-authenticated-figma-execution" },
+    "fileKey": { "const": "OJqxFKoGjRh4rrSZCKdkzi" },
+    "libraryState": { "const": "private-unpublished" },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["liveVerification", "historicalBaseline", "retryAfter"],
+      "properties": {
+        "liveVerification": { "const": "blocked-integration-usage-limit" },
+        "historicalBaseline": { "const": "verified-ios-003.1-evidence" },
+        "retryAfter": { "type": "string", "format": "date-time" }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "required": ["variableCount", "collectionIds", "evidencePath"],
+      "properties": {
+        "variableCount": { "const": 80 },
+        "collectionIds": { "type": "object" },
+        "evidencePath": { "type": "string" }
+      }
+    },
+    "target": {
+      "type": "object",
+      "required": ["variableCount", "collectionCounts"],
+      "properties": {
+        "variableCount": { "const": 170 },
+        "collectionCounts": {
+          "type": "object",
+          "properties": {
+            "Primitive": { "const": 100 },
+            "Semantic": { "const": 35 },
+            "Theme": { "const": 35 },
+            "Responsive": { "const": 0 },
+            "Motion": { "const": 0 }
+          },
+          "required": ["Primitive", "Semantic", "Theme", "Responsive", "Motion"]
+        }
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "required": [
+        "existingVariablesToPreserve",
+        "variablesToCreate",
+        "variablesToUpdate",
+        "missingVariables"
+      ],
+      "properties": {
+        "existingVariablesToPreserve": { "const": 80 },
+        "variablesToCreate": { "const": 90 },
+        "variablesToUpdate": { "const": 0 },
+        "missingVariables": {
+          "type": "array",
+          "minItems": 90,
+          "maxItems": 90,
+          "items": {
+            "type": "object",
+            "required": [
+              "canonicalTokenPath",
+              "figmaName",
+              "collection",
+              "collectionId",
+              "variableType",
+              "scopes",
+              "values",
+              "variableId",
+              "mutationStatus"
+            ],
+            "properties": {
+              "canonicalTokenPath": { "type": "string" },
+              "figmaName": { "type": "string", "pattern": "^[a-z0-9/-]+$" },
+              "collection": { "enum": ["Primitive", "Semantic", "Theme"] },
+              "collectionId": { "type": "string", "minLength": 1 },
+              "variableType": { "const": "COLOR" },
+              "scopes": { "type": "array", "minItems": 1, "uniqueItems": true },
+              "values": { "type": "object" },
+              "variableId": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["status", "value"],
+                "properties": {
+                  "status": { "const": "pending-human-capture" },
+                  "value": { "type": "null" }
+                }
+              },
+              "mutationStatus": {
+                "const": "pending-authenticated-figma-execution"
+              }
+            }
+          }
+        }
+      }
+    },
+    "controls": {
+      "type": "object",
+      "required": [
+        "preserveVerifiedIds",
+        "publishLibrary",
+        "createComponents",
+        "inventIds",
+        "mutationPerformed",
+        "accessibilitySpecialistReview",
+        "independentReleaseApproval"
+      ],
+      "properties": {
+        "preserveVerifiedIds": { "const": true },
+        "publishLibrary": { "const": false },
+        "createComponents": { "const": false },
+        "inventIds": { "const": false },
+        "mutationPerformed": { "const": false },
+        "accessibilitySpecialistReview": { "const": "pending" },
+        "independentReleaseApproval": { "const": "pending" }
+      }
+    }
+  }
+}

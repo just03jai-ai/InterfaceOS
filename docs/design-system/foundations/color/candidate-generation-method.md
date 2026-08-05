@@ -6,7 +6,7 @@ Status: Reproducible exploration method; generated visual outputs approved for V
 
 The generated palette is visual exploration evidence, not a token source. The canonical source remains [`color.tokens.json`](../../../../packages/tokens/src/primitives/color.tokens.json). Running the generator never writes beneath `packages/tokens/src`, creates Figma variables, changes semantic mappings, or approves a color.
 
-The reproducible artifact is [`color-candidates.generated.json`](color-candidates.generated.json). Generate it with `pnpm color:candidates:generate` and verify drift with `pnpm color:candidates:check`.
+The current reproducible artifact is [`color-candidates.generated.json`](color-candidates.generated.json). Generate it with `pnpm color:candidates:generate` and verify drift with `pnpm color:candidates:check`. The exact IOS-003.1 promotion input is frozen separately as [`color-candidates.approved-v1.json`](color-candidates.approved-v1.json); its checksum remains historical evidence and it must not be regenerated after canonical promotion.
 
 ## Existing families
 

@@ -1,0 +1,1835 @@
+{
+  "$schema": "../../schemas/figma-color-token-reconciliation.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-003.2-FIGMA-COLOR-TOKEN-RECONCILIATION",
+  "milestone": "IOS-003.2",
+  "status": "blocked-pending-authenticated-figma-execution",
+  "fileKey": "OJqxFKoGjRh4rrSZCKdkzi",
+  "libraryState": "private-unpublished",
+  "access": {
+    "liveVerification": "blocked-integration-usage-limit",
+    "historicalBaseline": "verified-ios-003.1-evidence",
+    "retryAfter": "2026-08-11T21:18:00+05:30"
+  },
+  "baseline": {
+    "variableCount": 80,
+    "collectionIds": {
+      "Primitive": "VariableCollectionId:63:14",
+      "Semantic": "VariableCollectionId:63:15",
+      "Theme": "VariableCollectionId:63:16",
+      "Responsive": "VariableCollectionId:63:17",
+      "Motion": "VariableCollectionId:63:18"
+    },
+    "evidencePath": "evidence/figma/ios-003-1-color-variables.capture.json"
+  },
+  "target": {
+    "variableCount": 170,
+    "collectionCounts": {
+      "Primitive": 100,
+      "Semantic": 35,
+      "Theme": 35,
+      "Responsive": 0,
+      "Motion": 0
+    }
+  },
+  "reconciliation": {
+    "existingVariablesToPreserve": 80,
+    "variablesToCreate": 90,
+    "variablesToUpdate": 0,
+    "missingVariables": [
+      {
+        "canonicalTokenPath": "color.primitive.neutral.400",
+        "figmaName": "color/primitive/neutral/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.615686, 0.635294, 0.67451],
+              "alpha": 1,
+              "hex": "#9da2ac"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.neutral.600",
+        "figmaName": "color/primitive/neutral/600",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.360784, 0.384314, 0.427451],
+              "alpha": 1,
+              "hex": "#5c626d"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.blue.100",
+        "figmaName": "color/primitive/blue/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.839216, 0.890196, 1],
+              "alpha": 1,
+              "hex": "#d6e3ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.blue.300",
+        "figmaName": "color/primitive/blue/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.545098, 0.67451, 0.968627],
+              "alpha": 1,
+              "hex": "#8bacf7"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.blue.500",
+        "figmaName": "color/primitive/blue/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.266667, 0.458824, 0.886275],
+              "alpha": 1,
+              "hex": "#4475e2"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.blue.950",
+        "figmaName": "color/primitive/blue/950",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.035294, 0.094118, 0.247059],
+              "alpha": 1,
+              "hex": "#09183f"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.green.100",
+        "figmaName": "color/primitive/green/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.772549, 0.941176, 0.839216],
+              "alpha": 1,
+              "hex": "#c5f0d6"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.green.300",
+        "figmaName": "color/primitive/green/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.490196, 0.8, 0.611765],
+              "alpha": 1,
+              "hex": "#7dcc9c"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.green.400",
+        "figmaName": "color/primitive/green/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.372549, 0.705882, 0.498039],
+              "alpha": 1,
+              "hex": "#5fb47f"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.green.500",
+        "figmaName": "color/primitive/green/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.243137, 0.611765, 0.388235],
+              "alpha": 1,
+              "hex": "#3e9c63"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.green.700",
+        "figmaName": "color/primitive/green/700",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.058824, 0.419608, 0.219608],
+              "alpha": 1,
+              "hex": "#0f6b38"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.green.900",
+        "figmaName": "color/primitive/green/900",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.019608, 0.219608, 0.117647],
+              "alpha": 1,
+              "hex": "#05381e"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.red.100",
+        "figmaName": "color/primitive/red/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [1, 0.827451, 0.827451],
+              "alpha": 1,
+              "hex": "#ffd3d3"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.red.300",
+        "figmaName": "color/primitive/red/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.952941, 0.576471, 0.572549],
+              "alpha": 1,
+              "hex": "#f39392"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.red.400",
+        "figmaName": "color/primitive/red/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.901961, 0.447059, 0.439216],
+              "alpha": 1,
+              "hex": "#e67270"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.red.500",
+        "figmaName": "color/primitive/red/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.847059, 0.305882, 0.305882],
+              "alpha": 1,
+              "hex": "#d84e4e"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.red.700",
+        "figmaName": "color/primitive/red/700",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.627451, 0.090196, 0.117647],
+              "alpha": 1,
+              "hex": "#a0171e"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.red.900",
+        "figmaName": "color/primitive/red/900",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.321569, 0.039216, 0.062745],
+              "alpha": 1,
+              "hex": "#520a10"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.amber.100",
+        "figmaName": "color/primitive/amber/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.996078, 0.905882, 0.666667],
+              "alpha": 1,
+              "hex": "#fee7aa"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.amber.300",
+        "figmaName": "color/primitive/amber/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.929412, 0.729412, 0.309804],
+              "alpha": 1,
+              "hex": "#edba4f"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.amber.400",
+        "figmaName": "color/primitive/amber/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.862745, 0.627451, 0.223529],
+              "alpha": 1,
+              "hex": "#dca039"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.amber.500",
+        "figmaName": "color/primitive/amber/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.792157, 0.529412, 0.133333],
+              "alpha": 1,
+              "hex": "#ca8722"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.amber.700",
+        "figmaName": "color/primitive/amber/700",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.556863, 0.333333, 0.011765],
+              "alpha": 1,
+              "hex": "#8e5503"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.amber.900",
+        "figmaName": "color/primitive/amber/900",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.270588, 0.156863, 0],
+              "alpha": 1,
+              "hex": "#452800"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.50",
+        "figmaName": "color/primitive/indigo/50",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.956863, 0.960784, 1],
+              "alpha": 1,
+              "hex": "#f4f5ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.100",
+        "figmaName": "color/primitive/indigo/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.905882, 0.913725, 1],
+              "alpha": 1,
+              "hex": "#e7e9ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.200",
+        "figmaName": "color/primitive/indigo/200",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.823529, 0.835294, 1],
+              "alpha": 1,
+              "hex": "#d2d5ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.300",
+        "figmaName": "color/primitive/indigo/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.713725, 0.729412, 1],
+              "alpha": 1,
+              "hex": "#b6baff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.400",
+        "figmaName": "color/primitive/indigo/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.592157, 0.592157, 1],
+              "alpha": 1,
+              "hex": "#9797ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.500",
+        "figmaName": "color/primitive/indigo/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.482353, 0.447059, 0.976471],
+              "alpha": 1,
+              "hex": "#7b72f9"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.600",
+        "figmaName": "color/primitive/indigo/600",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.396078, 0.337255, 0.890196],
+              "alpha": 1,
+              "hex": "#6556e3"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.700",
+        "figmaName": "color/primitive/indigo/700",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.321569, 0.258824, 0.756863],
+              "alpha": 1,
+              "hex": "#5242c1"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.800",
+        "figmaName": "color/primitive/indigo/800",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.247059, 0.2, 0.6],
+              "alpha": 1,
+              "hex": "#3f3399"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.900",
+        "figmaName": "color/primitive/indigo/900",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.180392, 0.14902, 0.431373],
+              "alpha": 1,
+              "hex": "#2e266e"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.indigo.950",
+        "figmaName": "color/primitive/indigo/950",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.094118, 0.082353, 0.231373],
+              "alpha": 1,
+              "hex": "#18153b"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.50",
+        "figmaName": "color/primitive/purple/50",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.980392, 0.956863, 1],
+              "alpha": 1,
+              "hex": "#faf4ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.100",
+        "figmaName": "color/primitive/purple/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.952941, 0.898039, 1],
+              "alpha": 1,
+              "hex": "#f3e5ff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.200",
+        "figmaName": "color/primitive/purple/200",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.913725, 0.807843, 1],
+              "alpha": 1,
+              "hex": "#e9ceff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.300",
+        "figmaName": "color/primitive/purple/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.858824, 0.670588, 1],
+              "alpha": 1,
+              "hex": "#dbabff"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.400",
+        "figmaName": "color/primitive/purple/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.784314, 0.52549, 0.964706],
+              "alpha": 1,
+              "hex": "#c886f6"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.500",
+        "figmaName": "color/primitive/purple/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.701961, 0.384314, 0.901961],
+              "alpha": 1,
+              "hex": "#b362e6"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.600",
+        "figmaName": "color/primitive/purple/600",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.603922, 0.27451, 0.803922],
+              "alpha": 1,
+              "hex": "#9a46cd"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.700",
+        "figmaName": "color/primitive/purple/700",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.498039, 0.196078, 0.678431],
+              "alpha": 1,
+              "hex": "#7f32ad"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.800",
+        "figmaName": "color/primitive/purple/800",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.388235, 0.141176, 0.533333],
+              "alpha": 1,
+              "hex": "#632488"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.900",
+        "figmaName": "color/primitive/purple/900",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.278431, 0.105882, 0.380392],
+              "alpha": 1,
+              "hex": "#471b61"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.purple.950",
+        "figmaName": "color/primitive/purple/950",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.14902, 0.062745, 0.203922],
+              "alpha": 1,
+              "hex": "#261034"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.50",
+        "figmaName": "color/primitive/teal/50",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.917647, 0.984314, 0.976471],
+              "alpha": 1,
+              "hex": "#eafbf9"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.100",
+        "figmaName": "color/primitive/teal/100",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.827451, 0.960784, 0.94902],
+              "alpha": 1,
+              "hex": "#d3f5f2"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.200",
+        "figmaName": "color/primitive/teal/200",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.658824, 0.921569, 0.901961],
+              "alpha": 1,
+              "hex": "#a8ebe6"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.300",
+        "figmaName": "color/primitive/teal/300",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.435294, 0.858824, 0.831373],
+              "alpha": 1,
+              "hex": "#6fdbd4"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.400",
+        "figmaName": "color/primitive/teal/400",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.105882, 0.772549, 0.745098],
+              "alpha": 1,
+              "hex": "#1bc5be"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.500",
+        "figmaName": "color/primitive/teal/500",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0, 0.658824, 0.635294],
+              "alpha": 1,
+              "hex": "#00a8a2"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.600",
+        "figmaName": "color/primitive/teal/600",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0, 0.545098, 0.52549],
+              "alpha": 1,
+              "hex": "#008b86"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.700",
+        "figmaName": "color/primitive/teal/700",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0, 0.443137, 0.427451],
+              "alpha": 1,
+              "hex": "#00716d"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.800",
+        "figmaName": "color/primitive/teal/800",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0, 0.345098, 0.329412],
+              "alpha": 1,
+              "hex": "#005854"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.900",
+        "figmaName": "color/primitive/teal/900",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0, 0.25098, 0.239216],
+              "alpha": 1,
+              "hex": "#00403d"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.teal.950",
+        "figmaName": "color/primitive/teal/950",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0, 0.137255, 0.129412],
+              "alpha": 1,
+              "hex": "#002321"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.10",
+        "figmaName": "color/primitive/data/10",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.560784, 0.705882, 0.247059],
+              "alpha": 1,
+              "hex": "#8fb43f"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.11",
+        "figmaName": "color/primitive/data/11",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.neutral.500"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.01",
+        "figmaName": "color/primitive/data/01",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.blue.600"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.02",
+        "figmaName": "color/primitive/data/02",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.amber.600"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.03",
+        "figmaName": "color/primitive/data/03",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.purple.600"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.04",
+        "figmaName": "color/primitive/data/04",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.green.700"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.05",
+        "figmaName": "color/primitive/data/05",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.indigo.500"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.06",
+        "figmaName": "color/primitive/data/06",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.red.600"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.07",
+        "figmaName": "color/primitive/data/07",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.teal.500"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.08",
+        "figmaName": "color/primitive/data/08",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.815686, 0.215686, 0.396078],
+              "alpha": 1,
+              "hex": "#d03765"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.primitive.data.09",
+        "figmaName": "color/primitive/data/09",
+        "collection": "Primitive",
+        "collectionId": "VariableCollectionId:63:14",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "direct",
+            "value": {
+              "colorSpace": "srgb",
+              "components": [0.121569, 0.67451, 0.807843],
+              "alpha": 1,
+              "hex": "#1facce"
+            }
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.10",
+        "figmaName": "color/theme/data/categorical/10",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.10"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.10"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.11",
+        "figmaName": "color/theme/data/categorical/11",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.11"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.11"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.01",
+        "figmaName": "color/theme/data/categorical/01",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.01"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.01"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.02",
+        "figmaName": "color/theme/data/categorical/02",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.02"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.02"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.03",
+        "figmaName": "color/theme/data/categorical/03",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.03"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.03"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.04",
+        "figmaName": "color/theme/data/categorical/04",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.04"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.04"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.05",
+        "figmaName": "color/theme/data/categorical/05",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.05"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.05"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.06",
+        "figmaName": "color/theme/data/categorical/06",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.06"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.06"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.07",
+        "figmaName": "color/theme/data/categorical/07",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.07"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.07"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.08",
+        "figmaName": "color/theme/data/categorical/08",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.08"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.08"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.theme.data.categorical.09",
+        "figmaName": "color/theme/data/categorical/09",
+        "collection": "Theme",
+        "collectionId": "VariableCollectionId:63:16",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "Light": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.09"
+          },
+          "Dark": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.primitive.data.09"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.10",
+        "figmaName": "color/semantic/data/categorical/10",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.10"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.11",
+        "figmaName": "color/semantic/data/categorical/11",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.11"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.01",
+        "figmaName": "color/semantic/data/categorical/01",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.01"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.02",
+        "figmaName": "color/semantic/data/categorical/02",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.02"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.03",
+        "figmaName": "color/semantic/data/categorical/03",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.03"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.04",
+        "figmaName": "color/semantic/data/categorical/04",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.04"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.05",
+        "figmaName": "color/semantic/data/categorical/05",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.05"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.06",
+        "figmaName": "color/semantic/data/categorical/06",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.06"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.07",
+        "figmaName": "color/semantic/data/categorical/07",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.07"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.08",
+        "figmaName": "color/semantic/data/categorical/08",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.08"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      },
+      {
+        "canonicalTokenPath": "color.semantic.data.categorical.09",
+        "figmaName": "color/semantic/data/categorical/09",
+        "collection": "Semantic",
+        "collectionId": "VariableCollectionId:63:15",
+        "variableType": "COLOR",
+        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "values": {
+          "storage": {
+            "kind": "alias",
+            "canonicalTokenPath": "color.theme.data.categorical.09"
+          }
+        },
+        "variableId": { "status": "pending-human-capture", "value": null },
+        "mutationStatus": "pending-authenticated-figma-execution"
+      }
+    ]
+  },
+  "controls": {
+    "preserveVerifiedIds": true,
+    "publishLibrary": false,
+    "createComponents": false,
+    "inventIds": false,
+    "mutationPerformed": false,
+    "accessibilitySpecialistReview": "pending",
+    "independentReleaseApproval": "pending"
+  }
+}
