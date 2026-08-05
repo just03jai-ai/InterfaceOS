@@ -28,6 +28,30 @@ const figmaArchitectureSchema = ajv.getSchema(
 const figmaVariableBatchSchema = ajv.getSchema(
   'https://interfaceos.dev/schemas/figma-variable-execution-batch.schema.json',
 );
+const colorFoundationSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/color-foundation-contract.schema.json',
+);
+const colorReferenceAssessmentSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/color-reference-assessment.schema.json',
+);
+const figmaColorFoundationBlueprintSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-color-foundation-blueprint.schema.json',
+);
+const figmaColorFoundationMutationSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-color-foundation-mutation.schema.json',
+);
+const figmaColorVariableCaptureSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-color-variable-capture.schema.json',
+);
+const colorCandidatePaletteSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/color-candidate-palette.schema.json',
+);
+const figmaColorCandidateMutationSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-color-candidate-mutation.schema.json',
+);
+const colorFoundationApprovalSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/color-foundation-approval.schema.json',
+);
 const example = JSON.parse(
   await readFile(
     path.join(schemasDir, 'examples/evidence-manifest.example.json'),
@@ -77,10 +101,115 @@ if (!figmaVariableBatchSchema?.(figmaVariableBatch)) {
   );
 }
 
+const colorFoundationPath = path.join(
+  root,
+  'docs/design-system/foundations/color/color-foundation.contract.json',
+);
+const colorFoundation = JSON.parse(await readFile(colorFoundationPath, 'utf8'));
+if (!colorFoundationSchema?.(colorFoundation)) {
+  throw new Error(
+    `Color foundation contract is invalid: ${ajv.errorsText(colorFoundationSchema?.errors)}`,
+  );
+}
+
+const colorReferenceAssessmentPath = path.join(
+  root,
+  'docs/design-system/foundations/color/framepad-reference-assessment.json',
+);
+const colorReferenceAssessment = JSON.parse(
+  await readFile(colorReferenceAssessmentPath, 'utf8'),
+);
+if (!colorReferenceAssessmentSchema?.(colorReferenceAssessment)) {
+  throw new Error(
+    `Color reference assessment is invalid: ${ajv.errorsText(colorReferenceAssessmentSchema?.errors)}`,
+  );
+}
+
+const figmaColorFoundationBlueprintPath = path.join(
+  root,
+  'docs/design-system/foundations/color/figma-color-foundation-blueprint.json',
+);
+const figmaColorFoundationBlueprint = JSON.parse(
+  await readFile(figmaColorFoundationBlueprintPath, 'utf8'),
+);
+if (!figmaColorFoundationBlueprintSchema?.(figmaColorFoundationBlueprint)) {
+  throw new Error(
+    `Figma Color Foundation blueprint is invalid: ${ajv.errorsText(figmaColorFoundationBlueprintSchema?.errors)}`,
+  );
+}
+
+const figmaColorFoundationMutationPath = path.join(
+  root,
+  'evidence/figma/ios-003-1-color-foundation.mutation.json',
+);
+const figmaColorFoundationMutation = JSON.parse(
+  await readFile(figmaColorFoundationMutationPath, 'utf8'),
+);
+if (!figmaColorFoundationMutationSchema?.(figmaColorFoundationMutation)) {
+  throw new Error(
+    `Figma Color Foundation mutation record is invalid: ${ajv.errorsText(figmaColorFoundationMutationSchema?.errors)}`,
+  );
+}
+
+const figmaColorVariableCapturePath = path.join(
+  root,
+  'evidence/figma/ios-003-1-color-variables.capture.json',
+);
+const figmaColorVariableCapture = JSON.parse(
+  await readFile(figmaColorVariableCapturePath, 'utf8'),
+);
+if (!figmaColorVariableCaptureSchema?.(figmaColorVariableCapture)) {
+  throw new Error(
+    `Figma color variable capture is invalid: ${ajv.errorsText(figmaColorVariableCaptureSchema?.errors)}`,
+  );
+}
+
+const colorCandidatePalettePath = path.join(
+  root,
+  'docs/design-system/foundations/color/color-candidates.generated.json',
+);
+const colorCandidatePalette = JSON.parse(
+  await readFile(colorCandidatePalettePath, 'utf8'),
+);
+if (!colorCandidatePaletteSchema?.(colorCandidatePalette)) {
+  throw new Error(
+    `Color candidate palette is invalid: ${ajv.errorsText(colorCandidatePaletteSchema?.errors)}`,
+  );
+}
+
+const figmaColorCandidateMutationPath = path.join(
+  root,
+  'evidence/figma/ios-003-1-color-candidates.mutation.json',
+);
+const figmaColorCandidateMutation = JSON.parse(
+  await readFile(figmaColorCandidateMutationPath, 'utf8'),
+);
+if (!figmaColorCandidateMutationSchema?.(figmaColorCandidateMutation)) {
+  throw new Error(
+    `Figma color candidate mutation evidence is invalid: ${ajv.errorsText(figmaColorCandidateMutationSchema?.errors)}`,
+  );
+}
+
+const colorFoundationApprovalPath = path.join(
+  root,
+  'evidence/reviews/IOS-003-1-COLOR-FOUNDATION-APPROVAL.json',
+);
+const colorFoundationApproval = JSON.parse(
+  await readFile(colorFoundationApprovalPath, 'utf8'),
+);
+if (!colorFoundationApprovalSchema?.(colorFoundationApproval)) {
+  throw new Error(
+    `Color foundation approval evidence is invalid: ${ajv.errorsText(colorFoundationApprovalSchema?.errors)}`,
+  );
+}
+
 const evidenceFiles = (await findJsonFiles(path.join(root, 'evidence'))).filter(
   (file) =>
     !file.endsWith('.architecture.json') &&
-    !file.endsWith('.variable-execution.json'),
+    !file.endsWith('.variable-execution.json') &&
+    !file.endsWith('.mutation.json') &&
+    !file.endsWith('.capture.json') &&
+    file !== colorFoundationApprovalPath,
 );
 const manifests = [];
 for (const file of evidenceFiles) {
@@ -134,6 +263,18 @@ for (const { file, manifest } of manifests)
   assertNoFakeCapturedValues(manifest.figmaEvidence, path.relative(root, file));
 assertNoFakeCapturedValues(figmaArchitecture, 'Figma architecture manifest');
 assertNoFakeCapturedValues(figmaVariableBatch, 'Figma variable Batch 1 record');
+assertNoFakeCapturedValues(
+  figmaColorFoundationMutation,
+  'Figma Color Foundation mutation record',
+);
+assertNoFakeCapturedValues(
+  figmaColorVariableCapture,
+  'Figma color variable capture',
+);
+assertNoFakeCapturedValues(
+  figmaColorCandidateMutation,
+  'Figma color candidate mutation evidence',
+);
 
 for (const page of figmaArchitecture.pages) {
   for (const item of page.items) {
@@ -159,5 +300,5 @@ for (const page of figmaArchitecture.pages) {
 }
 
 console.log(
-  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, and the IOS-002 Batch 1 execution record.`,
+  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003.1 color foundation contract, the external color reference assessment, the Figma Color Foundation blueprint, the Figma Color Foundation mutation record, the Figma color variable capture, the provisional color candidate palette, its Figma mutation evidence, and the Color Foundation V1 approval record.`,
 );

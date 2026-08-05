@@ -1,0 +1,207 @@
+{
+  "$schema": "../../../../schemas/color-foundation-contract.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-FND-COLOR",
+  "milestone": "IOS-003.1",
+  "status": "approved-visual-baseline-pending-token-promotion",
+  "owner": "Jai Singh",
+  "canonicalSources": [
+    "packages/tokens/src/primitives/color.tokens.json",
+    "packages/tokens/src/semantic/color.tokens.json",
+    "packages/tokens/src/themes/light.tokens.json",
+    "packages/tokens/src/themes/dark.tokens.json",
+    "packages/tokens/src/contracts/theme-contract.json"
+  ],
+  "currentBaseline": {
+    "primitiveCount": 32,
+    "semanticCount": 24,
+    "themes": ["light", "dark"],
+    "classification": "canonical-git-baseline-with-approved-figma-visual-extension"
+  },
+  "primitiveArchitecture": {
+    "namingPattern": "color.primitive.{family}.{step}",
+    "recommendedStops": [
+      "50",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "950"
+    ],
+    "families": [
+      {
+        "name": "neutral",
+        "disposition": "approved-core-v1",
+        "usageIntent": "Surfaces, text, borders, disabled structure, and dense enterprise hierarchy."
+      },
+      {
+        "name": "blue",
+        "disposition": "approved-core-v1",
+        "usageIntent": "Official product Primary source family for interaction, focus, and information where semantically mapped."
+      },
+      {
+        "name": "green",
+        "disposition": "approved-core-v1",
+        "usageIntent": "Current success candidate; never a sole status cue."
+      },
+      {
+        "name": "red",
+        "disposition": "approved-core-v1",
+        "usageIntent": "Danger and error outcomes with redundant non-color cues."
+      },
+      {
+        "name": "amber",
+        "disposition": "approved-core-v1",
+        "usageIntent": "Warning and attention outcomes with approved foreground relationships."
+      },
+      {
+        "name": "orange",
+        "disposition": "not-selected-v1",
+        "usageIntent": "Possible warning, attention, or chart family if distinct from amber and yellow."
+      },
+      {
+        "name": "yellow",
+        "disposition": "not-selected-v1",
+        "usageIntent": "Possible caution or chart family with explicit foreground pairing rules."
+      },
+      {
+        "name": "indigo",
+        "disposition": "approved-extended-v1",
+        "usageIntent": "Advanced, AI, and premium contexts; not a core status semantic."
+      },
+      {
+        "name": "purple",
+        "disposition": "approved-extended-v1",
+        "usageIntent": "AI, automation, and innovation contexts; not a default marketing color."
+      },
+      {
+        "name": "teal",
+        "disposition": "approved-extended-v1",
+        "usageIntent": "Analytics, information, and data-heavy contexts with collision testing against success."
+      },
+      {
+        "name": "pink",
+        "disposition": "not-selected-v1",
+        "usageIntent": "Possible user-generated accent or chart family; not a marketing default."
+      }
+    ]
+  },
+  "semanticArchitecture": {
+    "namingPattern": "color.semantic.{purpose}.{role}.{state?}",
+    "categories": [
+      {
+        "name": "primary",
+        "coverage": "partial-current",
+        "intent": "Highest-priority product action or emphasis; not synonymous with a hue."
+      },
+      {
+        "name": "secondary",
+        "coverage": "gap",
+        "intent": "Lower-emphasis product action or supporting emphasis."
+      },
+      {
+        "name": "accent",
+        "coverage": "gap",
+        "intent": "Non-status emphasis, categorization, or user-selected identity."
+      },
+      {
+        "name": "success",
+        "coverage": "current",
+        "intent": "Completed or positive outcome with text, icon, or structure."
+      },
+      {
+        "name": "warning",
+        "coverage": "current",
+        "intent": "Condition requiring attention before failure."
+      },
+      {
+        "name": "error",
+        "coverage": "decision-required",
+        "intent": "Invalid or failed state; relationship to current danger semantics must be approved."
+      },
+      {
+        "name": "info",
+        "coverage": "gap",
+        "intent": "Neutral explanatory status that is not a primary action."
+      },
+      {
+        "name": "surface",
+        "coverage": "partial-current",
+        "intent": "Layered containers and grouped regions independent of shadow."
+      },
+      {
+        "name": "background",
+        "coverage": "current",
+        "intent": "Canvas and broad application regions."
+      },
+      {
+        "name": "border",
+        "coverage": "current",
+        "intent": "Dividers, boundaries, and state-relevant outlines."
+      },
+      {
+        "name": "text",
+        "coverage": "current",
+        "intent": "Readable foreground hierarchy by purpose and emphasis."
+      },
+      {
+        "name": "interactive",
+        "coverage": "partial-current",
+        "intent": "Rest, hover, active, selected, and visited behavior where meaningful."
+      },
+      {
+        "name": "focus",
+        "coverage": "current",
+        "intent": "Keyboard focus indication independent of selection and hover."
+      },
+      {
+        "name": "selection",
+        "coverage": "gap",
+        "intent": "Persistent selected state distinct from keyboard focus."
+      },
+      {
+        "name": "overlay",
+        "coverage": "gap",
+        "intent": "Scrims and occlusion with compositing and forced-colors rules."
+      },
+      {
+        "name": "disabled",
+        "coverage": "partial-current",
+        "intent": "Unavailable state that retains legibility and a non-color cue."
+      },
+      {
+        "name": "inverse",
+        "coverage": "partial-current",
+        "intent": "Foreground and surface pairs for opposite-luminance contexts."
+      },
+      {
+        "name": "muted",
+        "coverage": "partial-current",
+        "intent": "Lower-emphasis content that still meets its declared contrast obligation."
+      }
+    ]
+  },
+  "themeArchitecture": {
+    "current": ["light", "dark"],
+    "future": ["brand-themes", "high-contrast"],
+    "mappingRule": "semantic-to-theme-to-primitive"
+  },
+  "validationRequirements": [
+    "missing-semantic-mappings",
+    "duplicate-primitive-values",
+    "missing-dark-values",
+    "contrast-obligations",
+    "naming-violations"
+  ],
+  "approvalState": {
+    "visual": "approved",
+    "engineering": "approved-by-milestone-owner",
+    "accessibility": "approved-v1-specialist-audit-pending-non-blocking",
+    "release": "blocked-pending-independent-approval"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "../../schemas/figma-color-candidate-mutation.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-003.1-FIGMA-COLOR-CANDIDATE-MUTATION",
+  "milestone": "IOS-003.1",
+  "status": "implemented-pending-human-review",
+  "mutationTimestamp": "2026-08-05T10:07:05Z",
+  "operator": {
+    "name": "Codex",
+    "mechanism": "Authenticated Figma Plugin API integration",
+    "authenticated": true
+  },
+  "sourceRevision": {
+    "gitCommit": "f3c4f0edff4a935deb9f3411ce074698b96c6169",
+    "worktreeState": "dirty-uncommitted",
+    "canonicalPath": "packages/tokens/src/primitives/color.tokens.json",
+    "canonicalSha256": "9545fd4fe5d7694995bc6adb774f370b7bfb30f16bf6248cebb417f3b93d98f9",
+    "candidatePath": "docs/design-system/foundations/color/color-candidates.generated.json",
+    "candidateSha256": "683f7fabbdf27824d4ffc03f3bcd7d6e66a69067b1826c3b4ff271df2fad6517"
+  },
+  "file": {
+    "key": "OJqxFKoGjRh4rrSZCKdkzi",
+    "name": "InterfaceOS — Design System"
+  },
+  "page": { "id": "2:4", "name": "03 Foundations" },
+  "board": {
+    "id": "26:16",
+    "name": "Color / 03 Primitive Families",
+    "width": 1440,
+    "height": 5676
+  },
+  "nodes": {
+    "lanes": {
+      "neutral": "37:14",
+      "primary": "37:51",
+      "green": "38:14",
+      "amber": "38:51",
+      "red": "39:14",
+      "blue": "39:51",
+      "indigo": "40:14",
+      "purple": "40:51",
+      "teal": "41:14",
+      "data": "41:51"
+    },
+    "created": ["99:14", "99:15", "99:16"]
+  },
+  "counts": {
+    "canonicalAnchors": 32,
+    "generatedMissingStops": 24,
+    "newFamilyCandidates": 33,
+    "primaryAliasCandidates": 11,
+    "dataCandidates": 11,
+    "visibleSwatches": 111,
+    "variablesBefore": 80,
+    "variablesAfter": 80,
+    "componentsAfter": 0
+  },
+  "screenshots": [
+    {
+      "nodeId": "37:14",
+      "path": "evidence/screenshots/ios-003-1/neutral-completed.png",
+      "sha256": "e8fc439889077b8fc3f3c1921447b2b2466fc6585274f73dc3185bd67edcfecf"
+    },
+    {
+      "nodeId": "39:51",
+      "path": "evidence/screenshots/ios-003-1/blue-completed.png",
+      "sha256": "9609bb1283a8659f1eaed11783af81c717d39710540da50aee3ac26699751d62"
+    },
+    {
+      "nodeId": "38:14",
+      "path": "evidence/screenshots/ios-003-1/green-completed.png",
+      "sha256": "c95265c822331b33a6f8849f8bc2376a99760060b104a1a061b5d85ca0b6818d"
+    },
+    {
+      "nodeId": "39:14",
+      "path": "evidence/screenshots/ios-003-1/red-completed.png",
+      "sha256": "47737e3362700172ac9ff86f859658bd60a11e7b23ee95702453b5498349058f"
+    },
+    {
+      "nodeId": "38:51",
+      "path": "evidence/screenshots/ios-003-1/amber-completed.png",
+      "sha256": "84cb316e8e2899b3d555500a05aa9cf32504556693a3a086f53dce2f5d5913e6"
+    },
+    {
+      "nodeId": "40:14",
+      "path": "evidence/screenshots/ios-003-1/indigo-candidate.png",
+      "sha256": "63ac499664a9dae9480d5bd4607bea292dc5ac657e96f0a017bb926adaf7e43c"
+    },
+    {
+      "nodeId": "40:51",
+      "path": "evidence/screenshots/ios-003-1/purple-candidate.png",
+      "sha256": "a9adfbaa6925b86f1c8d46a28652a48b25d3797a348f45094778f418bc49c4b0"
+    },
+    {
+      "nodeId": "41:14",
+      "path": "evidence/screenshots/ios-003-1/teal-candidate.png",
+      "sha256": "ef75c58f653e8a1eca8b6b262c1fe3d2feaa8cb2f6d89f77598f04b4d6286396"
+    },
+    {
+      "nodeId": "37:51",
+      "path": "evidence/screenshots/ios-003-1/primary-alias-candidate.png",
+      "sha256": "d98681c52c8bfc60e7565e7fb6d567b43f88ff64829f38608a730869e1c50410"
+    },
+    {
+      "nodeId": "41:51",
+      "path": "evidence/screenshots/ios-003-1/data-categorical-candidates.png",
+      "sha256": "0a7010cb66b28298062b24d5291b671e7b2deca9361469ce38e8bcdf9ff02133"
+    },
+    {
+      "nodeId": "26:16",
+      "path": "evidence/screenshots/ios-003-1/primitive-families-completed.png",
+      "sha256": "3d7065179a6ba06174ec7ab44dda4aa2e061776fced1c6328b61a7469fb79b84"
+    }
+  ],
+  "verification": {
+    "canonicalAnchorValuesPreserved": true,
+    "candidateArtifactMatched": true,
+    "allTargetSlotsFilled": true,
+    "primaryMatchesBlue": true,
+    "dataLabelsAreCategorical": true,
+    "newVariablesCreated": false,
+    "semanticMappingsCreated": false,
+    "componentsCreated": false,
+    "libraryPublished": false,
+    "externalValuesCopied": false,
+    "figmaRevision": null,
+    "driftStatus": "candidate-evidence-synchronized"
+  },
+  "warnings": {
+    "gamutAdjusted": "Blue/100, Red/100, Indigo/50–400, Purple/50–200, and Teal/500–950 required recorded chroma reduction; final HEX values are inside sRGB.",
+    "adjacentDistinction": "Neutral/0 to Neutral/50 has ΔL 0.0211 and remains flagged for human visual review.",
+    "accessibilityApproval": "Automated contrast and approximate color-vision diagnostics are evidence only; specialist approval is pending."
+  },
+  "approvals": {
+    "design": "pending-human-review",
+    "accessibility": "pending-specialist-review",
+    "engineering": "pending-specialist-review",
+    "release": "not-approved"
+  }
+}
