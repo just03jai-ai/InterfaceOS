@@ -4,7 +4,7 @@
 
 The approved structure and current canonical color representation were implemented through the authenticated Figma integration on 2026-08-05. Human review then approved the Color Foundation V1 visual baseline under [ADR-0006](../../../decisions/0006-color-foundation-v1-visual-baseline.md). The verified top-level section is `Color` (`26:14`) on `03 Foundations` (`2:4`); all 18 board IDs are captured in the [machine-readable blueprint](figma-color-foundation-blueprint.json), [mutation record](../../../../evidence/figma/ios-003-1-color-foundation.mutation.json), and [closure evidence](../../../../evidence/reviews/IOS-003-1-COLOR-FOUNDATION-APPROVAL.json).
 
-Five private collections and 80 color variables now represent the existing canonical Git graph: 32 Primitive values, 24 Theme variables with Light/Dark primitive aliases, and 24 Semantic variables aliasing Theme. Responsive and Motion contain zero color variables. No styles, components, token changes, or publish action occurred. A named Figma revision remains unavailable because the integration host does not expose a verified revision identifier; library visibility in the Figma UI still requires human confirmation.
+Five unpublished collections and 80 color variables now represent the existing canonical Git graph: 32 Primitive values, 24 Theme variables with Light/Dark primitive aliases, and 24 Semantic variables aliasing Theme. Responsive and Motion contain zero color variables. No styles, components, token changes, or publish action occurred. A named Figma revision remains unavailable because the integration host does not expose a verified revision identifier; file sharing permissions are separate from publication governance.
 
 Status: Color Foundation V1 visual baseline approved; canonical token promotion and public release pending  
 Target file: `InterfaceOS — Design System`  
@@ -314,7 +314,7 @@ Capture these after creation:
 - [ ] Every status has a written label; color is never the only cue.
 - [ ] All external IDs are verified or explicitly pending.
 - [x] Engineering and V1 Accessibility dispositions are recorded; specialist Accessibility audit and independent Release remain pending.
-- [ ] The library remains private and unpublished.
+- [ ] The library remains unpublished.
 - [x] No UI components or component sets exist, and no canonical token value was changed by visual approval.
 
 ## Final implementation checklist

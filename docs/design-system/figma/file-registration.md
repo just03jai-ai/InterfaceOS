@@ -11,7 +11,7 @@ Status: IOS-002 Batch 1 repository preparation complete; Figma implementation an
 | Interim owner            | Jai Singh                                                                                                                                              |
 | Current phase            | IOS-002 Batch 1 prepared                                                                                                                               |
 | Implementation status    | Access, collection-shell, and primitive-color execution prepared; human Figma work pending                                                             |
-| Publishing policy        | Private during foundations; publish only after mapping, visual review, evidence capture, and approval                                                  |
+| Publishing policy        | Unpublished during foundations; publish only after mapping, visual review, evidence capture, and approval                                              |
 | Machine-readable record  | [`evidence/figma/interfaceos-design-system.architecture.json`](../../../evidence/figma/interfaceos-design-system.architecture.json)                    |
 | Batch 1 execution record | [`evidence/figma/ios-002-batch-1.variable-execution.json`](../../../evidence/figma/ios-002-batch-1.variable-execution.json)                            |
 
@@ -32,7 +32,7 @@ The architecture manifest records page order, section/category status, related f
 | Open gap                   | Grid has a Figma placeholder but no canonical grid token source.                                                                                                          | Treat Grid as a specification/specimen derived from spacing, sizing, and breakpoints. Do not invent grid values or variables.                                                   |
 | Open gap                   | Elevation and Shadows are separate Figma sections but share `shadow.tokens.json` and one evidence ID.                                                                     | Use two visual explanations backed by the same canonical source; do not create a new elevation token tier without approval.                                                     |
 | Representation constraint  | Figma variables cannot losslessly represent every DTCG composite or CSS unit.                                                                                             | ADR-0004 approves Effect Styles for shadows, Layout Grid styles for grid, the primary available font for Figma typography, and technical metadata for cubic-bezier and z-index. |
-| Governance blocker         | Access verification, specialist reviews, and all external IDs are unknown.                                                                                                | Keep release gates blocked until human capture plus engineering and accessibility review. The library remains private during foundations.                                       |
+| Governance blocker         | Access verification, specialist reviews, and all external IDs are unknown.                                                                                                | Keep release gates blocked until human capture plus engineering and accessibility review. The library remains unpublished during foundations.                                   |
 
 The architecture-only placeholders for Components, Patterns, and Templates are recorded for file completeness. They are outside IOS-001 implementation and do not authorize UI work.
 
@@ -43,7 +43,7 @@ Git remains authoritative for token names, types, values, aliases, schemas, tran
 ## Current blockers
 
 - Capture the file, page, section, collection, variable/style, and revision identifiers from Figma.
-- Verify file access and private-library controls.
+- Verify file access separately from library publication state.
 - Assign independent engineering and accessibility specialist reviewers.
 - Finalize font delivery/licensing and the primary available Figma font; Inter remains provisional.
 - Decide whether InterfaceOS will create canonical grid tokens in a later milestone.

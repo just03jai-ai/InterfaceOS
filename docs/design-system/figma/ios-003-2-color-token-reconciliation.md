@@ -1,12 +1,14 @@
 # IOS-003.2 Figma Color Token Reconciliation
 
-Status: Blocked pending authenticated Figma execution
+Status: Implemented pending human review
 
 File: `InterfaceOS — Design System` (`OJqxFKoGjRh4rrSZCKdkzi`)
 
-Library state: Private and unpublished
+Library publication state: Unpublished
 
-Machine plan: `evidence/figma/ios-003-2-color-token-reconciliation.json`
+Machine record: `evidence/figma/ios-003-2-color-token-reconciliation.json`
+
+Verified capture: `evidence/figma/ios-003-3-color-variables.capture.json`
 
 ## Verified baseline and target
 
@@ -19,20 +21,17 @@ Machine plan: `evidence/figma/ios-003-2-color-token-reconciliation.json`
 | Motion     |                  0 |                0 |     0 |
 | Total      |                 80 |              170 |    90 |
 
-The authenticated integration could not perform live discovery or mutation because its usage limit was reached. Existing IDs remain preserved from IOS-003.1 evidence; all 90 new IDs remain explicitly pending.
+Authenticated Figma execution on 2026-08-05 preserved all 80 IOS-003.1 variable IDs and created the exact 90-variable canonical delta. The verified graph now contains 170 color variables with no duplicate names, broken aliases, or unsupported direct values.
 
-## Execution order
+## Executed reconciliation
 
-1. Re-run read-only discovery and verify the five collection IDs, Theme mode IDs, 80 existing variable IDs, private status, and exact names.
-2. Compare every existing variable with canonical Git values and aliases. Stop on any difference; do not overwrite unexplained drift.
-3. Create the 68 missing Primitive variables from the machine plan. Use aliases for Data 01–07 and 11; use direct approved values only for Data 08–10.
-4. Create 11 Theme variables with Light and Dark aliases exactly as recorded.
-5. Create 11 Semantic variables aliasing the new Theme variables.
-6. Set COLOR type, governed scopes, web code syntax, descriptions, and `hiddenFromPublishing=true` on every new variable.
-7. Preserve every verified IOS-003.1 collection, mode, and variable ID.
-8. Capture every returned new variable ID, the final collection counts, screenshots, current Figma revision, and synchronization checksum.
-9. Re-run `pnpm figma:ios-003-2:check`, repository validation, and the full Git-to-Figma drift comparison.
-10. Keep the library private; do not publish or mark specialist accessibility/release approval complete.
+1. Read-only preflight verified the canonical file, Foundations page, five collection IDs, six mode IDs, 80 baseline IDs, aliases, and zero components/styles.
+2. Created 68 Primitive variables, including Data 01–11, with exact canonical values or aliases.
+3. Created 11 Theme variables with exact Light and Dark aliases.
+4. Created 11 Semantic data variables aliasing Theme intent.
+5. Applied Primitive scopes `ALL_FILLS`, `STROKE_COLOR`, and `EFFECT_COLOR`; Theme has no bindable scopes; Semantic data uses `ALL_FILLS` and `STROKE_COLOR`.
+6. Re-read the live graph and verified 170 variables, 113 aliases, zero duplicate names, zero broken aliases, and preservation of all baseline IDs.
+7. Kept every collection and variable hidden from publishing. No publish operation, component creation, or style creation occurred.
 
 ## Completion criteria
 
@@ -41,5 +40,13 @@ The authenticated integration could not perform live discovery or mutation becau
 - All 90 new entries match the machine plan and canonical Git graph.
 - Existing 80 IDs and values remain verified or any drift is explicitly reviewed.
 - Light and Dark aliases resolve to the approved values.
-- The library remains private and unpublished.
-- Evidence contains real IDs, screenshots, revisions, checksums, and reviewer disposition.
+- The library remains unpublished; file sharing permissions are governed separately.
+- Evidence contains real IDs, screenshot checksums, source revision, limitations, and pending reviewer disposition.
+
+## Evidence limitations
+
+- The authenticated integration does not expose a Figma revision identifier.
+- Captured canvas screenshots prove visual provenance but retain IOS-003.1 annotations; they do not prove the 170-variable panel count.
+- Jai Singh must capture the Variables panel total before human approval.
+- Unpublished state was confirmed by Jai Singh on 2026-08-06. The Plugin API cannot expose file-level publication history, so governed UI evidence or human attestation records publication state independently of file sharing permissions.
+- Engineering and accessibility specialist reviews and independent release approval remain pending.

@@ -1,8 +1,8 @@
 # InterfaceOS Color Foundation Specification
 
-Status: Color Foundation V1 promoted to canonical Git tokens; Figma reconciliation and public release pending
+Status: Color Foundation V1 canonical tokens and Figma variables synchronized; human review and public release pending
 
-Milestone: IOS-003.2
+Milestone: IOS-003.3
 
 Evidence ID: `IOS-FND-COLOR`
 
@@ -15,7 +15,7 @@ External reference assessment: [`framepad-reference-assessment.md`](framepad-ref
 
 InterfaceOS color exists to preserve meaning, hierarchy, operability, and trust across dense enterprise experiences. It is not a decoration layer or a fixed brand palette. Consumers choose stable semantic intent; themes provide reviewed values; primitives remain implementation material rather than a product API.
 
-The canonical Git sources now contain 100 color primitives: 89 approved hue-family stops and 11 categorical data tokens. They also contain 35 semantic aliases and 35 complete Theme mappings in each Light/Dark resolver context. IOS-003.2 derives every promoted value from the frozen IOS-003.1 approval artifact, preserves all 32 previous anchors exactly, and keeps the Figma library private while its 90 missing variable representations await authenticated reconciliation.
+The canonical Git sources contain 100 color primitives: 89 approved hue-family stops and 11 categorical data tokens. They also contain 35 semantic aliases and 35 complete Theme mappings in each Light/Dark resolver context. IOS-003.2 derived every promoted value from the frozen IOS-003.1 approval artifact and preserved all 32 previous anchors exactly. IOS-003.3 created and verified the missing 90 Figma representations while preserving the original 80 IDs; the library remains unpublished pending review. File sharing permissions are outside this publication gate.
 
 ## Objectives
 

@@ -4,7 +4,7 @@
   "name": "Color foundation",
   "type": "foundation",
   "status": "implementation",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "owner": "Jai Singh",
   "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=26-14",
   "figmaNodeId": "26:14",
@@ -141,12 +141,19 @@
         "evidence/screenshots/ios-003-1/data-categorical-candidates.png",
         "evidence/screenshots/ios-003-1/primitive-families-completed.png",
         "evidence/screenshots/ios-003-1/decision-log-approved.png",
-        "evidence/screenshots/ios-003-1/review-approval-approved.png"
+        "evidence/screenshots/ios-003-1/review-approval-approved.png",
+        "evidence/screenshots/ios-003-3/primitive-collection.png",
+        "evidence/screenshots/ios-003-3/indigo.png",
+        "evidence/screenshots/ios-003-3/purple.png",
+        "evidence/screenshots/ios-003-3/teal.png",
+        "evidence/screenshots/ios-003-3/data-01-11.png",
+        "evidence/screenshots/ios-003-3/theme-light-dark.png",
+        "evidence/screenshots/ios-003-3/semantic-variables.png"
       ]
     },
     "sourceRevision": {
       "status": "captured",
-      "value": "f3c4f0edff4a935deb9f3411ce074698b96c6169 (dirty uncommitted worktree)"
+      "value": "202250f3578bbba33f118508062e0acd2bd4d924 (IOS-003.3 dirty uncommitted worktree)"
     },
     "figmaRevision": {
       "status": "pending-human-capture",
@@ -154,16 +161,16 @@
     },
     "synchronizationChecksum": {
       "status": "captured",
-      "value": "b24bd089ae587571a2cf9698b34f299bf74e54595b15f27dc25adc360b6a8a88"
+      "value": "59da336ea64310d03a5ac90bf336aa31d75b120a525f26d0d7faf695e8c7389d"
     },
     "review": {
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "reviewer": "Jai Singh — Interim Design System Owner",
       "approvalStatus": "in-review"
     },
     "drift": {
-      "status": "changed",
-      "lastCheckedDate": "2026-08-05",
+      "status": "synchronized",
+      "lastCheckedDate": "2026-08-06",
       "resolutionOwner": "Jai Singh"
     }
   },
@@ -173,7 +180,7 @@
   "aiMetadataPath": null,
   "accessibilityStatus": "in-progress",
   "reviewStatus": "in-review",
-  "lastReviewedDate": "2026-08-05",
+  "lastReviewedDate": "2026-08-06",
   "dependencies": [
     {
       "id": "IOS-FND-TOKEN-ARCHITECTURE",
@@ -234,6 +241,16 @@
     "docs/design-system/figma/ios-003-2-color-token-reconciliation.md",
     "scripts/promote-color-foundation-v1.mjs",
     "scripts/generate-figma-color-token-reconciliation.mjs",
+    "evidence/figma/ios-003-3-color-variables.capture.json",
+    "schemas/figma-color-variable-reconciliation-capture.schema.json",
+    "tests/figma-color-variable-reconciliation-capture.test.mjs",
+    "evidence/screenshots/ios-003-3/primitive-collection.png",
+    "evidence/screenshots/ios-003-3/indigo.png",
+    "evidence/screenshots/ios-003-3/purple.png",
+    "evidence/screenshots/ios-003-3/teal.png",
+    "evidence/screenshots/ios-003-3/data-01-11.png",
+    "evidence/screenshots/ios-003-3/theme-light-dark.png",
+    "evidence/screenshots/ios-003-3/semantic-variables.png",
     "evidence/screenshots/ios-003-1/decision-log-approved.png",
     "evidence/screenshots/ios-003-1/review-approval-approved.png"
   ]

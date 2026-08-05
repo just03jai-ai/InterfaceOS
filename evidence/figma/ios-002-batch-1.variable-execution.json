@@ -88,9 +88,9 @@
           }
         },
         {
-          "key": "private-library-status",
-          "label": "Current private-library status",
-          "instruction": "Confirm the library is private and has not been publicly published.",
+          "key": "library-publication-status",
+          "label": "Current library publication status",
+          "instruction": "Confirm the library has not been published. File sharing permissions are governed separately.",
           "capture": {
             "status": "pending-human-capture",
             "value": null
@@ -193,7 +193,7 @@
             "tokenDomain": "primitive-color",
             "variableCount": 32
           },
-          "publishingState": "private-unpublished",
+          "publishingState": "unpublished",
           "evidence": {
             "collectionId": {
               "status": "pending-human-capture",
@@ -212,7 +212,7 @@
             "The display name is an exact case-sensitive match.",
             "No duplicate collection with the same display name exists.",
             "Authored modes match the approved collection contract.",
-            "The collection remains private and unpublished.",
+            "The collection remains unpublished.",
             "The real collection ID and supporting screenshot are captured after creation."
           ]
         },
@@ -225,7 +225,7 @@
             "tokenDomain": "none",
             "variableCount": 0
           },
-          "publishingState": "private-unpublished",
+          "publishingState": "unpublished",
           "evidence": {
             "collectionId": {
               "status": "pending-human-capture",
@@ -244,7 +244,7 @@
             "The display name is an exact case-sensitive match.",
             "No duplicate collection with the same display name exists.",
             "Authored modes match the approved collection contract.",
-            "The collection remains private and unpublished.",
+            "The collection remains unpublished.",
             "The real collection ID and supporting screenshot are captured after creation."
           ]
         },
@@ -257,7 +257,7 @@
             "tokenDomain": "none",
             "variableCount": 0
           },
-          "publishingState": "private-unpublished",
+          "publishingState": "unpublished",
           "evidence": {
             "collectionId": {
               "status": "pending-human-capture",
@@ -276,7 +276,7 @@
             "The display name is an exact case-sensitive match.",
             "No duplicate collection with the same display name exists.",
             "Authored modes match the approved collection contract.",
-            "The collection remains private and unpublished.",
+            "The collection remains unpublished.",
             "The real collection ID and supporting screenshot are captured after creation."
           ]
         },
@@ -289,7 +289,7 @@
             "tokenDomain": "none",
             "variableCount": 0
           },
-          "publishingState": "private-unpublished",
+          "publishingState": "unpublished",
           "evidence": {
             "collectionId": {
               "status": "pending-human-capture",
@@ -308,7 +308,7 @@
             "The display name is an exact case-sensitive match.",
             "No duplicate collection with the same display name exists.",
             "Authored modes match the approved collection contract.",
-            "The collection remains private and unpublished.",
+            "The collection remains unpublished.",
             "The real collection ID and supporting screenshot are captured after creation."
           ]
         },
@@ -321,7 +321,7 @@
             "tokenDomain": "none",
             "variableCount": 0
           },
-          "publishingState": "private-unpublished",
+          "publishingState": "unpublished",
           "evidence": {
             "collectionId": {
               "status": "pending-human-capture",
@@ -340,7 +340,7 @@
             "The display name is an exact case-sensitive match.",
             "No duplicate collection with the same display name exists.",
             "Authored modes match the approved collection contract.",
-            "The collection remains private and unpublished.",
+            "The collection remains unpublished.",
             "The real collection ID and supporting screenshot are captured after creation."
           ]
         }

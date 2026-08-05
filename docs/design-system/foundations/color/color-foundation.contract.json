@@ -17,7 +17,7 @@
     "primitiveCount": 100,
     "semanticCount": 35,
     "themes": ["light", "dark"],
-    "classification": "canonical-color-foundation-v1-promoted-private"
+    "classification": "canonical-color-foundation-v1-promoted-unpublished"
   },
   "primitiveArchitecture": {
     "namingPattern": "color.primitive.{family}.{step}",

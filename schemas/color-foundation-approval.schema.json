@@ -130,7 +130,8 @@
         "figmaVariablesChanged",
         "componentsCreated",
         "libraryPublished",
-        "libraryState",
+        "libraryPublicationState",
+        "fileSharingPermissions",
         "branchingState"
       ],
       "properties": {
@@ -138,7 +139,10 @@
         "figmaVariablesChanged": { "const": false },
         "componentsCreated": { "const": false },
         "libraryPublished": { "const": false },
-        "libraryState": { "const": "private-unpublished" },
+        "libraryPublicationState": { "const": "unpublished" },
+        "fileSharingPermissions": {
+          "const": "governed-separately-from-library-publication"
+        },
         "branchingState": { "const": "enabled" }
       }
     },

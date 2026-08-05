@@ -58,6 +58,9 @@ const colorTokenPromotionSchema = ajv.getSchema(
 const figmaColorTokenReconciliationSchema = ajv.getSchema(
   'https://interfaceos.dev/schemas/figma-color-token-reconciliation.schema.json',
 );
+const figmaColorVariableReconciliationCaptureSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/figma-color-variable-reconciliation-capture.schema.json',
+);
 const example = JSON.parse(
   await readFile(
     path.join(schemasDir, 'examples/evidence-manifest.example.json'),
@@ -225,6 +228,22 @@ if (!figmaColorTokenReconciliationSchema?.(figmaColorTokenReconciliation)) {
   );
 }
 
+const figmaColorVariableReconciliationCapture = JSON.parse(
+  await readFile(
+    path.join(root, 'evidence/figma/ios-003-3-color-variables.capture.json'),
+    'utf8',
+  ),
+);
+if (
+  !figmaColorVariableReconciliationCaptureSchema?.(
+    figmaColorVariableReconciliationCapture,
+  )
+) {
+  throw new Error(
+    `Figma color variable reconciliation capture is invalid: ${ajv.errorsText(figmaColorVariableReconciliationCaptureSchema?.errors)}`,
+  );
+}
+
 const figmaColorCandidateMutationPath = path.join(
   root,
   'evidence/figma/ios-003-1-color-candidates.mutation.json',
@@ -329,6 +348,10 @@ assertNoFakeCapturedValues(
   figmaColorTokenReconciliation,
   'Figma color token reconciliation',
 );
+assertNoFakeCapturedValues(
+  figmaColorVariableReconciliationCapture,
+  'Figma color variable reconciliation capture',
+);
 
 for (const page of figmaArchitecture.pages) {
   for (const item of page.items) {
@@ -354,5 +377,5 @@ for (const page of figmaArchitecture.pages) {
 }
 
 console.log(
-  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003.2 color foundation contract, the external color reference assessment, the Figma Color Foundation blueprint, the Figma Color Foundation mutation record, the Figma color variable capture, the frozen and current color candidate palettes, the IOS-003.2 promotion manifest and Figma reconciliation plan, the IOS-003.1 Figma mutation evidence, and the Color Foundation V1 approval record.`,
+  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003.2 color foundation contract, the external color reference assessment, the Figma Color Foundation blueprint, the Figma Color Foundation mutation record, both Figma color variable captures, the frozen and current color candidate palettes, the IOS-003.2 promotion manifest and IOS-003.3 Figma reconciliation, the IOS-003.1 Figma mutation evidence, and the Color Foundation V1 approval record.`,
 );

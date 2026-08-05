@@ -9,15 +9,23 @@ const reference = (value) =>
     ? value.slice(1, -1)
     : null;
 
-const [capture, huePrimitive, dataPrimitive, semantic, light, dark] =
-  await Promise.all([
-    readJson('evidence/figma/ios-003-1-color-variables.capture.json'),
-    readJson('packages/tokens/src/primitives/color.tokens.json'),
-    readJson('packages/tokens/src/primitives/color-data.tokens.json'),
-    readJson('packages/tokens/src/semantic/color.tokens.json'),
-    readJson('packages/tokens/src/themes/light.tokens.json'),
-    readJson('packages/tokens/src/themes/dark.tokens.json'),
-  ]);
+const [
+  capture,
+  reconciliationCapture,
+  huePrimitive,
+  dataPrimitive,
+  semantic,
+  light,
+  dark,
+] = await Promise.all([
+  readJson('evidence/figma/ios-003-1-color-variables.capture.json'),
+  readJson('evidence/figma/ios-003-3-color-variables.capture.json'),
+  readJson('packages/tokens/src/primitives/color.tokens.json'),
+  readJson('packages/tokens/src/primitives/color-data.tokens.json'),
+  readJson('packages/tokens/src/semantic/color.tokens.json'),
+  readJson('packages/tokens/src/themes/light.tokens.json'),
+  readJson('packages/tokens/src/themes/dark.tokens.json'),
+]);
 
 const existing = new Map(
   [
@@ -44,25 +52,39 @@ const darkMap = new Map(
   flattenDocument(dark).map(({ name, token }) => [name, token]),
 );
 
-function pendingEntry(entry, collection, values) {
+const capturedByPath = new Map(
+  reconciliationCapture.createdVariables.map((entry) => [
+    entry.canonicalTokenPath,
+    entry,
+  ]),
+);
+
+function reconciledEntry(entry, collection, values) {
+  const captured = capturedByPath.get(entry.name);
+  if (!captured)
+    throw new Error(`Missing IOS-003.3 capture for ${entry.name}.`);
+  if (captured.collection !== collection)
+    throw new Error(
+      `${entry.name} was captured in ${captured.collection}, expected ${collection}.`,
+    );
   return {
     canonicalTokenPath: entry.name,
     figmaName: entry.name.replaceAll('.', '/'),
     collection,
     collectionId: collectionIds[collection],
     variableType: 'COLOR',
-    scopes: ['ALL_FILLS', 'STROKE_COLOR', 'EFFECT_COLOR'],
+    scopes: captured.scopes,
     values,
-    variableId: { status: 'pending-human-capture', value: null },
-    mutationStatus: 'pending-authenticated-figma-execution',
+    variableId: { status: 'captured', value: captured.variableId },
+    mutationStatus: 'created-and-verified',
   };
 }
 
-const missingVariables = [];
+const reconciledVariables = [];
 for (const entry of primitiveEntries) {
   if (existing.has(entry.name)) continue;
-  missingVariables.push(
-    pendingEntry(entry, 'Primitive', {
+  reconciledVariables.push(
+    reconciledEntry(entry, 'Primitive', {
       storage: reference(entry.token.$value)
         ? { kind: 'alias', canonicalTokenPath: reference(entry.token.$value) }
         : { kind: 'direct', value: entry.token.$value },
@@ -72,8 +94,8 @@ for (const entry of primitiveEntries) {
 for (const [name, lightToken] of lightMap) {
   if (existing.has(name)) continue;
   const entry = { name };
-  missingVariables.push(
-    pendingEntry(entry, 'Theme', {
+  reconciledVariables.push(
+    reconciledEntry(entry, 'Theme', {
       Light: {
         kind: 'alias',
         canonicalTokenPath: reference(lightToken.$value),
@@ -87,8 +109,8 @@ for (const [name, lightToken] of lightMap) {
 }
 for (const entry of semanticEntries) {
   if (existing.has(entry.name)) continue;
-  missingVariables.push(
-    pendingEntry(entry, 'Semantic', {
+  reconciledVariables.push(
+    reconciledEntry(entry, 'Semantic', {
       storage: {
         kind: 'alias',
         canonicalTokenPath: reference(entry.token.$value),
@@ -106,16 +128,16 @@ const targetCounts = {
 };
 const plan = {
   $schema: '../../schemas/figma-color-token-reconciliation.schema.json',
-  schemaVersion: '1.0.0',
+  schemaVersion: '1.1.0',
   id: 'IOS-003.2-FIGMA-COLOR-TOKEN-RECONCILIATION',
   milestone: 'IOS-003.2',
-  status: 'blocked-pending-authenticated-figma-execution',
+  status: 'implemented-pending-human-review',
   fileKey: capture.fileKey,
-  libraryState: 'private-unpublished',
+  libraryState: 'unpublished',
   access: {
-    liveVerification: 'blocked-integration-usage-limit',
+    liveVerification: 'verified-authenticated-figma-plugin-api',
     historicalBaseline: 'verified-ios-003.1-evidence',
-    retryAfter: '2026-08-11T21:18:00+05:30',
+    capturePath: 'evidence/figma/ios-003-3-color-variables.capture.json',
   },
   baseline: {
     variableCount: existing.size,
@@ -131,16 +153,16 @@ const plan = {
   },
   reconciliation: {
     existingVariablesToPreserve: existing.size,
-    variablesToCreate: missingVariables.length,
+    variablesToCreate: reconciledVariables.length,
     variablesToUpdate: 0,
-    missingVariables,
+    reconciledVariables,
   },
   controls: {
     preserveVerifiedIds: true,
     publishLibrary: false,
     createComponents: false,
     inventIds: false,
-    mutationPerformed: false,
+    mutationPerformed: true,
     accessibilitySpecialistReview: 'pending',
     independentReleaseApproval: 'pending',
   },
@@ -156,11 +178,11 @@ if (process.argv.includes('--check')) {
       `${outputPath} is stale; run pnpm figma:ios-003-2:generate.`,
     );
   console.log(
-    `Validated IOS-003.2 Figma reconciliation plan for ${missingVariables.length} pending variables.`,
+    `Validated IOS-003.3 Figma reconciliation for ${reconciledVariables.length} created variables.`,
   );
 } else {
   await writeFile(outputPath, serialized);
   console.log(
-    `Generated IOS-003.2 Figma reconciliation plan for ${missingVariables.length} pending variables.`,
+    `Generated IOS-003.3 Figma reconciliation for ${reconciledVariables.length} created variables.`,
   );
 }

@@ -49,7 +49,7 @@ test('color foundation contract introduces no visual color values', () => {
   assert.doesNotMatch(JSON.stringify(contract), /#[a-f0-9]{3,8}\b/i);
   assert.equal(
     contract.currentBaseline.classification,
-    'canonical-color-foundation-v1-promoted-private',
+    'canonical-color-foundation-v1-promoted-unpublished',
   );
 });
 

@@ -23,7 +23,7 @@ Approve the reviewed Figma work as the official **InterfaceOS Color Foundation V
 
 The canonical Git token values remain unchanged. Figma-only approved values must move through a separately reviewed token-promotion change before code, generated distributions, or runtime consumers may treat them as canonical.
 
-The library remains private and unpublished. A named Figma version and independent release approval are required before publication.
+The library remains unpublished. File sharing permissions are outside the publication gate. A named Figma version and independent release approval are required before publication.
 
 ## Consequences
 

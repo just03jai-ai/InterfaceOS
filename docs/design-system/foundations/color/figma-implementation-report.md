@@ -22,7 +22,7 @@ Theme (24 slots × 2 modes = 48 aliases)
 Semantic (24 aliases)
 ```
 
-The approved Primitive, Semantic, Theme, Responsive, and Motion collections are private and hidden from publishing. Responsive and Motion intentionally contain zero color variables. Verified collection, mode, variable, and alias IDs are recorded in [`ios-003-1-color-variables.capture.json`](../../../../evidence/figma/ios-003-1-color-variables.capture.json).
+The approved Primitive, Semantic, Theme, Responsive, and Motion collections are hidden from publishing, and the library is unpublished. Responsive and Motion intentionally contain zero color variables. Verified collection, mode, variable, and alias IDs are recorded in [`ios-003-1-color-variables.capture.json`](../../../../evidence/figma/ios-003-1-color-variables.capture.json). File sharing permissions are separate from publication state.
 
 ## Board execution
 
@@ -77,7 +77,7 @@ Component-context verification for focus adjacency, disabled-state ambiguity, al
 - Candidate mutation record: [`ios-003-1-color-candidates.mutation.json`](../../../../evidence/figma/ios-003-1-color-candidates.mutation.json)
 - Screenshot directory: [`evidence/screenshots/ios-003-1`](../../../../evidence/screenshots/ios-003-1)
 - Figma revision: unavailable from the authenticated integration; no value was invented.
-- Jai Singh confirmed file ownership, the InterfaceOS Design System project location, private unpublished library state, publishing permission, and branching availability. No publish action was invoked, and all collections and variables remain hidden from publishing.
+- Jai Singh confirmed file ownership, the InterfaceOS Design System project location, unpublished library state, publishing permission, and branching availability. File sharing permissions were recorded independently. No publish action was invoked, and all collections and variables remain hidden from publishing.
 
 ## Closure and remaining gates
 

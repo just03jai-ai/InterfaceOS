@@ -37,7 +37,7 @@ Status: Template — approval remains blocked until every required discipline si
 - [ ] Figma IDs, screenshots, Git/Figma revisions, and checksum are captured.
 - [ ] Drift is synchronized with no unresolved Critical/High findings.
 - [ ] Evidence manifests and documentation validate.
-- [ ] The library remains private until the publishing policy is satisfied.
+- [ ] The library remains unpublished until the publishing policy is satisfied.
 - [ ] An independent final approver signs the release decision.
 
 ## Approval record

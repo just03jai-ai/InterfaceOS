@@ -39,14 +39,16 @@
           "enum": [
             "IOS-002 Batch 1 prepared; human Figma execution pending",
             "IOS-003.1 Color Foundation implemented; human review pending",
-            "IOS-003.1 Color Foundation V1 visual baseline approved; token promotion pending"
+            "IOS-003.1 Color Foundation V1 visual baseline approved; token promotion pending",
+            "IOS-003.3 color variables reconciled; human review pending"
           ]
         },
         "phase": {
           "enum": [
             "IOS-002 Batch 1 prepared",
             "IOS-003.1 implementation",
-            "IOS-003.1 approved"
+            "IOS-003.1 approved",
+            "IOS-003.3 reconciliation"
           ]
         },
         "fileKey": { "$ref": "#/$defs/externalString" },
@@ -124,9 +126,9 @@
         "publishingPolicy": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["visibility", "publishAfter"],
+          "required": ["state", "publishAfter"],
           "properties": {
-            "visibility": { "const": "private-during-foundations" },
+            "state": { "const": "unpublished-during-foundations" },
             "publishAfter": {
               "type": "array",
               "minItems": 4,
@@ -252,8 +254,8 @@
           "uniqueItems": true,
           "items": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" }
         },
-        "colorVariableCount": { "enum": [0, 24, 32] },
-        "publishingState": { "const": "private-unpublished" }
+        "colorVariableCount": { "enum": [0, 24, 32, 35, 100] },
+        "publishingState": { "const": "unpublished" }
       }
     },
     "page": {

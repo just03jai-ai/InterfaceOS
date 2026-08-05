@@ -1,0 +1,1709 @@
+{
+  "$schema": "../../schemas/figma-color-variable-reconciliation-capture.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-003.3-FIGMA-COLOR-VARIABLE-CAPTURE",
+  "milestone": "IOS-003.3",
+  "status": "implemented-pending-human-review",
+  "capturedAt": "2026-08-05T18:15:42Z",
+  "operator": {
+    "name": "Codex",
+    "mechanism": "Authenticated Figma Plugin API integration",
+    "authenticated": true
+  },
+  "sourceRevision": {
+    "gitCommit": "202250f3578bbba33f118508062e0acd2bd4d924",
+    "worktreeState": "dirty-uncommitted"
+  },
+  "file": {
+    "key": "OJqxFKoGjRh4rrSZCKdkzi",
+    "name": "InterfaceOS — Design System",
+    "pageId": "2:4",
+    "pageName": "03 Foundations"
+  },
+  "figmaRevision": {
+    "status": "unavailable",
+    "value": null,
+    "reason": "The authenticated integration does not expose a verified Figma revision identifier."
+  },
+  "library": {
+    "collectionPublishingHidden": true,
+    "publishAction": "not-invoked",
+    "publicationEvidenceRequirement": "unpublished-library-state",
+    "fileSharingPermissionsGovernance": "separate-from-library-publication",
+    "publicationStateVerification": "human-confirmed-unpublished",
+    "humanConfirmation": {
+      "reviewer": "Jai Singh — Interim Design System Owner",
+      "confirmedDate": "2026-08-06",
+      "statement": "The InterfaceOS library has not been published.",
+      "evidenceType": "human-attestation",
+      "screenshotStatus": "unavailable-workspace-ui-limitation",
+      "limitation": "The Figma Plugin API cannot expose file-level publication state, and the current Figma workspace does not expose an unpublished-library screen."
+    }
+  },
+  "baseline": {
+    "capturePath": "evidence/figma/ios-003-1-color-variables.capture.json",
+    "preservedVariableCount": 80
+  },
+  "collections": [
+    {
+      "name": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "modes": [
+        {
+          "name": "Mode 1",
+          "modeId": "63:0"
+        }
+      ],
+      "colorVariableCount": 100
+    },
+    {
+      "name": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "modes": [
+        {
+          "name": "Mode 1",
+          "modeId": "63:1"
+        }
+      ],
+      "colorVariableCount": 35
+    },
+    {
+      "name": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "63:2"
+        },
+        {
+          "name": "Dark",
+          "modeId": "63:5"
+        }
+      ],
+      "colorVariableCount": 35
+    },
+    {
+      "name": "Responsive",
+      "collectionId": "VariableCollectionId:63:17",
+      "modes": [
+        {
+          "name": "Mode 1",
+          "modeId": "63:3"
+        }
+      ],
+      "colorVariableCount": 0
+    },
+    {
+      "name": "Motion",
+      "collectionId": "VariableCollectionId:63:18",
+      "modes": [
+        {
+          "name": "Mode 1",
+          "modeId": "63:4"
+        }
+      ],
+      "colorVariableCount": 0
+    }
+  ],
+  "createdVariables": [
+    {
+      "canonicalTokenPath": "color.primitive.neutral.400",
+      "figmaName": "color/primitive/neutral/400",
+      "variableId": "VariableID:127:14",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-neutral-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.neutral.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.neutral.600",
+      "figmaName": "color/primitive/neutral/600",
+      "variableId": "VariableID:127:15",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-neutral-600)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.neutral.600"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.blue.100",
+      "figmaName": "color/primitive/blue/100",
+      "variableId": "VariableID:127:16",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-blue-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.blue.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.blue.300",
+      "figmaName": "color/primitive/blue/300",
+      "variableId": "VariableID:127:17",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-blue-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.blue.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.blue.500",
+      "figmaName": "color/primitive/blue/500",
+      "variableId": "VariableID:127:18",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-blue-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.blue.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.blue.950",
+      "figmaName": "color/primitive/blue/950",
+      "variableId": "VariableID:127:19",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-blue-950)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.blue.950"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.green.100",
+      "figmaName": "color/primitive/green/100",
+      "variableId": "VariableID:127:20",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-green-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.green.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.green.300",
+      "figmaName": "color/primitive/green/300",
+      "variableId": "VariableID:127:21",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-green-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.green.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.green.400",
+      "figmaName": "color/primitive/green/400",
+      "variableId": "VariableID:127:22",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-green-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.green.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.green.500",
+      "figmaName": "color/primitive/green/500",
+      "variableId": "VariableID:127:23",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-green-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.green.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.green.700",
+      "figmaName": "color/primitive/green/700",
+      "variableId": "VariableID:127:24",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-green-700)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.green.700"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.green.900",
+      "figmaName": "color/primitive/green/900",
+      "variableId": "VariableID:127:25",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-green-900)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.green.900"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.red.100",
+      "figmaName": "color/primitive/red/100",
+      "variableId": "VariableID:127:26",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-red-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.red.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.red.300",
+      "figmaName": "color/primitive/red/300",
+      "variableId": "VariableID:127:27",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-red-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.red.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.red.400",
+      "figmaName": "color/primitive/red/400",
+      "variableId": "VariableID:127:28",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-red-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.red.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.red.500",
+      "figmaName": "color/primitive/red/500",
+      "variableId": "VariableID:127:29",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-red-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.red.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.red.700",
+      "figmaName": "color/primitive/red/700",
+      "variableId": "VariableID:127:30",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-red-700)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.red.700"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.red.900",
+      "figmaName": "color/primitive/red/900",
+      "variableId": "VariableID:127:31",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-red-900)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.red.900"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.amber.100",
+      "figmaName": "color/primitive/amber/100",
+      "variableId": "VariableID:127:32",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-amber-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.amber.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.amber.300",
+      "figmaName": "color/primitive/amber/300",
+      "variableId": "VariableID:127:33",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-amber-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.amber.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.amber.400",
+      "figmaName": "color/primitive/amber/400",
+      "variableId": "VariableID:127:34",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-amber-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.amber.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.amber.500",
+      "figmaName": "color/primitive/amber/500",
+      "variableId": "VariableID:127:35",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-amber-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.amber.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.amber.700",
+      "figmaName": "color/primitive/amber/700",
+      "variableId": "VariableID:127:36",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-amber-700)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.amber.700"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.amber.900",
+      "figmaName": "color/primitive/amber/900",
+      "variableId": "VariableID:127:37",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-amber-900)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.amber.900"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.50",
+      "figmaName": "color/primitive/indigo/50",
+      "variableId": "VariableID:127:38",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-50)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.50"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.100",
+      "figmaName": "color/primitive/indigo/100",
+      "variableId": "VariableID:127:39",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.200",
+      "figmaName": "color/primitive/indigo/200",
+      "variableId": "VariableID:127:40",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-200)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.200"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.300",
+      "figmaName": "color/primitive/indigo/300",
+      "variableId": "VariableID:127:41",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.400",
+      "figmaName": "color/primitive/indigo/400",
+      "variableId": "VariableID:127:42",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.500",
+      "figmaName": "color/primitive/indigo/500",
+      "variableId": "VariableID:127:43",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.600",
+      "figmaName": "color/primitive/indigo/600",
+      "variableId": "VariableID:127:44",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-600)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.600"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.700",
+      "figmaName": "color/primitive/indigo/700",
+      "variableId": "VariableID:127:45",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-700)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.700"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.800",
+      "figmaName": "color/primitive/indigo/800",
+      "variableId": "VariableID:127:46",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-800)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.800"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.900",
+      "figmaName": "color/primitive/indigo/900",
+      "variableId": "VariableID:127:47",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-900)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.900"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.indigo.950",
+      "figmaName": "color/primitive/indigo/950",
+      "variableId": "VariableID:127:48",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-indigo-950)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.indigo.950"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.50",
+      "figmaName": "color/primitive/purple/50",
+      "variableId": "VariableID:127:49",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-50)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.50"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.100",
+      "figmaName": "color/primitive/purple/100",
+      "variableId": "VariableID:127:50",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.200",
+      "figmaName": "color/primitive/purple/200",
+      "variableId": "VariableID:127:51",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-200)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.200"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.300",
+      "figmaName": "color/primitive/purple/300",
+      "variableId": "VariableID:127:52",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.400",
+      "figmaName": "color/primitive/purple/400",
+      "variableId": "VariableID:127:53",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.500",
+      "figmaName": "color/primitive/purple/500",
+      "variableId": "VariableID:127:54",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.600",
+      "figmaName": "color/primitive/purple/600",
+      "variableId": "VariableID:127:55",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-600)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.600"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.700",
+      "figmaName": "color/primitive/purple/700",
+      "variableId": "VariableID:127:56",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-700)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.700"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.800",
+      "figmaName": "color/primitive/purple/800",
+      "variableId": "VariableID:127:57",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-800)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.800"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.900",
+      "figmaName": "color/primitive/purple/900",
+      "variableId": "VariableID:127:58",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-900)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.900"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.purple.950",
+      "figmaName": "color/primitive/purple/950",
+      "variableId": "VariableID:127:59",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-purple-950)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.purple.950"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.50",
+      "figmaName": "color/primitive/teal/50",
+      "variableId": "VariableID:127:60",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-50)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.50"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.100",
+      "figmaName": "color/primitive/teal/100",
+      "variableId": "VariableID:127:61",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-100)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.100"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.200",
+      "figmaName": "color/primitive/teal/200",
+      "variableId": "VariableID:127:62",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-200)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.200"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.300",
+      "figmaName": "color/primitive/teal/300",
+      "variableId": "VariableID:127:63",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-300)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.300"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.400",
+      "figmaName": "color/primitive/teal/400",
+      "variableId": "VariableID:127:64",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-400)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.400"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.500",
+      "figmaName": "color/primitive/teal/500",
+      "variableId": "VariableID:127:65",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-500)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.500"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.600",
+      "figmaName": "color/primitive/teal/600",
+      "variableId": "VariableID:127:66",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-600)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.600"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.700",
+      "figmaName": "color/primitive/teal/700",
+      "variableId": "VariableID:127:67",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-700)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.700"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.800",
+      "figmaName": "color/primitive/teal/800",
+      "variableId": "VariableID:127:68",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-800)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.800"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.900",
+      "figmaName": "color/primitive/teal/900",
+      "variableId": "VariableID:127:69",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-900)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.900"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.teal.950",
+      "figmaName": "color/primitive/teal/950",
+      "variableId": "VariableID:127:70",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-teal-950)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.teal.950"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.10",
+      "figmaName": "color/primitive/data/10",
+      "variableId": "VariableID:128:14",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-10)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.data.10"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.11",
+      "figmaName": "color/primitive/data/11",
+      "variableId": "VariableID:128:15",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-11)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.neutral.500",
+          "targetVariableId": "VariableID:64:19"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.01",
+      "figmaName": "color/primitive/data/01",
+      "variableId": "VariableID:128:16",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-01)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.blue.600",
+          "targetVariableId": "VariableID:64:27"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.02",
+      "figmaName": "color/primitive/data/02",
+      "variableId": "VariableID:128:17",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-02)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.amber.600",
+          "targetVariableId": "VariableID:64:43"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.03",
+      "figmaName": "color/primitive/data/03",
+      "variableId": "VariableID:128:18",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-03)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.purple.600",
+          "targetVariableId": "VariableID:127:55"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.04",
+      "figmaName": "color/primitive/data/04",
+      "variableId": "VariableID:128:19",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-04)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.green.700",
+          "targetVariableId": "VariableID:127:24"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.05",
+      "figmaName": "color/primitive/data/05",
+      "variableId": "VariableID:128:20",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-05)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.indigo.500",
+          "targetVariableId": "VariableID:127:43"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.06",
+      "figmaName": "color/primitive/data/06",
+      "variableId": "VariableID:128:21",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-06)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.red.600",
+          "targetVariableId": "VariableID:64:38"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.07",
+      "figmaName": "color/primitive/data/07",
+      "variableId": "VariableID:128:22",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-07)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.teal.500",
+          "targetVariableId": "VariableID:127:65"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.08",
+      "figmaName": "color/primitive/data/08",
+      "variableId": "VariableID:128:23",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-08)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.data.08"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.primitive.data.09",
+      "figmaName": "color/primitive/data/09",
+      "variableId": "VariableID:128:24",
+      "collection": "Primitive",
+      "collectionId": "VariableCollectionId:63:14",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+      "codeSyntax": "var(--ios-color-primitive-data-09)",
+      "modeBindings": {
+        "storage": {
+          "kind": "direct",
+          "canonicalTokenPath": "color.primitive.data.09"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.10",
+      "figmaName": "color/theme/data/categorical/10",
+      "variableId": "VariableID:129:14",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-10)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.10",
+          "targetVariableId": "VariableID:128:14"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.10",
+          "targetVariableId": "VariableID:128:14"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.11",
+      "figmaName": "color/theme/data/categorical/11",
+      "variableId": "VariableID:129:15",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-11)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.11",
+          "targetVariableId": "VariableID:128:15"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.11",
+          "targetVariableId": "VariableID:128:15"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.01",
+      "figmaName": "color/theme/data/categorical/01",
+      "variableId": "VariableID:129:16",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-01)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.01",
+          "targetVariableId": "VariableID:128:16"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.01",
+          "targetVariableId": "VariableID:128:16"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.02",
+      "figmaName": "color/theme/data/categorical/02",
+      "variableId": "VariableID:129:17",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-02)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.02",
+          "targetVariableId": "VariableID:128:17"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.02",
+          "targetVariableId": "VariableID:128:17"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.03",
+      "figmaName": "color/theme/data/categorical/03",
+      "variableId": "VariableID:129:18",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-03)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.03",
+          "targetVariableId": "VariableID:128:18"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.03",
+          "targetVariableId": "VariableID:128:18"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.04",
+      "figmaName": "color/theme/data/categorical/04",
+      "variableId": "VariableID:129:19",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-04)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.04",
+          "targetVariableId": "VariableID:128:19"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.04",
+          "targetVariableId": "VariableID:128:19"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.05",
+      "figmaName": "color/theme/data/categorical/05",
+      "variableId": "VariableID:129:20",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-05)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.05",
+          "targetVariableId": "VariableID:128:20"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.05",
+          "targetVariableId": "VariableID:128:20"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.06",
+      "figmaName": "color/theme/data/categorical/06",
+      "variableId": "VariableID:129:21",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-06)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.06",
+          "targetVariableId": "VariableID:128:21"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.06",
+          "targetVariableId": "VariableID:128:21"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.07",
+      "figmaName": "color/theme/data/categorical/07",
+      "variableId": "VariableID:129:22",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-07)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.07",
+          "targetVariableId": "VariableID:128:22"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.07",
+          "targetVariableId": "VariableID:128:22"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.08",
+      "figmaName": "color/theme/data/categorical/08",
+      "variableId": "VariableID:129:23",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-08)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.08",
+          "targetVariableId": "VariableID:128:23"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.08",
+          "targetVariableId": "VariableID:128:23"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.theme.data.categorical.09",
+      "figmaName": "color/theme/data/categorical/09",
+      "variableId": "VariableID:129:24",
+      "collection": "Theme",
+      "collectionId": "VariableCollectionId:63:16",
+      "variableType": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ios-color-theme-data-categorical-09)",
+      "modeBindings": {
+        "Light": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.09",
+          "targetVariableId": "VariableID:128:24"
+        },
+        "Dark": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.primitive.data.09",
+          "targetVariableId": "VariableID:128:24"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.10",
+      "figmaName": "color/semantic/data/categorical/10",
+      "variableId": "VariableID:131:14",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-10)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.10",
+          "targetVariableId": "VariableID:129:14"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.11",
+      "figmaName": "color/semantic/data/categorical/11",
+      "variableId": "VariableID:131:15",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-11)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.11",
+          "targetVariableId": "VariableID:129:15"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.01",
+      "figmaName": "color/semantic/data/categorical/01",
+      "variableId": "VariableID:131:16",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-01)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.01",
+          "targetVariableId": "VariableID:129:16"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.02",
+      "figmaName": "color/semantic/data/categorical/02",
+      "variableId": "VariableID:131:17",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-02)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.02",
+          "targetVariableId": "VariableID:129:17"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.03",
+      "figmaName": "color/semantic/data/categorical/03",
+      "variableId": "VariableID:131:18",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-03)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.03",
+          "targetVariableId": "VariableID:129:18"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.04",
+      "figmaName": "color/semantic/data/categorical/04",
+      "variableId": "VariableID:131:19",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-04)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.04",
+          "targetVariableId": "VariableID:129:19"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.05",
+      "figmaName": "color/semantic/data/categorical/05",
+      "variableId": "VariableID:131:20",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-05)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.05",
+          "targetVariableId": "VariableID:129:20"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.06",
+      "figmaName": "color/semantic/data/categorical/06",
+      "variableId": "VariableID:131:21",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-06)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.06",
+          "targetVariableId": "VariableID:129:21"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.07",
+      "figmaName": "color/semantic/data/categorical/07",
+      "variableId": "VariableID:131:22",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-07)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.07",
+          "targetVariableId": "VariableID:129:22"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.08",
+      "figmaName": "color/semantic/data/categorical/08",
+      "variableId": "VariableID:131:23",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-08)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.08",
+          "targetVariableId": "VariableID:129:23"
+        }
+      }
+    },
+    {
+      "canonicalTokenPath": "color.semantic.data.categorical.09",
+      "figmaName": "color/semantic/data/categorical/09",
+      "variableId": "VariableID:131:24",
+      "collection": "Semantic",
+      "collectionId": "VariableCollectionId:63:15",
+      "variableType": "COLOR",
+      "scopes": ["ALL_FILLS", "STROKE_COLOR"],
+      "codeSyntax": "var(--ios-color-semantic-data-categorical-09)",
+      "modeBindings": {
+        "storage": {
+          "kind": "alias",
+          "targetCanonicalTokenPath": "color.theme.data.categorical.09",
+          "targetVariableId": "VariableID:129:24"
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "nodeId": "26:16",
+      "path": "evidence/screenshots/ios-003-3/primitive-collection.png",
+      "sha256": "85327027fb71fc429561e8473fdf4bf46480dbbc9c711b45bacd69c311d76973",
+      "limitation": "approved visual source; annotations predate token reconciliation"
+    },
+    {
+      "nodeId": "40:14",
+      "path": "evidence/screenshots/ios-003-3/indigo.png",
+      "sha256": "26e110bc3ac05020fae7da6e88eb73fc9d793a44150a94adcc0e507e043cc324",
+      "limitation": "approved visual source; annotations predate token reconciliation"
+    },
+    {
+      "nodeId": "40:51",
+      "path": "evidence/screenshots/ios-003-3/purple.png",
+      "sha256": "9077deb4c4ded6ed772f02da7c1fb8d3eeba818c4078904a024e80e6e1e75d68",
+      "limitation": "approved visual source; annotations predate token reconciliation"
+    },
+    {
+      "nodeId": "41:14",
+      "path": "evidence/screenshots/ios-003-3/teal.png",
+      "sha256": "e8afd8f65bafee5a9b4715fdd1948425fa519ab0814a54f57865d621339229fa",
+      "limitation": "approved visual source; annotations predate token reconciliation"
+    },
+    {
+      "nodeId": "41:51",
+      "path": "evidence/screenshots/ios-003-3/data-01-11.png",
+      "sha256": "e1d9bb0d0e712d6e280d1907866c833c4d77e546465785250a1de5b3f8c5bcbf",
+      "limitation": "approved visual source; annotations predate token reconciliation"
+    },
+    {
+      "nodeId": "26:18",
+      "path": "evidence/screenshots/ios-003-3/theme-light-dark.png",
+      "sha256": "3ab2a1c515983a395021e3d14fc2cf3365da1bb205bada6861c240cde19ebc04",
+      "limitation": "visual mapping board; annotations show the pre-reconciliation 24-variable state"
+    },
+    {
+      "nodeId": "26:17",
+      "path": "evidence/screenshots/ios-003-3/semantic-variables.png",
+      "sha256": "580810156c05e302cb9fabc7aee086c615859b7bf0d1f6962baa0385117430bd",
+      "limitation": "visual semantic board; annotations show the pre-reconciliation 24-variable state"
+    }
+  ],
+  "evidenceLimitations": [
+    "The Figma Plugin API cannot capture the Variables sidebar or expose a verified file revision.",
+    "The Figma Plugin API cannot expose file-level publication state, and the current Figma workspace does not expose an unpublished-library screen; unpublished state is recorded through dated human attestation.",
+    "Canvas screenshots retain IOS-003.1 candidate-era annotations and support visual provenance only; authenticated variable API results prove the IOS-003.3 counts and mappings."
+  ],
+  "verification": {
+    "colorVariableCount": 170,
+    "primitiveCount": 100,
+    "themeCount": 35,
+    "semanticCount": 35,
+    "createdVariableCount": 90,
+    "preservedVariableCount": 80,
+    "duplicateNames": 0,
+    "brokenAliases": 0,
+    "primaryPrimitiveCount": 0,
+    "responsiveColorVariables": 0,
+    "motionColorVariables": 0,
+    "componentCount": 0,
+    "localStyleCount": 0,
+    "hiddenFromPublishing": true,
+    "canonicalTokenDiff": "none",
+    "driftStatus": "synchronized"
+  },
+  "approvals": {
+    "design": "pending-human-review",
+    "accessibility": "pending-specialist-review",
+    "engineering": "pending-specialist-review",
+    "independentRelease": "pending",
+    "release": "blocked"
+  }
+}
