@@ -192,3 +192,21 @@ test('the current candidate projection is tied to the promoted canonical source'
   );
   assert.equal(generated.source.canonicalValuesModified, false);
 });
+
+test('generated numeric metadata uses runtime-stable precision', async () => {
+  const generated = await readJson(
+    'docs/design-system/foundations/color/color-candidates.generated.json',
+  );
+  const visit = (value) => {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      assert.equal(value, Number(value.toFixed(10)));
+      return;
+    }
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (value && typeof value === 'object') Object.values(value).forEach(visit);
+  };
+  visit(generated);
+});

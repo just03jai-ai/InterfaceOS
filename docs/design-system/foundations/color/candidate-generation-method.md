@@ -8,6 +8,8 @@ The generated palette is visual exploration evidence, not a token source. The ca
 
 The current reproducible artifact is [`color-candidates.generated.json`](color-candidates.generated.json). Generate it with `pnpm color:candidates:generate` and verify drift with `pnpm color:candidates:check`. The exact IOS-003.1 promotion input is frozen separately as [`color-candidates.approved-v1.json`](color-candidates.approved-v1.json); its checksum remains historical evidence and it must not be regenerated after canonical promotion.
 
+Derived floating-point metadata is rounded to ten decimal places only when the current projection is serialized. Calculations and HEX generation retain full runtime precision. This serialization boundary prevents insignificant JavaScript engine differences from creating false drift while leaving canonical and approved color values unchanged.
+
 ## Existing families
 
 Canonical Neutral, Blue, Green, Red, and Amber values are immutable anchors. Missing stops are interpolated piecewise in OKLCH using the shortest hue path. This preserves the exact source HEX values while producing a monotonic perceived-lightness sequence between anchors.
