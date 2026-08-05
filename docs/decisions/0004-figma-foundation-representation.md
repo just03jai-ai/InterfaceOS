@@ -29,7 +29,7 @@ Use five Figma variable collections named `Primitive`, `Semantic`, `Theme`, `Res
 - Breakpoints are reference variables and documentation, not directly bindable Figma layout properties.
 - Grid uses manually created Figma Layout Grid styles. No canonical grid token value may be invented; the missing grid-token source remains an open decision.
 - Elevation and Shadows remain separate documentation concepts and may reference the same canonical shadow source.
-- The Figma library remains private during foundations and may be published only after mapping, visual review, evidence capture, and approval.
+- The Figma library remains unpublished during foundations and may be published only after mapping, visual review, evidence capture, and approval. File sharing permissions are governed independently.
 
 ## Consequences
 

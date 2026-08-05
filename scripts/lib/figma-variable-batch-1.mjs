@@ -46,9 +46,9 @@ const accessChecks = [
     'Capture the owning Figma team and project.',
   ],
   [
-    'private-library-status',
-    'Current private-library status',
-    'Confirm the library is private and has not been publicly published.',
+    'library-publication-status',
+    'Current library publication status',
+    'Confirm the library has not been published. File sharing permissions are governed separately.',
   ],
   [
     'publishing-permission',
@@ -147,7 +147,7 @@ const collections = [
   },
 ].map((collection) => ({
   ...collection,
-  publishingState: 'private-unpublished',
+  publishingState: 'unpublished',
   evidence: {
     collectionId: pendingString(),
     modeIds: {
@@ -160,7 +160,7 @@ const collections = [
     'The display name is an exact case-sensitive match.',
     'No duplicate collection with the same display name exists.',
     'Authored modes match the approved collection contract.',
-    'The collection remains private and unpublished.',
+    'The collection remains unpublished.',
     'The real collection ID and supporting screenshot are captured after creation.',
   ],
 }));

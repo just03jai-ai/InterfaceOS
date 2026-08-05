@@ -18,7 +18,7 @@ Create an approved, accessible, mode-aware foundation and token architecture tha
 
 ## Stage 1 authorization note
 
-Stage 1 implementation was explicitly authorized on 2026-08-04. The canonical Figma file was registered for Stage 2 on 2026-08-04, with its architecture manually created and variables/foundations pending. On 2026-08-05, Jai Singh approved ADR-0003, evidence schema 2.0, the five-collection mapping, representation rules, private-foundations publishing policy, and temporary design/documentation/governance/release review ownership. Engineering and accessibility specialist reviews, Figma access verification, external IDs, variable/style implementation, and visual evidence remain execution or release blockers; they are not treated as satisfied.
+Stage 1 implementation was explicitly authorized on 2026-08-04. The canonical Figma file was registered for Stage 2 on 2026-08-04, with its architecture manually created and variables/foundations pending. On 2026-08-05, Jai Singh approved ADR-0003, evidence schema 2.0, the five-collection mapping, representation rules, unpublished-foundations publishing policy, and temporary design/documentation/governance/release review ownership. Engineering and accessibility specialist reviews, Figma access verification, external IDs, variable/style implementation, and visual evidence remain execution or release blockers; they are not treated as satisfied.
 
 ## Work breakdown
 
@@ -120,7 +120,7 @@ Each foundation and token set has stable IDs, Figma file/node/revision, Git revi
 | Primitive/no-authored-mode and semantic/theme alias rules decided                                    | Approved                         | ADR-0004 and execution checklist                                    |
 | Shadow, border, motion, typography, z-index, breakpoint, grid, and elevation representations decided | Approved with two open decisions | Font delivery/licensing and canonical grid-token source remain open |
 | Evidence schema 2.0 contract                                                                         | Approved                         | ADR-0005; all repository foundation manifests migrated              |
-| Private-foundations publishing policy                                                                | Approved                         | Publishing remains blocked until all stated gates pass              |
+| Unpublished-foundations publishing policy                                                            | Approved                         | Publishing remains blocked until all stated gates pass              |
 | Human Figma tasks are source/count/mode/alias/evidence traceable                                     | Complete                         | Stage 2 planning checklist; IOS-002 now owns batched execution      |
 | Foundation specimen requirements                                                                     | Complete                         | Sixteen requirements; no boards implemented                         |
 | Drift severity, ownership, resolution, and sign-off rules                                            | Complete                         | `docs/design-system/figma/drift-management.md`                      |

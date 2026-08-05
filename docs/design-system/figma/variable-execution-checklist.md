@@ -14,7 +14,7 @@ The IOS-001 Stage 2 checklist used `FIG-VAR-001–020` as representation-plannin
 
 | Task          | Scope                                | Canonical input                                    | Expected Figma result                                                                                          | Repository status | External status         |
 | ------------- | ------------------------------------ | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------------- |
-| `FIG-VAR-001` | Verify file access and library state | Registered file and governance policy              | Verified access, ownership, location, permission, private status, branching, inventory, and duplicate risk     | Prepared          | Pending human capture   |
+| `FIG-VAR-001` | Verify file access and library state | Registered file and governance policy              | Verified access, ownership, location, permissions, unpublished state, branching, inventory, and duplicate risk | Prepared          | Pending human capture   |
 | `FIG-VAR-002` | Prepare collection shells            | ADR-0004 five-collection decision                  | `Primitive`, `Semantic`, `Theme`, `Responsive`, and `Motion`; only Theme has authored `Light` and `Dark` modes | Prepared          | Pending human execution |
 | `FIG-VAR-003` | Execute primitive colors             | `packages/tokens/src/primitives/color.tokens.json` | 32 `COLOR` variables in `Primitive`; no aliases or authored product modes                                      | Prepared          | Pending human execution |
 
@@ -34,7 +34,7 @@ Batch 1 authorities:
 - Convert canonical dots to Figma `/` group separators without renaming a segment.
 - Use explicit color scopes and approved Web code syntax.
 - Preserve source names, descriptions, sRGB values, alpha, and direct-value/no-alias behavior.
-- Keep the library private and unpublished.
+- Keep the library unpublished. Treat file sharing permissions as a separate access concern.
 - Capture real IDs and screenshots only after verifying them in Figma.
 - Keep engineering, accessibility, and release reviews pending.
 

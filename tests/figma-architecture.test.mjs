@@ -66,7 +66,7 @@ test('Figma variable architecture exposes the approved five execution sections',
   );
 });
 
-test('Stage 2 decisions encode collections, modes, representations, and private publishing', () => {
+test('Stage 2 decisions encode collections, modes, representations, and unpublished governance', () => {
   const decisions = manifest.approvedDecisions;
   assert.equal(decisions.status, 'accepted');
   assert.equal(decisions.approvedDate, '2026-08-05');
@@ -99,19 +99,29 @@ test('Stage 2 decisions encode collections, modes, representations, and private 
     'layout-grid-styles-with-open-token-decision',
   );
   assert.equal(
-    decisions.publishingPolicy.visibility,
-    'private-during-foundations',
+    decisions.publishingPolicy.state,
+    'unpublished-during-foundations',
   );
-  assert.deepEqual(decisions.pendingSpecialistReviews, ['accessibility']);
+  assert.deepEqual(decisions.pendingSpecialistReviews, [
+    'engineering',
+    'accessibility',
+  ]);
   assert.equal(
     decisions.specialistReviewPolicy,
     'accessibility-audit-non-blocking-for-foundation-v1-required-before-public-release',
   );
-  assert.ok(
-    decisions.collections.every(
-      ({ implementationStatus }) =>
-        implementationStatus === 'approved-color-foundation-v1',
-    ),
+  assert.deepEqual(
+    decisions.collections.map(({ name, implementationStatus }) => [
+      name,
+      implementationStatus,
+    ]),
+    [
+      ['Primitive', 'implemented-pending-human-review'],
+      ['Semantic', 'implemented-pending-human-review'],
+      ['Theme', 'implemented-pending-human-review'],
+      ['Responsive', 'approved-color-foundation-v1'],
+      ['Motion', 'approved-color-foundation-v1'],
+    ],
   );
   assert.deepEqual(
     decisions.collections.map(({ name, colorVariableCount }) => [
@@ -119,9 +129,9 @@ test('Stage 2 decisions encode collections, modes, representations, and private 
       colorVariableCount,
     ]),
     [
-      ['Primitive', 32],
-      ['Semantic', 24],
-      ['Theme', 24],
+      ['Primitive', 100],
+      ['Semantic', 35],
+      ['Theme', 35],
       ['Responsive', 0],
       ['Motion', 0],
     ],
@@ -174,7 +184,7 @@ test('verified Figma state is captured and unavailable identifiers remain null',
   assert.deepEqual(manifest.figmaFile.accessPolicy, {
     status: 'captured',
     value:
-      'Owner Jai Singh; InterfaceOS Design System project; private unpublished library; publishing permission confirmed; branching enabled',
+      'Owner Jai Singh; InterfaceOS Design System project; file sharing and edit permissions recorded separately from library publication governance; publishing permission confirmed; branching enabled',
   });
 
   const pendingLocators = [

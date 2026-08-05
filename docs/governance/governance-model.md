@@ -35,7 +35,7 @@ ADR-0006 records Jai Singh’s approval of the Color Foundation V1 visual baseli
 - The named accessibility specialist audit continues as a non-blocking foundation follow-up and remains required before public-release conformance claims.
 - Jai Singh’s engineering disposition approves the IOS-003.1 architecture, token layering, and alias hierarchy; a separate engineer should review the canonical token-promotion diff before it is merged.
 - Author and final public-release approver remain separate roles.
-- Private, unpublished status is preserved until token promotion, named-version capture, drift verification, and independent release approval are complete.
+- Unpublished status is preserved until token promotion, named-version capture, drift verification, and independent release approval are complete. File sharing permissions are governed separately from library publication.
 
 ## Lifecycle gates
 

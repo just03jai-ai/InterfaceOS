@@ -43,7 +43,8 @@
     "figmaVariablesChanged": false,
     "componentsCreated": false,
     "libraryPublished": false,
-    "libraryState": "private-unpublished",
+    "libraryPublicationState": "unpublished",
+    "fileSharingPermissions": "governed-separately-from-library-publication",
     "branchingState": "enabled"
   },
   "execution": {

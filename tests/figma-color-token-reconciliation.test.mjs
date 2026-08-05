@@ -19,7 +19,7 @@ const ajv = new Ajv2020({ allErrors: true, strict: true });
 addFormats(ajv);
 const validate = ajv.compile(schema);
 
-test('IOS-003.2 Figma reconciliation plan satisfies its schema', () => {
+test('IOS-003.3 Figma reconciliation record satisfies its schema', () => {
   assert.equal(validate(plan), true, ajv.errorsText(validate.errors));
 });
 
@@ -37,32 +37,52 @@ test('Figma reconciliation accounts for every promoted canonical color token', (
     ...capture.semanticVariables,
     ...capture.themeVariables,
   ].map(({ canonicalTokenPath }) => canonicalTokenPath);
-  const missing = plan.reconciliation.missingVariables.map(
+  const reconciled = plan.reconciliation.reconciledVariables.map(
     ({ canonicalTokenPath }) => canonicalTokenPath,
   );
-  assert.equal(new Set([...existing, ...missing]).size, 170);
+  assert.equal(new Set([...existing, ...reconciled]).size, 170);
   assert.deepEqual(
-    [...new Set([...existing, ...missing])].sort(),
+    [...new Set([...existing, ...reconciled])].sort(),
     canonical.sort(),
   );
 });
 
-test('Figma reconciliation preserves all verified IDs and invents none', () => {
+test('Figma reconciliation preserves baseline IDs and records all returned IDs', () => {
   assert.equal(plan.reconciliation.existingVariablesToPreserve, 80);
   assert.ok(
-    plan.reconciliation.missingVariables.every(
+    plan.reconciliation.reconciledVariables.every(
       ({ variableId }) =>
-        variableId.status === 'pending-human-capture' &&
-        variableId.value === null,
+        variableId.status === 'captured' &&
+        /^VariableID:[0-9]+:[0-9]+$/.test(variableId.value),
     ),
   );
   assert.equal(plan.controls.preserveVerifiedIds, true);
   assert.equal(plan.controls.inventIds, false);
-  assert.equal(plan.controls.mutationPerformed, false);
+  assert.equal(plan.controls.mutationPerformed, true);
+  assert.equal(
+    new Set(
+      plan.reconciliation.reconciledVariables.map(
+        ({ variableId }) => variableId.value,
+      ),
+    ).size,
+    90,
+  );
 });
 
-test('Figma library remains private and specialist/release gates remain pending', () => {
-  assert.equal(plan.libraryState, 'private-unpublished');
+test('Figma scopes follow the approved collection-specific contract', () => {
+  for (const entry of plan.reconciliation.reconciledVariables) {
+    const expected =
+      entry.collection === 'Primitive'
+        ? ['ALL_FILLS', 'STROKE_COLOR', 'EFFECT_COLOR']
+        : entry.collection === 'Semantic'
+          ? ['ALL_FILLS', 'STROKE_COLOR']
+          : [];
+    assert.deepEqual(entry.scopes, expected, entry.canonicalTokenPath);
+  }
+});
+
+test('Figma library remains unpublished and specialist/release gates remain pending', () => {
+  assert.equal(plan.libraryState, 'unpublished');
   assert.equal(plan.controls.publishLibrary, false);
   assert.equal(plan.controls.accessibilitySpecialistReview, 'pending');
   assert.equal(plan.controls.independentReleaseApproval, 'pending');

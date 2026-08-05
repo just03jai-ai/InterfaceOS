@@ -7,8 +7,8 @@
     "url": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
     "registeredDate": "2026-08-04",
     "owner": "Jai Singh",
-    "status": "IOS-003.1 Color Foundation V1 visual baseline approved; token promotion pending",
-    "phase": "IOS-003.1 approved",
+    "status": "IOS-003.3 color variables reconciled; human review pending",
+    "phase": "IOS-003.3 reconciliation",
     "fileKey": {
       "status": "captured",
       "value": "OJqxFKoGjRh4rrSZCKdkzi"
@@ -19,7 +19,7 @@
     },
     "accessPolicy": {
       "status": "captured",
-      "value": "Owner Jai Singh; InterfaceOS Design System project; private unpublished library; publishing permission confirmed; branching enabled"
+      "value": "Owner Jai Singh; InterfaceOS Design System project; file sharing and edit permissions recorded separately from library publication governance; publishing permission confirmed; branching enabled"
     }
   },
   "approvedDecisions": {
@@ -34,38 +34,38 @@
       {
         "name": "Primitive",
         "authoredModes": [],
-        "implementationStatus": "approved-color-foundation-v1",
+        "implementationStatus": "implemented-pending-human-review",
         "collectionId": {
           "status": "captured",
           "value": "VariableCollectionId:63:14"
         },
         "storageModes": ["63:0"],
-        "colorVariableCount": 32,
-        "publishingState": "private-unpublished"
+        "colorVariableCount": 100,
+        "publishingState": "unpublished"
       },
       {
         "name": "Semantic",
         "authoredModes": [],
-        "implementationStatus": "approved-color-foundation-v1",
+        "implementationStatus": "implemented-pending-human-review",
         "collectionId": {
           "status": "captured",
           "value": "VariableCollectionId:63:15"
         },
         "storageModes": ["63:1"],
-        "colorVariableCount": 24,
-        "publishingState": "private-unpublished"
+        "colorVariableCount": 35,
+        "publishingState": "unpublished"
       },
       {
         "name": "Theme",
         "authoredModes": ["Light", "Dark"],
-        "implementationStatus": "approved-color-foundation-v1",
+        "implementationStatus": "implemented-pending-human-review",
         "collectionId": {
           "status": "captured",
           "value": "VariableCollectionId:63:16"
         },
         "storageModes": ["63:2", "63:5"],
-        "colorVariableCount": 24,
-        "publishingState": "private-unpublished"
+        "colorVariableCount": 35,
+        "publishingState": "unpublished"
       },
       {
         "name": "Responsive",
@@ -77,7 +77,7 @@
         },
         "storageModes": ["63:3"],
         "colorVariableCount": 0,
-        "publishingState": "private-unpublished"
+        "publishingState": "unpublished"
       },
       {
         "name": "Motion",
@@ -89,7 +89,7 @@
         },
         "storageModes": ["63:4"],
         "colorVariableCount": 0,
-        "publishingState": "private-unpublished"
+        "publishingState": "unpublished"
       }
     ],
     "representationPolicies": {
@@ -103,7 +103,7 @@
       "elevation": "documentation-concept-sharing-shadow-source"
     },
     "publishingPolicy": {
-      "visibility": "private-during-foundations",
+      "state": "unpublished-during-foundations",
       "publishAfter": [
         "variable-mapping",
         "visual-review",
@@ -118,7 +118,7 @@
       "governance",
       "release"
     ],
-    "pendingSpecialistReviews": ["accessibility"],
+    "pendingSpecialistReviews": ["engineering", "accessibility"],
     "specialistReviewPolicy": "accessibility-audit-non-blocking-for-foundation-v1-required-before-public-release",
     "openDecisions": [
       "canonical-grid-token-source",
@@ -159,7 +159,7 @@
     {
       "order": 3,
       "name": "03 Foundations",
-      "status": "foundation-v1-approved",
+      "status": "foundation-implementation-in-review",
       "nodeId": {
         "status": "captured",
         "value": "2:4"
@@ -168,7 +168,7 @@
         {
           "name": "Color",
           "kind": "foundation-section",
-          "status": "approved-color-foundation-v1",
+          "status": "implemented-pending-human-review",
           "nodeId": {
             "status": "captured",
             "value": "26:14"
@@ -181,6 +181,7 @@
           ],
           "plannedTokenSourceMappings": [
             "packages/tokens/src/primitives/color.tokens.json",
+            "packages/tokens/src/primitives/color-data.tokens.json",
             "packages/tokens/src/semantic/color.tokens.json",
             "packages/tokens/src/themes/light.tokens.json",
             "packages/tokens/src/themes/dark.tokens.json"
@@ -452,6 +453,7 @@
             "packages/tokens/src/primitives/border.tokens.json",
             "packages/tokens/src/primitives/breakpoint.tokens.json",
             "packages/tokens/src/primitives/color.tokens.json",
+            "packages/tokens/src/primitives/color-data.tokens.json",
             "packages/tokens/src/primitives/opacity.tokens.json",
             "packages/tokens/src/primitives/radius.tokens.json",
             "packages/tokens/src/primitives/shadow.tokens.json",

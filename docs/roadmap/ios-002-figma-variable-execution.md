@@ -4,7 +4,7 @@ Status: Active — Batch 1 repository preparation complete; human execution pend
 
 Owner: Jai Singh (interim Design System Owner)  
 Entry gate: IOS-001 Stage 2 architecture and governance merged  
-Release boundary: Private Figma library; no component implementation
+Release boundary: Unpublished Figma library; no component implementation
 
 ## Objective
 
@@ -22,14 +22,14 @@ The [human execution guide](../design-system/figma/ios-002-batch-1-execution-gui
 
 ## Batch 1 acceptance
 
-- Access, ownership, location, permissions, private status, branching, and existing artifact inventory are captured from Figma.
+- Access, ownership, location, file sharing permissions, branching, publication state, and existing artifact inventory are captured as separate concerns.
 - Five exact collection names exist with approved authored-mode behavior.
 - The Primitive collection contains exactly the 32 planned primitive colors.
 - The other four collections contain no variables.
 - Names, values, descriptions, scopes, code syntax, alias status, modes, and counts match the canonical source.
 - Real collection, mode, and variable IDs plus screenshots are captured.
 - Drift is assessed against one Git revision and one Figma revision.
-- The library remains private and unpublished.
+- The library remains unpublished.
 - Engineering, accessibility, and independent release reviews remain pending until performed.
 
 ## Exclusions

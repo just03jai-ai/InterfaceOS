@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/figma-color-variable-reconciliation-capture.schema.json",
+  "title": "InterfaceOS IOS-003.3 Figma Color Variable Reconciliation Capture",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "id",
+    "milestone",
+    "status",
+    "capturedAt",
+    "operator",
+    "sourceRevision",
+    "file",
+    "figmaRevision",
+    "library",
+    "baseline",
+    "collections",
+    "createdVariables",
+    "screenshots",
+    "evidenceLimitations",
+    "verification",
+    "approvals"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-003.3-FIGMA-COLOR-VARIABLE-CAPTURE" },
+    "milestone": { "const": "IOS-003.3" },
+    "status": { "const": "implemented-pending-human-review" },
+    "capturedAt": { "type": "string", "format": "date-time" },
+    "operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "mechanism", "authenticated"],
+      "properties": {
+        "name": { "const": "Codex" },
+        "mechanism": {
+          "const": "Authenticated Figma Plugin API integration"
+        },
+        "authenticated": { "const": true }
+      }
+    },
+    "sourceRevision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gitCommit", "worktreeState"],
+      "properties": {
+        "gitCommit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "worktreeState": { "const": "dirty-uncommitted" }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "name", "pageId", "pageName"],
+      "properties": {
+        "key": { "const": "OJqxFKoGjRh4rrSZCKdkzi" },
+        "name": { "const": "InterfaceOS — Design System" },
+        "pageId": { "const": "2:4" },
+        "pageName": { "const": "03 Foundations" }
+      }
+    },
+    "figmaRevision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "value", "reason"],
+      "properties": {
+        "status": { "const": "unavailable" },
+        "value": { "type": "null" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    },
+    "library": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "collectionPublishingHidden",
+        "publishAction",
+        "publicationEvidenceRequirement",
+        "fileSharingPermissionsGovernance",
+        "publicationStateVerification",
+        "humanConfirmation"
+      ],
+      "properties": {
+        "collectionPublishingHidden": { "const": true },
+        "publishAction": { "const": "not-invoked" },
+        "publicationEvidenceRequirement": {
+          "const": "unpublished-library-state"
+        },
+        "fileSharingPermissionsGovernance": {
+          "const": "separate-from-library-publication"
+        },
+        "publicationStateVerification": {
+          "const": "human-confirmed-unpublished"
+        },
+        "humanConfirmation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reviewer",
+            "confirmedDate",
+            "statement",
+            "evidenceType",
+            "screenshotStatus",
+            "limitation"
+          ],
+          "properties": {
+            "reviewer": {
+              "const": "Jai Singh — Interim Design System Owner"
+            },
+            "confirmedDate": { "const": "2026-08-06" },
+            "statement": {
+              "const": "The InterfaceOS library has not been published."
+            },
+            "evidenceType": { "const": "human-attestation" },
+            "screenshotStatus": {
+              "const": "unavailable-workspace-ui-limitation"
+            },
+            "limitation": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capturePath", "preservedVariableCount"],
+      "properties": {
+        "capturePath": {
+          "const": "evidence/figma/ios-003-1-color-variables.capture.json"
+        },
+        "preservedVariableCount": { "const": 80 }
+      }
+    },
+    "collections": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": { "$ref": "#/$defs/collection" }
+    },
+    "createdVariables": {
+      "type": "array",
+      "minItems": 90,
+      "maxItems": 90,
+      "items": { "$ref": "#/$defs/variable" }
+    },
+    "screenshots": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": { "$ref": "#/$defs/screenshot" }
+    },
+    "evidenceLimitations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "colorVariableCount",
+        "primitiveCount",
+        "themeCount",
+        "semanticCount",
+        "createdVariableCount",
+        "preservedVariableCount",
+        "duplicateNames",
+        "brokenAliases",
+        "primaryPrimitiveCount",
+        "responsiveColorVariables",
+        "motionColorVariables",
+        "componentCount",
+        "localStyleCount",
+        "hiddenFromPublishing",
+        "canonicalTokenDiff",
+        "driftStatus"
+      ],
+      "properties": {
+        "colorVariableCount": { "const": 170 },
+        "primitiveCount": { "const": 100 },
+        "themeCount": { "const": 35 },
+        "semanticCount": { "const": 35 },
+        "createdVariableCount": { "const": 90 },
+        "preservedVariableCount": { "const": 80 },
+        "duplicateNames": { "const": 0 },
+        "brokenAliases": { "const": 0 },
+        "primaryPrimitiveCount": { "const": 0 },
+        "responsiveColorVariables": { "const": 0 },
+        "motionColorVariables": { "const": 0 },
+        "componentCount": { "const": 0 },
+        "localStyleCount": { "const": 0 },
+        "hiddenFromPublishing": { "const": true },
+        "canonicalTokenDiff": { "const": "none" },
+        "driftStatus": { "const": "synchronized" }
+      }
+    },
+    "approvals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "design",
+        "accessibility",
+        "engineering",
+        "independentRelease",
+        "release"
+      ],
+      "properties": {
+        "design": { "const": "pending-human-review" },
+        "accessibility": { "const": "pending-specialist-review" },
+        "engineering": { "const": "pending-specialist-review" },
+        "independentRelease": { "const": "pending" },
+        "release": { "const": "blocked" }
+      }
+    }
+  },
+  "$defs": {
+    "collectionId": {
+      "type": "string",
+      "pattern": "^VariableCollectionId:[0-9]+:[0-9]+$"
+    },
+    "variableId": {
+      "type": "string",
+      "pattern": "^VariableID:[0-9]+:[0-9]+$"
+    },
+    "modeId": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+    "collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "collectionId", "modes", "colorVariableCount"],
+      "properties": {
+        "name": {
+          "enum": ["Primitive", "Semantic", "Theme", "Responsive", "Motion"]
+        },
+        "collectionId": { "$ref": "#/$defs/collectionId" },
+        "modes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "modeId"],
+            "properties": {
+              "name": { "enum": ["Mode 1", "Light", "Dark"] },
+              "modeId": { "$ref": "#/$defs/modeId" }
+            }
+          }
+        },
+        "colorVariableCount": { "enum": [0, 35, 100] }
+      }
+    },
+    "binding": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "canonicalTokenPath"],
+          "properties": {
+            "kind": { "const": "direct" },
+            "canonicalTokenPath": {
+              "type": "string",
+              "pattern": "^color\\.primitive\\.[a-z0-9.]+$"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "targetCanonicalTokenPath", "targetVariableId"],
+          "properties": {
+            "kind": { "const": "alias" },
+            "targetCanonicalTokenPath": {
+              "type": "string",
+              "pattern": "^color\\.(?:primitive|theme)\\.[a-z0-9.]+$"
+            },
+            "targetVariableId": { "$ref": "#/$defs/variableId" }
+          }
+        }
+      ]
+    },
+    "variable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonicalTokenPath",
+        "figmaName",
+        "variableId",
+        "collection",
+        "collectionId",
+        "variableType",
+        "scopes",
+        "codeSyntax",
+        "modeBindings"
+      ],
+      "properties": {
+        "canonicalTokenPath": {
+          "type": "string",
+          "pattern": "^color\\.(?:primitive|theme|semantic)\\.[a-z0-9.]+$"
+        },
+        "figmaName": {
+          "type": "string",
+          "pattern": "^color/(?:primitive|theme|semantic)/[a-z0-9/]+$"
+        },
+        "variableId": { "$ref": "#/$defs/variableId" },
+        "collection": { "enum": ["Primitive", "Theme", "Semantic"] },
+        "collectionId": { "$ref": "#/$defs/collectionId" },
+        "variableType": { "const": "COLOR" },
+        "scopes": {
+          "type": "array",
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"]
+          }
+        },
+        "codeSyntax": {
+          "type": "string",
+          "pattern": "^var\\(--ios-color-[a-z0-9-]+\\)$"
+        },
+        "modeBindings": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 2,
+          "additionalProperties": { "$ref": "#/$defs/binding" }
+        }
+      }
+    },
+    "screenshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodeId", "path", "sha256", "limitation"],
+      "properties": {
+        "nodeId": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+        "path": {
+          "type": "string",
+          "pattern": "^evidence/screenshots/ios-003-3/.+\\.png$"
+        },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "limitation": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

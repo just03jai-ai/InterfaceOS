@@ -13,10 +13,10 @@ The machine-readable execution record is [`evidence/figma/ios-002-batch-1.variab
 Stop without creating or renaming anything when:
 
 - the opened file name or ownership context differs from the registered file;
-- edit permission, variable creation permission, or private-library state cannot be verified;
+- edit permission, variable creation permission, or unpublished-library state cannot be verified;
 - an exact collection or variable name already exists;
 - the source checksum, expected count, name, type, scope, or value differs from the generated plan;
-- creating the shells would publish the library or expose it outside the approved private context;
+- creating the shells would publish the library without completing the approved publication gates;
 - any work outside primitive colors is required to proceed.
 
 Record the mismatch as pending or blocked. Do not resolve it by deleting, renaming, overwriting, or publishing existing Figma artifacts.
@@ -26,7 +26,7 @@ Record the mismatch as pending or blocked. Do not resolve it by deleting, renami
 1. Open the canonical URL and confirm the visible file name is `InterfaceOS — Design System`.
 2. Confirm Jai Singh has edit access and can open the Variables and Styles management surfaces.
 3. Capture the verified file owner and the exact team/project location.
-4. Confirm the library is private and not publicly published.
+4. Confirm the library is unpublished. Record file sharing permissions separately as access metadata.
 5. Record whether Jai has publishing permission, but do not publish.
 6. Record whether Figma branching is available for this file and plan.
 7. Inventory all existing local collections, variables, Paint Styles, Text Styles, Effect Styles, and Grid Styles.
@@ -38,13 +38,13 @@ Record the mismatch as pending or blocked. Do not resolve it by deleting, renami
 
 Create collections in this exact order after the preflight passes:
 
-| Display name | Purpose                                                     | Authored modes  | Batch 1 contents    | Publishing state        |
-| ------------ | ----------------------------------------------------------- | --------------- | ------------------- | ----------------------- |
-| `Primitive`  | Raw platform-neutral values without product intent          | None            | 32 primitive colors | Private and unpublished |
-| `Semantic`   | Stable product-intent aliases for a later batch             | None            | Empty               | Private and unpublished |
-| `Theme`      | Mode-specific slots for later semantic-to-primitive mapping | `Light`, `Dark` | Empty               | Private and unpublished |
-| `Responsive` | Reference-only responsive decisions for a later batch       | None            | Empty               | Private and unpublished |
-| `Motion`     | Motion primitives and semantic durations for a later batch  | None            | Empty               | Private and unpublished |
+| Display name | Purpose                                                     | Authored modes  | Batch 1 contents    | Publishing state |
+| ------------ | ----------------------------------------------------------- | --------------- | ------------------- | ---------------- |
+| `Primitive`  | Raw platform-neutral values without product intent          | None            | 32 primitive colors | Unpublished      |
+| `Semantic`   | Stable product-intent aliases for a later batch             | None            | Empty               | Unpublished      |
+| `Theme`      | Mode-specific slots for later semantic-to-primitive mapping | `Light`, `Dark` | Empty               | Unpublished      |
+| `Responsive` | Reference-only responsive decisions for a later batch       | None            | Empty               | Unpublished      |
+| `Motion`     | Motion primitives and semantic durations for a later batch  | None            | Empty               | Unpublished      |
 
 For `Primitive`, `Semantic`, `Responsive`, and `Motion`, retain Figma's required default storage mode without treating it as a product mode. For `Theme`, rename the default mode to `Light` and add exactly one `Dark` mode. Do not create variables in the four deferred collections.
 
@@ -54,7 +54,7 @@ After each shell:
 2. Confirm no duplicate collection exists.
 3. Capture the real collection and mode IDs from Figma.
 4. Capture a screenshot showing the collection name and modes.
-5. Confirm the library remains private and unpublished.
+5. Confirm the library remains unpublished.
 
 ## 3. Create primitive color variables only — FIG-VAR-003
 
@@ -94,7 +94,7 @@ Keep engineering and accessibility reviews pending. Jai may perform temporary de
 2. Confirm the command reports 32 primitive colors and no stale generated artifact.
 3. Compare each Figma variable against the generated table for identity, name, type, source value, scope, code syntax, alias status, mode behavior, description, and IDs.
 4. Confirm `Semantic`, `Theme`, `Responsive`, and `Motion` contain zero variables.
-5. Confirm the library remains private and unpublished.
+5. Confirm the library remains unpublished.
 6. Classify every mismatch using the [drift-management contract](drift-management.md). Missing or unverifiable evidence is `blocked`, not synchronized.
 7. Set drift to `synchronized` only after all 32 rows and the five shells match the same Git and Figma revisions.
 
@@ -108,5 +108,5 @@ Batch 1 is ready for human review only when:
 - all collection, mode, and variable IDs plus screenshots are captured;
 - the deterministic repository checks pass;
 - drift is synchronized or every exception is documented;
-- the library remains private and unpublished;
+- the library remains unpublished;
 - design review is requested while engineering, accessibility, and release remain pending.

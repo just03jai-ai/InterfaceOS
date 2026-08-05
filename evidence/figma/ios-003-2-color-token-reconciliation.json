@@ -1,15 +1,15 @@
 {
   "$schema": "../../schemas/figma-color-token-reconciliation.schema.json",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "id": "IOS-003.2-FIGMA-COLOR-TOKEN-RECONCILIATION",
   "milestone": "IOS-003.2",
-  "status": "blocked-pending-authenticated-figma-execution",
+  "status": "implemented-pending-human-review",
   "fileKey": "OJqxFKoGjRh4rrSZCKdkzi",
-  "libraryState": "private-unpublished",
+  "libraryState": "unpublished",
   "access": {
-    "liveVerification": "blocked-integration-usage-limit",
+    "liveVerification": "verified-authenticated-figma-plugin-api",
     "historicalBaseline": "verified-ios-003.1-evidence",
-    "retryAfter": "2026-08-11T21:18:00+05:30"
+    "capturePath": "evidence/figma/ios-003-3-color-variables.capture.json"
   },
   "baseline": {
     "variableCount": 80,
@@ -36,7 +36,7 @@
     "existingVariablesToPreserve": 80,
     "variablesToCreate": 90,
     "variablesToUpdate": 0,
-    "missingVariables": [
+    "reconciledVariables": [
       {
         "canonicalTokenPath": "color.primitive.neutral.400",
         "figmaName": "color/primitive/neutral/400",
@@ -55,8 +55,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:14" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.neutral.600",
@@ -76,8 +76,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:15" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.blue.100",
@@ -97,8 +97,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:16" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.blue.300",
@@ -118,8 +118,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:17" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.blue.500",
@@ -139,8 +139,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:18" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.blue.950",
@@ -160,8 +160,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:19" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.green.100",
@@ -181,8 +181,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:20" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.green.300",
@@ -202,8 +202,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:21" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.green.400",
@@ -223,8 +223,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:22" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.green.500",
@@ -244,8 +244,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:23" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.green.700",
@@ -265,8 +265,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:24" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.green.900",
@@ -286,8 +286,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:25" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.red.100",
@@ -307,8 +307,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:26" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.red.300",
@@ -328,8 +328,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:27" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.red.400",
@@ -349,8 +349,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:28" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.red.500",
@@ -370,8 +370,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:29" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.red.700",
@@ -391,8 +391,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:30" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.red.900",
@@ -412,8 +412,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:31" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.amber.100",
@@ -433,8 +433,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:32" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.amber.300",
@@ -454,8 +454,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:33" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.amber.400",
@@ -475,8 +475,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:34" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.amber.500",
@@ -496,8 +496,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:35" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.amber.700",
@@ -517,8 +517,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:36" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.amber.900",
@@ -538,8 +538,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:37" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.50",
@@ -559,8 +559,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:38" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.100",
@@ -580,8 +580,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:39" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.200",
@@ -601,8 +601,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:40" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.300",
@@ -622,8 +622,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:41" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.400",
@@ -643,8 +643,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:42" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.500",
@@ -664,8 +664,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:43" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.600",
@@ -685,8 +685,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:44" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.700",
@@ -706,8 +706,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:45" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.800",
@@ -727,8 +727,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:46" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.900",
@@ -748,8 +748,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:47" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.indigo.950",
@@ -769,8 +769,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:48" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.50",
@@ -790,8 +790,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:49" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.100",
@@ -811,8 +811,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:50" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.200",
@@ -832,8 +832,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:51" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.300",
@@ -853,8 +853,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:52" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.400",
@@ -874,8 +874,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:53" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.500",
@@ -895,8 +895,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:54" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.600",
@@ -916,8 +916,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:55" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.700",
@@ -937,8 +937,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:56" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.800",
@@ -958,8 +958,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:57" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.900",
@@ -979,8 +979,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:58" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.purple.950",
@@ -1000,8 +1000,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:59" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.50",
@@ -1021,8 +1021,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:60" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.100",
@@ -1042,8 +1042,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:61" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.200",
@@ -1063,8 +1063,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:62" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.300",
@@ -1084,8 +1084,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:63" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.400",
@@ -1105,8 +1105,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:64" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.500",
@@ -1126,8 +1126,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:65" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.600",
@@ -1147,8 +1147,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:66" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.700",
@@ -1168,8 +1168,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:67" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.800",
@@ -1189,8 +1189,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:68" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.900",
@@ -1210,8 +1210,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:69" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.teal.950",
@@ -1231,8 +1231,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:127:70" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.10",
@@ -1252,8 +1252,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:14" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.11",
@@ -1268,8 +1268,8 @@
             "canonicalTokenPath": "color.primitive.neutral.500"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:15" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.01",
@@ -1284,8 +1284,8 @@
             "canonicalTokenPath": "color.primitive.blue.600"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:16" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.02",
@@ -1300,8 +1300,8 @@
             "canonicalTokenPath": "color.primitive.amber.600"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:17" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.03",
@@ -1316,8 +1316,8 @@
             "canonicalTokenPath": "color.primitive.purple.600"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:18" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.04",
@@ -1332,8 +1332,8 @@
             "canonicalTokenPath": "color.primitive.green.700"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:19" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.05",
@@ -1348,8 +1348,8 @@
             "canonicalTokenPath": "color.primitive.indigo.500"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:20" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.06",
@@ -1364,8 +1364,8 @@
             "canonicalTokenPath": "color.primitive.red.600"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:21" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.07",
@@ -1380,8 +1380,8 @@
             "canonicalTokenPath": "color.primitive.teal.500"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:22" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.08",
@@ -1401,8 +1401,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:23" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.primitive.data.09",
@@ -1422,8 +1422,8 @@
             }
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:128:24" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.10",
@@ -1431,7 +1431,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1442,8 +1442,8 @@
             "canonicalTokenPath": "color.primitive.data.10"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:14" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.11",
@@ -1451,7 +1451,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1462,8 +1462,8 @@
             "canonicalTokenPath": "color.primitive.data.11"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:15" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.01",
@@ -1471,7 +1471,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1482,8 +1482,8 @@
             "canonicalTokenPath": "color.primitive.data.01"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:16" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.02",
@@ -1491,7 +1491,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1502,8 +1502,8 @@
             "canonicalTokenPath": "color.primitive.data.02"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:17" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.03",
@@ -1511,7 +1511,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1522,8 +1522,8 @@
             "canonicalTokenPath": "color.primitive.data.03"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:18" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.04",
@@ -1531,7 +1531,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1542,8 +1542,8 @@
             "canonicalTokenPath": "color.primitive.data.04"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:19" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.05",
@@ -1551,7 +1551,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1562,8 +1562,8 @@
             "canonicalTokenPath": "color.primitive.data.05"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:20" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.06",
@@ -1571,7 +1571,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1582,8 +1582,8 @@
             "canonicalTokenPath": "color.primitive.data.06"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:21" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.07",
@@ -1591,7 +1591,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1602,8 +1602,8 @@
             "canonicalTokenPath": "color.primitive.data.07"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:22" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.08",
@@ -1611,7 +1611,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1622,8 +1622,8 @@
             "canonicalTokenPath": "color.primitive.data.08"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:23" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.theme.data.categorical.09",
@@ -1631,7 +1631,7 @@
         "collection": "Theme",
         "collectionId": "VariableCollectionId:63:16",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": [],
         "values": {
           "Light": {
             "kind": "alias",
@@ -1642,8 +1642,8 @@
             "canonicalTokenPath": "color.primitive.data.09"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:129:24" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.10",
@@ -1651,15 +1651,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.10"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:14" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.11",
@@ -1667,15 +1667,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.11"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:15" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.01",
@@ -1683,15 +1683,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.01"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:16" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.02",
@@ -1699,15 +1699,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.02"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:17" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.03",
@@ -1715,15 +1715,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.03"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:18" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.04",
@@ -1731,15 +1731,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.04"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:19" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.05",
@@ -1747,15 +1747,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.05"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:20" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.06",
@@ -1763,15 +1763,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.06"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:21" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.07",
@@ -1779,15 +1779,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.07"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:22" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.08",
@@ -1795,15 +1795,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.08"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:23" },
+        "mutationStatus": "created-and-verified"
       },
       {
         "canonicalTokenPath": "color.semantic.data.categorical.09",
@@ -1811,15 +1811,15 @@
         "collection": "Semantic",
         "collectionId": "VariableCollectionId:63:15",
         "variableType": "COLOR",
-        "scopes": ["ALL_FILLS", "STROKE_COLOR", "EFFECT_COLOR"],
+        "scopes": ["ALL_FILLS", "STROKE_COLOR"],
         "values": {
           "storage": {
             "kind": "alias",
             "canonicalTokenPath": "color.theme.data.categorical.09"
           }
         },
-        "variableId": { "status": "pending-human-capture", "value": null },
-        "mutationStatus": "pending-authenticated-figma-execution"
+        "variableId": { "status": "captured", "value": "VariableID:131:24" },
+        "mutationStatus": "created-and-verified"
       }
     ]
   },
@@ -1828,7 +1828,7 @@
     "publishLibrary": false,
     "createComponents": false,
     "inventIds": false,
-    "mutationPerformed": false,
+    "mutationPerformed": true,
     "accessibilitySpecialistReview": "pending",
     "independentReleaseApproval": "pending"
   }

@@ -54,7 +54,7 @@ Establish and approve the architecture, research basis, accessibility model, Fig
 - Indigo, Purple, and Teal are approved as constrained extended families.
 - Data 01–11, Light, Dark, semantic mapping, interaction, text, surface, border, feedback, dashboard, chart, and V1 accessibility models are approved.
 - Engineering architecture, token layering, and alias hierarchy are approved for the milestone.
-- The private library remains unpublished; a named Figma version is required before public release.
+- The library remains unpublished; file sharing permissions are separate, and a named Figma version is required before public release.
 
 See [ADR-0006](../decisions/0006-color-foundation-v1-visual-baseline.md) and the [closure evidence](../../evidence/reviews/IOS-003-1-COLOR-FOUNDATION-APPROVAL.json).
 

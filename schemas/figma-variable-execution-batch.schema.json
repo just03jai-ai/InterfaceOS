@@ -207,7 +207,7 @@
             "variableCount": { "type": "integer", "minimum": 0, "maximum": 32 }
           }
         },
-        "publishingState": { "const": "private-unpublished" },
+        "publishingState": { "const": "unpublished" },
         "evidence": {
           "type": "object",
           "additionalProperties": false,

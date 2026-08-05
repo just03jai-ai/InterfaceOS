@@ -1,6 +1,6 @@
 # IOS-003.1 Token Promotion Proposal
 
-Status: Implemented in IOS-003.2 — pending human review and Figma reconciliation
+Status: Implemented in IOS-003.2; variable reconciliation completed in IOS-003.3
 
 Owner: Jai Singh
 
@@ -43,13 +43,13 @@ This document records the executed promotion plan. Canonical mutations are gener
 - Extended families do not become status semantics by implication.
 - Data colors require labels, shapes, patterns, or other redundant encoding in product charts.
 - Accessibility specialist audit remains required before public-release claims.
-- The library stays private until token promotion, named-version capture, drift validation, and independent release approval are complete.
+- The library stays unpublished until token promotion, named-version capture, drift validation, and independent release approval are complete. File sharing permissions are governed separately.
 
 ## Remaining human approval and release gates
 
 - Review `color.primitive.data.{01-11}` and `color.semantic.data.categorical.{01-11}` as the implemented categorical namespace.
 - Review the generated canonical diff and confirm the 32 anchors remain unchanged.
-- Complete the pending 90-variable Figma reconciliation and capture real IDs.
+- Review the completed 90-variable Figma reconciliation and captured IDs.
 - Obtain the named accessibility specialist audit and independent release approval.
 - Capture a named Figma version before any library publication.
 
@@ -59,6 +59,6 @@ This document records the executed promotion plan. Canonical mutations are gener
 - Canonical-source diff with unchanged unrelated tokens.
 - Generated output checksums.
 - Figma variable/node ID map with zero unsupported aliases.
-- Deterministic pending reconciliation guide: [`../../figma/ios-003-2-color-token-reconciliation.md`](../../figma/ios-003-2-color-token-reconciliation.md).
+- Deterministic reconciliation record: [`../../figma/ios-003-2-color-token-reconciliation.md`](../../figma/ios-003-2-color-token-reconciliation.md).
 - Light/Dark completeness and declared contrast results.
 - Design, engineering, accessibility disposition, governance, and independent release records.

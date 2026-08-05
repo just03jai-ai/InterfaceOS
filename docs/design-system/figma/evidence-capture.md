@@ -41,6 +41,13 @@ Evidence connects an InterfaceOS stable ID to verified Figma, Git, documentation
 - Do not include credentials, private comments, personal data, or unrelated unpublished work.
 - Record the screenshot path and Figma revision together so stale evidence is detectable.
 
+### Library publication evidence
+
+- Publication evidence must show that the InterfaceOS library is unpublished, such as the authenticated Figma library interface displaying an available `Publish…` action and no published version.
+- A file-sharing label such as private, restricted, team-only, or public is not evidence of library publication state and must not be used as a substitute.
+- File sharing permissions remain access metadata. Record them separately only when required for collaboration or security review.
+- Screenshot requirements must name the unpublished-library claim they prove; they must not require a private file or workspace.
+
 ## Review boundary
 
 Repository validation proves schema shape and internal traceability. It does not prove that an external Figma ID exists, a screenshot matches the current file, or a visual result is accessible. Those claims require human verification and the review record defined here.

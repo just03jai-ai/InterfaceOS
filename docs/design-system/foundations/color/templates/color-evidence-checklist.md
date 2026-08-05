@@ -20,7 +20,7 @@ Status: Template — absent or unverifiable evidence is blocked, not synchronize
 - [ ] Figma revision/version
 - [ ] Screenshots of primitive, semantic, theme, accessibility, dashboard, chart, review, and approval boards
 - [ ] Evidence that proposals are separated from approved artifacts
-- [ ] Private/unpublished library-state capture
+- [ ] Unpublished library-state capture; file sharing permissions are recorded separately
 
 ## Validation evidence
 
