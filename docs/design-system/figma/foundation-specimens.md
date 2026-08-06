@@ -41,6 +41,8 @@ IOS-003.1 specializes FSP-001 through FSP-003 with the [Color Foundation page bl
 
 ## FSP-004 — Typography scale
 
+IOS-004.1 specializes this requirement through the [Typography Foundation specification](../foundations/typography/typography-foundation-specification.md), [human Figma page blueprint](../foundations/typography/figma-page-blueprint.md), and [machine-readable blueprint](../foundations/typography/typography-figma-blueprint.json). The architecture is approved under ADR-0007, but no Figma mutation, font selection, or token change is implied.
+
 - **Purpose:** Demonstrate hierarchy, rhythm, fallback behavior, and readable default candidates.
 - **Canonical token source:** `packages/tokens/src/primitives/typography.tokens.json`.
 - **Required content:** Font families, sizes, weights, line heights, letter spacing, specimen text, and mapping limitations.

@@ -190,7 +190,7 @@
         {
           "name": "Typography",
           "kind": "foundation-section",
-          "status": "placeholder-created",
+          "status": "specification-approved",
           "nodeId": {
             "status": "pending-human-capture",
             "value": null
@@ -200,7 +200,10 @@
             "IOS-FND-TYPOGRAPHY"
           ],
           "plannedDocumentationPaths": [
-            "docs/design-system/figma/foundation-specimens.md"
+            "docs/design-system/figma/foundation-specimens.md",
+            "docs/design-system/foundations/typography/typography-foundation-specification.md",
+            "docs/design-system/foundations/typography/figma-page-blueprint.md",
+            "docs/design-system/foundations/typography/typography-figma-blueprint.json"
           ],
           "plannedTokenSourceMappings": [
             "packages/tokens/src/primitives/typography.tokens.json"

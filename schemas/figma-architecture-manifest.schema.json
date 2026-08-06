@@ -309,6 +309,8 @@
         "status": {
           "enum": [
             "placeholder-created",
+            "specification-ready",
+            "specification-approved",
             "implemented-pending-human-review",
             "reconciled-ready-for-approval",
             "approved-color-foundation-v1"

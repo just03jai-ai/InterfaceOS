@@ -3,8 +3,8 @@
   "id": "IOS-FND-TYPOGRAPHY",
   "name": "Typography foundation",
   "type": "foundation",
-  "status": "implementation",
-  "version": "0.1.0",
+  "status": "specification",
+  "version": "0.3.0",
   "owner": "Jai Singh",
   "figmaUrl": "https://www.figma.com/design/OJqxFKoGjRh4rrSZCKdkzi/InterfaceOS-%E2%80%94-Design-System?node-id=2-11&t=ooeNCCEtH5b0vcgR-1",
   "figmaNodeId": null,
@@ -23,9 +23,9 @@
       "value": null
     },
     "review": {
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "reviewer": "Jai Singh — temporary design/documentation/governance/release reviewer",
-      "approvalStatus": "in-review"
+      "approvalStatus": "pending"
     },
     "drift": {
       "status": "not-assessed",
@@ -33,14 +33,31 @@
       "resolutionOwner": "Jai Singh"
     }
   },
-  "documentationPath": "docs/design-system/tokens/token-architecture.md",
+  "documentationPath": "docs/design-system/foundations/typography/typography-foundation-specification.md",
   "codePath": "packages/tokens/src/primitives/typography.tokens.json",
   "storybookPath": null,
   "aiMetadataPath": null,
   "accessibilityStatus": "in-progress",
-  "reviewStatus": "in-review",
-  "lastReviewedDate": "2026-08-05",
+  "reviewStatus": "approved",
+  "lastReviewedDate": "2026-08-06",
   "dependencies": [{ "id": "IOS-FND-TOKEN-ARCHITECTURE" }],
-  "relatedItems": [],
-  "evidenceLinks": ["docs/decisions/0004-figma-foundation-representation.md"]
+  "relatedItems": [
+    {
+      "type": "approved-by",
+      "targetId": "IOS-DEC-TYPOGRAPHY-ARCHITECTURE"
+    }
+  ],
+  "evidenceLinks": [
+    "docs/decisions/0004-figma-foundation-representation.md",
+    "docs/decisions/0007-typography-foundation-architecture.md",
+    "docs/design-system/foundations/typography/current-system-audit.md",
+    "docs/design-system/foundations/typography/research-summary.md",
+    "docs/design-system/foundations/typography/typography-foundation.contract.json",
+    "docs/design-system/foundations/typography/font-decision.candidates.json",
+    "docs/design-system/foundations/typography/type-style.catalog.json",
+    "docs/design-system/foundations/typography/typography-figma-blueprint.json",
+    "docs/design-system/foundations/typography/accessibility-requirements.md",
+    "docs/design-system/foundations/typography/validation-strategy.md",
+    "tests/typography-foundation.test.mjs"
+  ]
 }
