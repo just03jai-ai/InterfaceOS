@@ -61,6 +61,18 @@ const figmaColorTokenReconciliationSchema = ajv.getSchema(
 const figmaColorVariableReconciliationCaptureSchema = ajv.getSchema(
   'https://interfaceos.dev/schemas/figma-color-variable-reconciliation-capture.schema.json',
 );
+const typographyFoundationSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/typography-foundation-contract.schema.json',
+);
+const fontDecisionSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/font-decision.schema.json',
+);
+const typeStyleSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/type-style.schema.json',
+);
+const typographyFigmaBlueprintSchema = ajv.getSchema(
+  'https://interfaceos.dev/schemas/typography-figma-blueprint.schema.json',
+);
 const example = JSON.parse(
   await readFile(
     path.join(schemasDir, 'examples/evidence-manifest.example.json'),
@@ -244,6 +256,58 @@ if (
   );
 }
 
+const typographyDirectory = path.join(
+  root,
+  'docs/design-system/foundations/typography',
+);
+const typographyFoundation = JSON.parse(
+  await readFile(
+    path.join(typographyDirectory, 'typography-foundation.contract.json'),
+    'utf8',
+  ),
+);
+if (!typographyFoundationSchema?.(typographyFoundation)) {
+  throw new Error(
+    `Typography foundation contract is invalid: ${ajv.errorsText(typographyFoundationSchema?.errors)}`,
+  );
+}
+
+const fontDecision = JSON.parse(
+  await readFile(
+    path.join(typographyDirectory, 'font-decision.candidates.json'),
+    'utf8',
+  ),
+);
+if (!fontDecisionSchema?.(fontDecision)) {
+  throw new Error(
+    `Font decision matrix is invalid: ${ajv.errorsText(fontDecisionSchema?.errors)}`,
+  );
+}
+
+const typeStyleCatalog = JSON.parse(
+  await readFile(
+    path.join(typographyDirectory, 'type-style.catalog.json'),
+    'utf8',
+  ),
+);
+if (!typeStyleSchema?.(typeStyleCatalog)) {
+  throw new Error(
+    `Type Style catalog is invalid: ${ajv.errorsText(typeStyleSchema?.errors)}`,
+  );
+}
+
+const typographyFigmaBlueprint = JSON.parse(
+  await readFile(
+    path.join(typographyDirectory, 'typography-figma-blueprint.json'),
+    'utf8',
+  ),
+);
+if (!typographyFigmaBlueprintSchema?.(typographyFigmaBlueprint)) {
+  throw new Error(
+    `Typography Figma blueprint is invalid: ${ajv.errorsText(typographyFigmaBlueprintSchema?.errors)}`,
+  );
+}
+
 const figmaColorCandidateMutationPath = path.join(
   root,
   'evidence/figma/ios-003-1-color-candidates.mutation.json',
@@ -377,5 +441,5 @@ for (const page of figmaArchitecture.pages) {
 }
 
 console.log(
-  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003.2 color foundation contract, the external color reference assessment, the Figma Color Foundation blueprint, the Figma Color Foundation mutation record, both Figma color variable captures, the frozen and current color candidate palettes, the IOS-003.2 promotion manifest and IOS-003.3 Figma reconciliation, the IOS-003.1 Figma mutation evidence, and the Color Foundation V1 approval record.`,
+  `Validated ${schemaFiles.length} schemas, the evidence example, ${manifests.length} evidence manifests, the Figma architecture manifest, the IOS-002 Batch 1 execution record, the IOS-003 color contracts and evidence, and all four IOS-004.1 typography contracts.`,
 );

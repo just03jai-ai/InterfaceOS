@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/typography-foundation-contract.schema.json",
+  "title": "InterfaceOS Typography Foundation Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "id",
+    "milestone",
+    "status",
+    "owner",
+    "canonicalSource",
+    "layers",
+    "primitiveCategories",
+    "semanticRoles",
+    "responsiveContexts",
+    "fontDecision",
+    "figma",
+    "accessibilityCriteria",
+    "architectureApproval",
+    "openDecisions",
+    "prohibitions"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-004.1-TYPOGRAPHY-FOUNDATION" },
+    "milestone": { "const": "IOS-004.1" },
+    "status": { "const": "architecture-approved" },
+    "owner": { "type": "string", "minLength": 1 },
+    "canonicalSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "tokenCount",
+        "valuesModified",
+        "inventory"
+      ],
+      "properties": {
+        "path": {
+          "const": "packages/tokens/src/primitives/typography.tokens.json"
+        },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "tokenCount": { "const": 21 },
+        "valuesModified": { "const": false },
+        "inventory": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "fontFamily",
+            "fontSize",
+            "fontWeight",
+            "lineHeight",
+            "letterSpacing",
+            "paragraphSpacing",
+            "semanticStyles",
+            "responsiveMappings"
+          ],
+          "properties": {
+            "fontFamily": { "const": 2 },
+            "fontSize": { "const": 8 },
+            "fontWeight": { "const": 4 },
+            "lineHeight": { "const": 4 },
+            "letterSpacing": { "const": 3 },
+            "paragraphSpacing": { "const": 0 },
+            "semanticStyles": { "const": 0 },
+            "responsiveMappings": { "const": 0 }
+          }
+        }
+      }
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "primitive-properties",
+          "semantic-type-styles",
+          "responsive-context-mappings",
+          "platform-representations"
+        ]
+      }
+    },
+    "primitiveCategories": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "font-family",
+          "font-weight",
+          "font-size",
+          "line-height",
+          "letter-spacing",
+          "paragraph-spacing"
+        ]
+      }
+    },
+    "semanticRoles": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "uniqueItems": true,
+      "items": { "$ref": "type-style.schema.json#/$defs/role" }
+    },
+    "responsiveContexts": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": { "enum": ["compact", "medium", "expanded", "dense"] }
+    },
+    "fontDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "artifact", "interStatus"],
+      "properties": {
+        "status": { "const": "pending-human-decision" },
+        "artifact": { "$ref": "#/$defs/repoPath" },
+        "interStatus": { "const": "provisional" }
+      }
+    },
+    "figma": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "blueprint",
+        "mutationStatus",
+        "libraryPublicationState",
+        "collectionStrategy",
+        "textStyleStrategy"
+      ],
+      "properties": {
+        "blueprint": { "$ref": "#/$defs/repoPath" },
+        "mutationStatus": { "const": "not-authorized" },
+        "libraryPublicationState": { "const": "unpublished" },
+        "collectionStrategy": { "const": "reuse-approved-five-collections" },
+        "textStyleStrategy": {
+          "const": "semantic-composites-backed-by-approved-variables"
+        }
+      }
+    },
+    "accessibilityCriteria": {
+      "type": "array",
+      "minItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^WCAG-[0-9]+\\.[0-9]+\\.[0-9]+$"
+      }
+    },
+    "architectureApproval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "date",
+        "owner",
+        "decision",
+        "specialistEngineeringReview",
+        "specialistAccessibilityReview"
+      ],
+      "properties": {
+        "status": { "const": "approved" },
+        "date": { "const": "2026-08-06" },
+        "owner": { "const": "Jai Singh" },
+        "decision": {
+          "const": "docs/decisions/0007-typography-foundation-architecture.md"
+        },
+        "specialistEngineeringReview": { "const": "pending" },
+        "specialistAccessibilityReview": { "const": "pending" }
+      }
+    },
+    "openDecisions": {
+      "type": "array",
+      "minItems": 10,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "allOf": [
+        { "contains": { "const": "canonical-token-change" } },
+        { "contains": { "const": "figma-mutation" } },
+        { "contains": { "const": "font-download-or-bundling" } },
+        { "contains": { "const": "library-publication" } }
+      ],
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "repoPath": { "type": "string", "pattern": "^(?!/)(?!.*\\.\\.)[^\\s]+$" }
+  }
+}

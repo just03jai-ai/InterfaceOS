@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/type-style.schema.json",
+  "title": "InterfaceOS Semantic Type Style Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "id", "status", "styles"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-004-TYPE-STYLE-CATALOG" },
+    "status": { "const": "role-inventory-approved-no-values-mapped" },
+    "styles": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": { "$ref": "#/$defs/style" }
+    }
+  },
+  "$defs": {
+    "role": {
+      "enum": [
+        "display",
+        "heading",
+        "title",
+        "body",
+        "label",
+        "caption",
+        "code",
+        "numeric",
+        "data-table",
+        "button-text",
+        "input-text",
+        "helper-text",
+        "validation-text"
+      ]
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "role",
+        "familyIntent",
+        "sizeMapping",
+        "weightIntent",
+        "lineHeightIntent",
+        "letterSpacingIntent",
+        "paragraphSpacingIntent",
+        "responsiveBehavior",
+        "features",
+        "status"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^typography\\.semantic\\.[a-z]+(?:-[a-z]+)*\\.default$"
+        },
+        "role": { "$ref": "#/$defs/role" },
+        "familyIntent": { "enum": ["sans", "mono"] },
+        "sizeMapping": { "type": "null" },
+        "weightIntent": { "type": "string", "minLength": 1 },
+        "lineHeightIntent": { "type": "string", "minLength": 1 },
+        "letterSpacingIntent": { "type": "string", "minLength": 1 },
+        "paragraphSpacingIntent": { "type": "string", "minLength": 1 },
+        "responsiveBehavior": { "type": "string", "minLength": 1 },
+        "features": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "status": { "const": "role-approved-mapping-pending" }
+      }
+    }
+  }
+}

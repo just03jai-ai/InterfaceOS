@@ -1,0 +1,218 @@
+{
+  "$schema": "../../../../../schemas/typography-figma-blueprint.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-004.1-TYPOGRAPHY-FIGMA-BLUEPRINT",
+  "status": "approved-specification",
+  "targetPage": "03 Foundations",
+  "targetSection": "Typography",
+  "mutationAuthorized": false,
+  "libraryPublicationState": "unpublished",
+  "sharedFrameContract": {
+    "layout": "vertical-auto-layout",
+    "contentOrder": [
+      "title-and-purpose",
+      "editable-specimens",
+      "comparisons",
+      "annotations",
+      "review-and-evidence"
+    ],
+    "annotationFields": [
+      "canonical-path-or-proposed-role",
+      "decision-status",
+      "accessibility-obligation",
+      "representation-limitation",
+      "evidence-id"
+    ],
+    "evidenceFields": [
+      "figma-node-id",
+      "text-style-id",
+      "variable-ids",
+      "screenshot-path",
+      "figma-revision",
+      "reviewer",
+      "review-date"
+    ]
+  },
+  "boards": [
+    {
+      "order": 1,
+      "name": "01 Typography / Philosophy",
+      "purpose": "Establish productive enterprise tone, AI-content requirements, density boundaries, localization, and brand-expression limits.",
+      "requiredContent": [
+        "principles",
+        "prohibited uses",
+        "product versus expressive comparison"
+      ]
+    },
+    {
+      "order": 2,
+      "name": "02 Typography / Font family candidates",
+      "purpose": "Compare unapproved primary and monospace candidates without selecting a winner.",
+      "requiredContent": [
+        "candidate specimens",
+        "decision matrix",
+        "fallback and ambiguous-glyph tests"
+      ]
+    },
+    {
+      "order": 3,
+      "name": "03 Typography / Font delivery and licensing",
+      "purpose": "Make every delivery, licensing, version, redistribution, and ownership decision visible.",
+      "requiredContent": [
+        "source and version",
+        "license evidence",
+        "delivery and file budget"
+      ]
+    },
+    {
+      "order": 4,
+      "name": "04 Typography / Type scale anatomy",
+      "purpose": "Explain existing primitive stops and role-led size, line-height, and tracking relationships without approving values.",
+      "requiredContent": [
+        "eight source stops",
+        "type anatomy",
+        "canonical paths and status"
+      ]
+    },
+    {
+      "order": 5,
+      "name": "05 Typography / Display styles",
+      "purpose": "Compare rare display candidates across contexts, content lengths, and fallbacks.",
+      "requiredContent": [
+        "display hypotheses",
+        "long headings",
+        "product-use boundary"
+      ]
+    },
+    {
+      "order": 6,
+      "name": "06 Typography / Heading styles",
+      "purpose": "Demonstrate page and section hierarchy, adjacent-level differentiation, and multiline behavior.",
+      "requiredContent": [
+        "hierarchy specimens",
+        "multiline stress",
+        "structural-heading caveat"
+      ]
+    },
+    {
+      "order": 7,
+      "name": "07 Typography / Body styles",
+      "purpose": "Compare reading hypotheses with measure, paragraphs, lists, links, and emphasis.",
+      "requiredContent": [
+        "short UI copy",
+        "sustained prose",
+        "measure and spacing"
+      ]
+    },
+    {
+      "order": 8,
+      "name": "08 Typography / Labels and captions",
+      "purpose": "Test concise supporting roles with wrapping, translation expansion, and sentence case.",
+      "requiredContent": [
+        "labels and captions",
+        "helper text",
+        "all-caps restriction"
+      ]
+    },
+    {
+      "order": 9,
+      "name": "09 Typography / Numeric and data typography",
+      "purpose": "Treat metrics, tables, dates, currency, and localized numerals as first-class typography.",
+      "requiredContent": [
+        "tabular and proportional figures",
+        "locale formats",
+        "alignment caveat"
+      ]
+    },
+    {
+      "order": 10,
+      "name": "10 Typography / Code typography",
+      "purpose": "Evaluate code readability, ambiguous glyphs, indentation, overflow, and ligatures.",
+      "requiredContent": [
+        "inline and block code",
+        "ambiguous glyphs",
+        "wrap and scroll behavior"
+      ]
+    },
+    {
+      "order": 11,
+      "name": "11 Typography / Responsive typography",
+      "purpose": "Compare compact, medium, and expanded contexts without approving fixed or fluid behavior.",
+      "requiredContent": [
+        "boundary widths",
+        "intermediate widths",
+        "fixed versus fluid hypotheses"
+      ]
+    },
+    {
+      "order": 12,
+      "name": "12 Typography / Dense enterprise typography",
+      "purpose": "Stress typography for tables, filters, logs, dashboards, and monitoring without creating components.",
+      "requiredContent": [
+        "abstract data rows",
+        "dense text blocks",
+        "complete-value access"
+      ]
+    },
+    {
+      "order": 13,
+      "name": "13 Typography / Internationalization",
+      "purpose": "Test expansion, direction, scripts, combining marks, identifiers, and locale-specific formatting.",
+      "requiredContent": [
+        "RTL and mixed scripts",
+        "CJK and diacritics",
+        "fallback coverage"
+      ]
+    },
+    {
+      "order": 14,
+      "name": "14 Typography / Accessibility",
+      "purpose": "Record contrast, resize, reflow, text-spacing, hierarchy, non-color, and truncation obligations.",
+      "requiredContent": [
+        "200 percent resize",
+        "400 percent reflow",
+        "WCAG text-spacing override"
+      ]
+    },
+    {
+      "order": 15,
+      "name": "15 Typography / Light and Dark examples",
+      "purpose": "Show identical typography against approved theme roles without adding typography modes.",
+      "requiredContent": [
+        "matched specimens",
+        "text-color bindings",
+        "contrast and glare evidence"
+      ]
+    },
+    {
+      "order": 16,
+      "name": "16 Typography / Decision log",
+      "purpose": "Record decisions, alternatives, rationale, owners, dates, and supersession links.",
+      "requiredContent": [
+        "font and scale decisions",
+        "responsive and OpenType decisions",
+        "delivery and localization decisions"
+      ]
+    },
+    {
+      "order": 17,
+      "name": "17 Typography / Review and approval",
+      "purpose": "Keep design, engineering, accessibility, licensing, governance, and release dispositions separate.",
+      "requiredContent": [
+        "review matrix",
+        "named reviewers and dates",
+        "unresolved blockers"
+      ]
+    },
+    {
+      "order": 18,
+      "name": "18 Typography / Handoff and evidence",
+      "purpose": "Map approved Figma representations to sources, generated outputs, IDs, captures, and drift evidence.",
+      "requiredContent": [
+        "mapping inventory",
+        "evidence and checksums",
+        "unpublished-library proof"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "../../../../../schemas/typography-foundation-contract.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "IOS-004.1-TYPOGRAPHY-FOUNDATION",
+  "milestone": "IOS-004.1",
+  "status": "architecture-approved",
+  "owner": "Jai Singh",
+  "canonicalSource": {
+    "path": "packages/tokens/src/primitives/typography.tokens.json",
+    "sha256": "f0af52ed6e5ca86f10a9635f59a7decd98027bad942b4d97385f00ab80ca5bfe",
+    "tokenCount": 21,
+    "valuesModified": false,
+    "inventory": {
+      "fontFamily": 2,
+      "fontSize": 8,
+      "fontWeight": 4,
+      "lineHeight": 4,
+      "letterSpacing": 3,
+      "paragraphSpacing": 0,
+      "semanticStyles": 0,
+      "responsiveMappings": 0
+    }
+  },
+  "layers": [
+    "primitive-properties",
+    "semantic-type-styles",
+    "responsive-context-mappings",
+    "platform-representations"
+  ],
+  "primitiveCategories": [
+    "font-family",
+    "font-weight",
+    "font-size",
+    "line-height",
+    "letter-spacing",
+    "paragraph-spacing"
+  ],
+  "semanticRoles": [
+    "display",
+    "heading",
+    "title",
+    "body",
+    "label",
+    "caption",
+    "code",
+    "numeric",
+    "data-table",
+    "button-text",
+    "input-text",
+    "helper-text",
+    "validation-text"
+  ],
+  "responsiveContexts": ["compact", "medium", "expanded", "dense"],
+  "fontDecision": {
+    "status": "pending-human-decision",
+    "artifact": "docs/design-system/foundations/typography/font-decision.candidates.json",
+    "interStatus": "provisional"
+  },
+  "figma": {
+    "blueprint": "docs/design-system/foundations/typography/typography-figma-blueprint.json",
+    "mutationStatus": "not-authorized",
+    "libraryPublicationState": "unpublished",
+    "collectionStrategy": "reuse-approved-five-collections",
+    "textStyleStrategy": "semantic-composites-backed-by-approved-variables"
+  },
+  "accessibilityCriteria": [
+    "WCAG-1.3.1",
+    "WCAG-1.4.1",
+    "WCAG-1.4.3",
+    "WCAG-1.4.4",
+    "WCAG-1.4.5",
+    "WCAG-1.4.10",
+    "WCAG-1.4.12",
+    "WCAG-2.4.6"
+  ],
+  "architectureApproval": {
+    "status": "approved",
+    "date": "2026-08-06",
+    "owner": "Jai Singh",
+    "decision": "docs/decisions/0007-typography-foundation-architecture.md",
+    "specialistEngineeringReview": "pending",
+    "specialistAccessibilityReview": "pending"
+  },
+  "openDecisions": [
+    "primary-font-family-and-version",
+    "font-license-and-delivery",
+    "approved-fallback-stack",
+    "target-language-and-script-coverage",
+    "monospace-family-and-ligature-policy",
+    "numeric-opentype-features",
+    "type-scale-values-and-role-mappings",
+    "responsive-fixed-versus-fluid-behavior",
+    "paragraph-spacing-source-and-code-mapping",
+    "figma-font-source-and-style-names"
+  ],
+  "prohibitions": [
+    "canonical-token-change",
+    "figma-mutation",
+    "font-download-or-bundling",
+    "licensing-approval-claim",
+    "accessibility-approval-claim",
+    "ui-component-creation",
+    "library-publication"
+  ]
+}

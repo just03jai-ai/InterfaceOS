@@ -10,6 +10,7 @@ Architectural decisions use ADRs with immutable numbers and statuses: Proposed, 
 | [ADR-0004](0004-figma-foundation-representation.md)     | Govern Figma collections, representations, and publishing         | Accepted |
 | [ADR-0005](0005-evidence-manifest-v2.md)                | Require explicit Figma capture and drift evidence in schema 2.0   | Accepted |
 | [ADR-0006](0006-color-foundation-v1-visual-baseline.md) | Approve Color Foundation V1 visual intent pending token promotion | Accepted |
+| [ADR-0007](0007-typography-foundation-architecture.md)  | Approve the IOS-004.1 Typography Foundation architecture baseline | Accepted |
 
 ## Decision policy
 

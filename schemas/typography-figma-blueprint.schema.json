@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interfaceos.dev/schemas/typography-figma-blueprint.schema.json",
+  "title": "InterfaceOS Typography Figma Blueprint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "id",
+    "status",
+    "targetPage",
+    "targetSection",
+    "mutationAuthorized",
+    "libraryPublicationState",
+    "sharedFrameContract",
+    "boards"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "const": "IOS-004.1-TYPOGRAPHY-FIGMA-BLUEPRINT" },
+    "status": { "const": "approved-specification" },
+    "targetPage": { "const": "03 Foundations" },
+    "targetSection": { "const": "Typography" },
+    "mutationAuthorized": { "const": false },
+    "libraryPublicationState": { "const": "unpublished" },
+    "sharedFrameContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layout",
+        "contentOrder",
+        "annotationFields",
+        "evidenceFields"
+      ],
+      "properties": {
+        "layout": { "const": "vertical-auto-layout" },
+        "contentOrder": {
+          "type": "array",
+          "minItems": 5,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "annotationFields": {
+          "type": "array",
+          "minItems": 5,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "evidenceFields": {
+          "type": "array",
+          "minItems": 7,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "boards": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": { "$ref": "#/$defs/board" }
+    }
+  },
+  "$defs": {
+    "board": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "name", "purpose", "requiredContent"],
+      "properties": {
+        "order": { "type": "integer", "minimum": 1, "maximum": 18 },
+        "name": { "type": "string", "pattern": "^[0-9]{2} .+" },
+        "purpose": { "type": "string", "minLength": 1 },
+        "requiredContent": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
